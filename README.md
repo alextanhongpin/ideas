@@ -21,7 +21,7 @@ Use websocket that allows clients from different devices to connect and vote.
 
 Ensure that one person can only vote once from the device.
 
-## Reverse Engineer MultiwWorld Testing
+## Reverse Engineer MultiWorld Testing
 
 Start with a simple bandit experiment, understand the limitation (delayed response). Add real-time graphs and intelligent bot to tell you what can be optimized.
 
@@ -36,3 +36,16 @@ Design an architecture for a webhook server and integrate it successfully.
 ## Storing data in IPFS
 
 Look into how to create DAP (decentralized application).
+
+
+## Genetic Algorithm
+
+Write your own implementation of Genetic Algorithm and look into the application in web/mobile.
+
+## Neural network
+
+Write your own neural network and look into the basic applications. Implement in different languages (go, node, python, rust, haskell).
+
+## Developer Page
+
+Scrape github user's data from malaysia and perform a job search/developer search based on personality and specialization. Write your own recommendation engine and get feedback from users whether it's relevant or not, and perform learning from there.
