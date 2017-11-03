@@ -14,3 +14,25 @@ How can we understand the user's personality and tie them to the brigg-myers per
 Numeric pagination is easy to scrape `?limit=9999&offset=1`. Find a way to create a pagination token that is hard to scrape.
 
 Also, do not expose `id` of resources to the frontend. That includes pages that displays a single item and so on e.g. `books/:id`. Rather, use slug instead as identifier.
+
+## Create a simple page for voting
+
+Use websocket that allows clients from different devices to connect and vote.
+
+Ensure that one person can only vote once from the device.
+
+## Reverse Engineer MultiwWorld Testing
+
+Start with a simple bandit experiment, understand the limitation (delayed response). Add real-time graphs and intelligent bot to tell you what can be optimized.
+
+## Smart bots with different personality
+
+Create a bot that has different personality (features). Allows users to search through something and create alerts.
+
+## Webhook Server
+
+Design an architecture for a webhook server and integrate it successfully.
+
+## Storing data in IPFS
+
+Look into how to create DAP (decentralized application).
