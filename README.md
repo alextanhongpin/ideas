@@ -53,3 +53,13 @@ Scrape github user's data from malaysia and perform a job search/developer searc
 ## Clones
 
 Finanz Revamp, Residenz, Instagram clone, Facebook, what is X is Y (what if JobStreet is Facebook?). Point-of-Sale system for food ordering, lorry tracking system. A clone of Journal.
+
+## User Recommendations
+
+Compare the different recommendations approach and look into matrix factorization. 
+
+## Bandit Server
+
+Bandit algorithm application in recommendations and other things. Not the concurrent issue with some algorithms (greedy epsilon) which requires the values to be updated immediately - imagine many users are pulling the same arm at the same time when the algorithm has not been updated.
+
+Also look into how to apply contextual bandit by using decision tree.
