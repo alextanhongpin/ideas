@@ -49,3 +49,7 @@ Write your own neural network and look into the basic applications. Implement in
 ## Developer Page
 
 Scrape github user's data from malaysia and perform a job search/developer search based on personality and specialization. Write your own recommendation engine and get feedback from users whether it's relevant or not, and perform learning from there.
+
+## Clones
+
+Finanz Revamp, Residenz, Instagram clone, Facebook, what is X is Y (what if JobStreet is Facebook?). Point-of-Sale system for food ordering, lorry tracking system. A clone of Journal.
