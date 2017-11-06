@@ -47,3 +47,11 @@ Given that you have a `Buy this Button`, you need to:
 
 So if you displayed the button 100 times, and got 35 clicks, the click ratio will be 0.35. It's up to you to justify whether this is a good value or not.
 
+
+## Logging vs Monitoring
+
+There are things we want to log (errors, business insights) and monitor (application errors, health check). You need to separate both of them, as logging errors does not add value to business. 
+A developer would like to monitor the application (request api calls, errors, cpu/memory usage). 
+
+Business and marketing are only interested to know about the analytics (what are the target audience based on gender, age, location, etc).
+
