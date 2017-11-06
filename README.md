@@ -63,3 +63,7 @@ Compare the different recommendations approach and look into matrix factorizatio
 Bandit algorithm application in recommendations and other things. Not the concurrent issue with some algorithms (greedy epsilon) which requires the values to be updated immediately - imagine many users are pulling the same arm at the same time when the algorithm has not been updated.
 
 Also look into how to apply contextual bandit by using decision tree.
+
+## Retry Pattern and Circuit Breaker
+
+Design a retry pattern and circuit breaker that can be reused. It will be using exponential backoff when performing retry.
