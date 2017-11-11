@@ -67,3 +67,8 @@ Also look into how to apply contextual bandit by using decision tree.
 ## Retry Pattern and Circuit Breaker
 
 Design a retry pattern and circuit breaker that can be reused. It will be using exponential backoff when performing retry.
+
+## Databases
+
+Distributed sqlLite with Bedrock, CockroachDB, TiDB.
+
