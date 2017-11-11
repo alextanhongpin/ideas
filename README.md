@@ -72,3 +72,7 @@ Design a retry pattern and circuit breaker that can be reused. It will be using 
 
 Distributed sqlLite with Bedrock, CockroachDB, TiDB.
 
+
+## Tracing
+
+Carry out opentracing with Node and python. Also experiment with X-Ray trace.
