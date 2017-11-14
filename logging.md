@@ -55,3 +55,15 @@ A developer would like to monitor the application (request api calls, errors, cp
 
 Business and marketing are only interested to know about the analytics (what are the target audience based on gender, age, location, etc).
 
+## Structured, Semi-structured and Unstructured Logging
+
+There are several ways of logging data - compare the following three different implementations:
+
+
+### Unstructured Logging
+![/assets/unstructured-logging.png]
+### Structured Logging
+
+![/assets/structured-logging.png]
+### Semi-structured Logging
+![/assets/semi-structured-logging.png]
