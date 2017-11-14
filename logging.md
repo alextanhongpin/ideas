@@ -62,10 +62,12 @@ There are several ways of logging data - compare the following three different i
 
 ### Unstructured Logging
 ![Unstructured Logging](./assets/unstructured.png)
+
 ### Structured Logging
 
 
 ![Structured Logging](./assets/structured.png)
+
 ### Semi-structured Logging
 
 ![Semi Structured Logging](./assets/semi-structured.png)
