@@ -61,9 +61,11 @@ There are several ways of logging data - compare the following three different i
 
 
 ### Unstructured Logging
-![/assets/unstructured-logging.png]
+![Unstructured Logging](./assets/unstructured.png)
 ### Structured Logging
 
-![/assets/structured-logging.png]
+
+![Structured Logging](./assets/structured.png)
 ### Semi-structured Logging
-![/assets/semi-structured-logging.png]
+
+![Semi Structured Logging](./assets/semi-structured.png)
