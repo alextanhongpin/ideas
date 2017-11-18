@@ -81,3 +81,11 @@ Carry out opentracing with Node and python. Also experiment with X-Ray trace.
 ## Imbalanced Dataset Machine Learning
 
 Reference [here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwi2_ISImcXXAhUBLY8KHaS9BkAQFggxMAE&url=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2017%2F03%2Fimbalanced-classification-problem%2F&usg=AOvVaw18t2VQ8g39iZnlFc8a7O4t) and [here](https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/).
+
+## CQRS and Event Sourcing
+
+Look into how CQRS and Event Sourcing can be implemented. Also look into how Git versioning works.
+
+## Sudoku Solver
+
+Look into how to solve sudoku uisng the `Dancing Links` and `Algorithm X` algorithms.
