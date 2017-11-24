@@ -89,3 +89,9 @@ Look into how CQRS and Event Sourcing can be implemented. Also look into how Git
 ## Sudoku Solver
 
 Look into how to solve sudoku uisng the `Dancing Links` and `Algorithm X` algorithms.
+
+## Relevant Search
+
+Normal search will not do for most cases - try to incorporate context into the search. At the same time, try to add personalization to the search.
+
+Most list pages will display a list of items in the first place. While it's possible to just display them based on the last created date, it doesn't add relevancy to users that has searched for something, and want to search for similar things. So, keep track of what the users have searched for, and then use the last history to compute the personalized search. It would be great to keep another section to recommend users something related to what they have searched for.
