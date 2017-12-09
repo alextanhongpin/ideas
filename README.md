@@ -100,3 +100,7 @@ Most list pages will display a list of items in the first place. While it's poss
 ## Singleflight pattern
 
 Look into the singleflight pattern for subscribing to connection. http://www.cs.duke.edu/courses/cps296.4/fall13/838-CloudPapers/dean_longtail.pdf. Also look into connection pooling in Golang, and sync.Once.
+
+## Future of Web Apps
+
+How would the future of web apps look like? Design conceptual websites with modern technologies.
