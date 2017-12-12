@@ -29,4 +29,8 @@ Working on new technologies and would like to try it out in production? Not unti
 
 ## Mob Review
 
+## What's more important than deploying is knowing how to destroy it
+
+It's easy to push stuff to production, bringing them down without breaking other dependencies is hard. Always plan on how to bring down the things you want to deploy.
+
 Done working on a feature and ready for production? Don't go there straight away. Take 30 minutes of your team's time, and start battle-testing your system. Try all weird inputs, try to break your system. Once you are confident, release it.
