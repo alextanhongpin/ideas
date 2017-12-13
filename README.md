@@ -104,3 +104,7 @@ Look into the singleflight pattern for subscribing to connection. http://www.cs.
 ## Future of Web Apps
 
 How would the future of web apps look like? Design conceptual websites with modern technologies.
+
+## ACL Admin
+
+ACL that allows you to limit user's access to certain operation (read, write, etc) and allow you to invite new users through email.
