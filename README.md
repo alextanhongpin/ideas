@@ -108,3 +108,8 @@ How would the future of web apps look like? Design conceptual websites with mode
 ## ACL Admin
 
 ACL that allows you to limit user's access to certain operation (read, write, etc) and allow you to invite new users through email.
+
+
+## ABAC and RBAC
+
+Implement Attribute Based Access Control (ACAB) and Role Based Access Control (RCAB) for different languages.
