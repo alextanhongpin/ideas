@@ -107,7 +107,7 @@ How would the future of web apps look like? Design conceptual websites with mode
 
 ## ACL Admin
 
-ACL that allows you to limit user's access to certain operation (read, write, etc) and allow you to invite new users through email.
+ACL that allows you to limit user's access to certain operation (read, write, etc) and allow you to invite new users through email. Basic implementation with nodejs [here](https://github.com/alextanhongpin/node-scope).
 
 
 ## ABAC and RBAC
@@ -116,4 +116,4 @@ Implement Attribute Based Access Control (ACAB) and Role Based Access Control (R
 
 ## Chat Server
 
-Create a full chat server.
+Create a full chat server. The server is written in [golang](https://github.com/alextanhongpin/go-chat) and the client [Vue](https://github.com/alextanhongpin/vue-chat). Work in progress.
