@@ -117,3 +117,19 @@ Implement Attribute Based Access Control (ACAB) and Role Based Access Control (R
 ## Chat Server
 
 Create a full chat server. The server is written in [golang](https://github.com/alextanhongpin/go-chat) and the client [Vue](https://github.com/alextanhongpin/vue-chat). Work in progress.
+
+## Bloom Filter
+
+The classic example is using bloom filters to reduce expensive disk (or network) lookups for non-existent keys. Another use case is to check if the unique username existed before allowing users to choose that username.
+
+## Markov Chain Classifier
+
+Predicting user behaviour using transition probability. Can also be used to predict customer conversion (perhaps to find out the churn possibility).
+
+## Spam Filtering
+
+Use naive bayes to predict if a text is spam or not.
+
+## Boosting algorithm
+
+AdaBoost.
