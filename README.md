@@ -146,3 +146,52 @@ Learn and understand the use case of NER. Use NER to understand the context of t
 ## Levenshtein Distance
 
 Understand how to implement dynamic programming with it.
+
+
+## LambdaMART
+
+Understand the LambdaMART algorithm and use it to create ranking system.
+
+## Viterbi Algorithm
+
+Checkout Viterbi algorithm, and see what are the applications in real life.
+
+## Technical Indicators
+
+Try out all the possible technical indicators and write the algorithm in Python Jupyter. Also, run it against a real test data, plot it out and visualize the outcome. See if they can be used for prediction. Also, check if you can do image pattern matching against the popular technical indicators.
+
+## Decentralized Applications
+
+Check out how to create and deploy a simple dapp. Also, check out solutions for distributed databases. 
+
+## Regression with Stochastic Gradient Descent
+
+You can do linear regression with stochastic gradient descent. Understand the difference between the ordinary solution and the solution using stochastic gradient descent.
+
+## Affinity Analysis
+
+Compare the different data mining algorithms for affinity analysis, especially apriori and eclat.
+
+## Minimal Docker images
+
+For rust, haskell, golang, node, scala and python. Write down the size and multi-stage build process.
+
+## CRISP-DM
+
+Cross Industry Standard Practice for Data Mining. Try to implement the full steps.
+
+## Contextual Bandit
+
+Learnm and apply the contextual bandit algorithm.
+
+## Ad Click Prediction
+
+Can be done through several ways - such as logistic regression. Find out how to implement a working server for that.
+
+## Dynamic Pricing and Price elasticity
+
+Find out how to work with time series data for prices, and the differences between dynamic pricing vs price elasticity algorithms and how to apply them.
+
+## Machine Learning Softwares
+
+Check out the PredictionIO, Apache Mahout and Elastic Search More Like This performance.
