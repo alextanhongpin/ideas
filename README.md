@@ -133,3 +133,16 @@ Use naive bayes to predict if a text is spam or not.
 ## Boosting algorithm
 
 AdaBoost.
+
+
+## Named Entity Recognition
+
+Learn and understand the use case of NER. Use NER to understand the context of the word - perhaps optimise it so that it can be used to perform more relevant search and deliver a google-like search experience.
+
+- examples
+- how to train your own model
+- architecture deployment
+
+## Levenshtein Distance
+
+Understand how to implement dynamic programming with it.
