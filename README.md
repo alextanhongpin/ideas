@@ -195,3 +195,7 @@ Find out how to work with time series data for prices, and the differences betwe
 ## Machine Learning Softwares
 
 Check out the PredictionIO, Apache Mahout and Elastic Search More Like This performance.
+
+## Stable Marriage Problem
+
+Look into how to solve stable marriage problems and test it on timetable allocation, dorm room allocation to students, candidates and hirers application and ...finding best dating partner. Wiki link [here](https://en.wikipedia.org/wiki/Stable_marriage_problem).
