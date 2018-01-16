@@ -199,3 +199,8 @@ Check out the PredictionIO, Apache Mahout and Elastic Search More Like This perf
 ## Stable Marriage Problem
 
 Look into how to solve stable marriage problems and test it on timetable allocation, dorm room allocation to students, candidates and hirers application and ...finding best dating partner. Wiki link [here](https://en.wikipedia.org/wiki/Stable_marriage_problem).
+
+
+## Basic and advanced algorithms
+
+Bubble sort, quick sort, shellsort, merge sort, etc. Learn the different kinds of sorting and then look into dynamic programming. Knapsack problem, and coin changing problem.
