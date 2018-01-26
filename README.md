@@ -204,3 +204,9 @@ Look into how to solve stable marriage problems and test it on timetable allocat
 ## Basic and advanced algorithms
 
 Bubble sort, quick sort, shellsort, merge sort, etc. Learn the different kinds of sorting and then look into dynamic programming. Knapsack problem, and coin changing problem.
+
+## Docker Monitoring
+
+Done this before, but didn't write down the steps for others to replicate. Also, there are some improvements that I want to, like generating daily, weekly, monthly and yearly report on the metrics (CPU usage, memory, SLA etc).
+
+Pair it with Grafana and Prometheus.
