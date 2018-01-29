@@ -200,6 +200,8 @@ Check out the PredictionIO, Apache Mahout and Elastic Search More Like This perf
 
 Look into how to solve stable marriage problems and test it on timetable allocation, dorm room allocation to students, candidates and hirers application and ...finding best dating partner. Wiki link [here](https://en.wikipedia.org/wiki/Stable_marriage_problem).
 
+Solution in several languages can be found [here](https://github.com/alextanhongpin/stable-marriage-problem).
+
 
 ## Basic and advanced algorithms
 
