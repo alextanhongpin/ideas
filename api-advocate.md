@@ -1,4 +1,4 @@
-Technology Stacks
+## Technology Stacks
 
 -	Containers. Everything will be Docker-based – for now we will utilize AWS ECS before moving to AWS EKS (currently still in Preview). Migration should be seamless – the goal is to encourage developers to move everything to Docker.
 -	JSON API. To align with the API Standards, we will model all our APIs based on the JSON API Specification. 
@@ -26,3 +26,28 @@ Reference: https://nordicapis.com/api-model-canvas-developer-experience-is-a-key
 -	Event-Driven. All (relevant) logs data should be persisted in S3 for example. This data should be utilized (analytics, dashboards), not just kept. This should align with Data Team’s initiatives.
 
 Overall, 80% of our work should be mainly exploitation (making use of existing standards, best practices) and the remaining 20% for exploration (researching new technologies, methodologies). It’s important that mature code be separated from unproven/untested implementations.
+
+
+## API Lean Canvas
+
+```
+I’m sharing two links here that describes the API Model Canvas that was mentioned earlier:
+
+1. https://nordicapis.com/api-model-canvas-developer-experience-is-a-key-ingredient-of-quality-apis/
+2. http://www.apiacademy.co/tag/microservices/
+
+We will definitely be getting ad-hoc requests from different team for APIs, and without a systematic approach, we might end up going in circles.
+
+Therefore, we should be more specific on how we are going to handle the requests from other team. A suggestion would be to use the existing API Model Canvas, and customise it based on our needs. 
+
+Here are some thoughts on things that we can add-on:
+
+- The owner of the service, and the team using it
+- Overview on what the services does, and who can access it
+- Channels (by Country?)
+- Data Storage (Which databases are we accessing/creating)
+- Analytics (A simple overview on the relevant metrics that can be obtained from the services, which will be feed back to Roger’s centralised data mart)
+- Language/Technology implementation - This will address the technology road map that we discussed previously.
+
+Of course, this is not an enforcement, merely a suggestion.
+```
