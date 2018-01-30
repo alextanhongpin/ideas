@@ -53,6 +53,10 @@ List of the books (that I remember) that I have read/gone through the examples. 
 
 - [Architecting for Scale](http://shop.oreilly.com/product/0636920047070.do) - This is the book I read about scalability and reliability. Most of the concepts there makes sense, and it's always good to put some thoughts into it before designing your next system.
 
+## Monitoring
+
+- [Effective Monitoring and Alerting](https://www.amazon.com/Effective-Monitoring-Alerting-Web-Operations/dp/1449333524)
+
 ## UI/UX/Testing
 
 - [User Story Mapping](http://shop.oreilly.com/product/0636920033851.do)
