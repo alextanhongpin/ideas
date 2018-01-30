@@ -49,6 +49,9 @@ List of the books (that I remember) that I have read/gone through the examples. 
 - Patterns, Principles and Practices of Domain Driven Design
 - [Exploring CQRS and Event Sourcing](https://msdn.microsoft.com/en-us/library/jj554200.aspx)
 
+## Scalability
+
+- [Architecting for Scale](http://shop.oreilly.com/product/0636920047070.do) - This is the book I read about scalability and reliability. Most of the concepts there makes sense, and it's always good to put some thoughts into it before designing your next system.
 
 ## UI/UX/Testing
 
