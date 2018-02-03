@@ -52,6 +52,8 @@ List of the books (that I remember) that I have read/gone through the examples. 
 ## Scalability
 
 - [Architecting for Scale](http://shop.oreilly.com/product/0636920047070.do) - This is the book I read about scalability and reliability. Most of the concepts there makes sense, and it's always good to put some thoughts into it before designing your next system.
+- [Designing Distributed System](http://shop.oreilly.com/product/0636920072768.do)
+- [Patterns of Enterprise Application Architecture](https://www.amazon.com/Patterns-Enterprise-Application-Architecture-Martin/dp/0321127420)
 
 ## Monitoring
 
