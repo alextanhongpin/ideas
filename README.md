@@ -220,3 +220,7 @@ Algorithm for splitting rent.
 ## Evolutionary Architecture
 
 I wanted to design an architecture called Perfect Architecture before - only to realize there is no such thing as perfect. It is always `it depends`-architecture and should be designed based on the use cases. But evolutionary architecture is something that I would like to advocate - it mimics the human process and has a brain (machine learning/deep learning) and has a pipeline (whatever organs in the human body has), has self-healing and functions as a whole.
+
+## Token Bucket & Leaky Bucket
+
+Look into how to implement those algorithms in different languages.
