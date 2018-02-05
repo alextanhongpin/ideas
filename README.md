@@ -226,3 +226,7 @@ I wanted to design an architecture called Perfect Architecture before - only to 
 ## Token Bucket & Leaky Bucket
 
 Look into how to implement those algorithms in different languages.
+
+## SASS
+
+"Servicify" everything that you have done, with Kubernetes/Nomad as the scheduler. Include proper unit tests for each services too, and best practices.
