@@ -86,6 +86,8 @@ Reference [here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2
 
 Look into how CQRS and Event Sourcing can be implemented. Also look into how Git versioning works.
 
+What is CQRS? How can I build and test each components of event sourcing while scaling it. Check the implementation for event sourcing using Go, Nodejs, Elixir and Scala.
+
 ## Sudoku Solver
 
 Look into how to solve sudoku uisng the `Dancing Links` and `Algorithm X` algorithms.
