@@ -40,7 +40,7 @@ Look into how to create DAP (decentralized application).
 
 ## Genetic Algorithm
 
-Write your own implementation of Genetic Algorithm and look into the application in web/mobile.
+Write your own implementation of Genetic Algorithm and look into the application in web/mobile. Compare it against stochastic gradient descent. Also, understand that Genetic Programming and genetic algorithm is different.
 
 ## Neural network
 
@@ -230,3 +230,19 @@ Look into how to implement those algorithms in different languages.
 ## SASS
 
 "Servicify" everything that you have done, with Kubernetes/Nomad as the scheduler. Include proper unit tests for each services too, and best practices.
+
+## JSON API Specification
+
+Look into JSON API specification and understand how to implement it correctly.
+
+## Avro Schema
+
+Look into avro schema registry and compare it against protobuf.
+
+## Hidden Markov Model
+
+Implement hidden markov model in different languages.
+
+## Keras Text Processing
+
+Look into the different areas of text processing and understand how to apply keras to it.
