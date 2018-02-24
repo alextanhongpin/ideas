@@ -13,3 +13,13 @@ Also, use redis to cache the rows of item sent with a sensible key name, prefera
 ## Elasticsearch Search Query
 
 Cache the request for performing the search, as it can be reused. Say if you have 1000 rows to be matched, you might only need to call the ElasticSearch 900 times, because 100 of them have similary query params. 
+
+
+## Table of requests
+
+| requests/s | time (s) for 1 mil. requests |
+|------------|------------------------------|
+| 1/s | 277.8 hrs |
+| 10/s | 27.78 hrs |
+| 100/s | 2.778 hr| 
+| 1000/s | 0.2778 hr ~ 16.67 min | 
