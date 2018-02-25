@@ -245,4 +245,10 @@ Implement hidden markov model in different languages.
 
 ## Keras Text Processing
 
-Look into the different areas of text processing and understand how to apply keras to it.
+Look into the different areas of text processing and understand how to apply keras to it. Also look into Spacy for chatbots and learn how to dockerize them.
+
+## Frequent Itemsets
+
+Use frequent itemsets for food recommendation, create packages (food, drink and misc.), log the most frequently purchased and perform recommendations.
+
+
