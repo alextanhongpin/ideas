@@ -252,3 +252,6 @@ Look into the different areas of text processing and understand how to apply ker
 Use frequent itemsets for food recommendation, create packages (food, drink and misc.), log the most frequently purchased and perform recommendations.
 
 
+## New Search
+
+Rather than focusing on letting users search on a keyword, provide dynamic recommendations - listing page that changes over time based on the frequency and trend. Users can still search for stuff based on keywords, but this will be the primary feature.
