@@ -255,3 +255,11 @@ Use frequent itemsets for food recommendation, create packages (food, drink and 
 ## New Search
 
 Rather than focusing on letting users search on a keyword, provide dynamic recommendations - listing page that changes over time based on the frequency and trend. Users can still search for stuff based on keywords, but this will be the primary feature.
+
+## Yik Yak
+
+Make an app like Yik Yak, that will messages that will expire after certain days. Also, add sentiment analysis to create postive text rather than negative.
+
+## Service Value
+
+Defining Service value will enable easy rewrites of the API.
