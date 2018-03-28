@@ -286,4 +286,6 @@ https://www.mulesoft.com/sites/default/files/resource-assets/API-led-connectivit
 
 Try to understand the separate layer and why they exist. Is it also possible to abstract, say database access calls to one layer, and reduce the side-effects by splitting read/write (CQRS), which can only be consumed through RPC by other clients?
 
+## Exposing schemas
 
+Given a hypothetical api endpoint `/foods` which return foods, we can have an equivalent schema endpoint `/schemas/foods` that returns the JSON Schema of the resource.
