@@ -280,4 +280,10 @@ Look into websub and how to implement it.
 Learn the basics of Istio and Conduit and create examples. Also look back into Nomad and Linkerd.
 
 
+## System API, Experience API and Process API
+
+https://www.mulesoft.com/sites/default/files/resource-assets/API-led-connectivity-new-soa-updated.pdf
+
+Try to understand the separate layer and why they exist. Is it also possible to abstract, say database access calls to one layer, and reduce the side-effects by splitting read/write (CQRS), which can only be consumed through RPC by other clients?
+
 
