@@ -289,3 +289,7 @@ Try to understand the separate layer and why they exist. Is it also possible to 
 ## Exposing schemas
 
 Given a hypothetical api endpoint `/foods` which return foods, we can have an equivalent schema endpoint `/schemas/foods` that returns the JSON Schema of the resource.
+
+## Intelligent API as a Service
+
+Spam, NER, Search, Viterbi, Markov Chain, Bandit, Recommendation, Sentiment Analysis API for real-world use cases.
