@@ -4,7 +4,7 @@ A list of principles I hold when programming/working with my team. It's rather o
 
 ## If you want to move fast, walk alone. If you want to move far, walk together.
 
-Title says it all. 
+Also, you need to want to walk the same path. If our destination differs, split.
 
 ## Iterate, don't conclude
 
@@ -42,3 +42,6 @@ When time is scarce, learn what you need. When time is abundant, learn as much a
 ## Know what you do not know
 
 It is important not just to know about this, but also to do something about it. If you are lacking in some areas, always seek to improve and not necessarily by yourself - you can get help from others.
+
+
+## Good decisions come from experience, and experience comes from bad decisions
