@@ -42,3 +42,20 @@ Understand that data that are logged can be stale if they are not used. Knowing 
 - what features perform best on what devices
 - what is the value of the features (determined by clicks, duration used, lifespan etc)
 - click rates
+
+## Metrics Domain
+
+Capturing data can be done for separate domains. Domains differs by context, such as monitoring, analytics, deployment and also time-series. 
+
+- **monitoring** is used to capture the application performance, e.g. CPU Usage, requests count, errors. See the [USE Method](http://www.brendangregg.com/usemethod.html) by Brendan Gregg.
+- **analytics** covers more on the application logic - how the user's are using our application, their journey etc. Also the latency they experience. OpenTracing is a good tool to capture this metrics, as we can apply the Hidden Markov Model to carry out churn prediction for example.
+- **deployment** captures metrics on deployment and the duration. Allow us to see how frequent is the deployment, and how we reach from planning to release. Also, it's important to compare the metrics captured between different version (V1 vs V2 releases) to see if there are improvements.
+- **test coverage** describes the reliability of a system, on how it is supposed to perform
+
+## Monitoring Services
+
+Monitoring services is more than logging the latency, request count, request rate, errors etc. The erros count can be part of monitoring, and also reporting SLA (Service Level Agreement).
+
+Latency and requests rate provides information on the improvement we made on a service (from V1 to V2), and enables us to trace the outcome of the deployment (similar to benchmarking in test, but this is carried out in production. Of course, benchmark it in test first, the production data is just a support for the improvements conducted).
+
+
