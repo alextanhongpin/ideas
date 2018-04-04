@@ -45,3 +45,7 @@ It is important not just to know about this, but also to do something about it. 
 
 
 ## Good decisions come from experience, and experience comes from bad decisions
+
+## Pushing new technology is simple
+
+__ (Replace this with the technology in mind) __ is not our core business, we should delegate it so that we can prioritize on what is important for us.
