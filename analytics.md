@@ -59,3 +59,7 @@ Monitoring services is more than logging the latency, request count, request rat
 Latency and requests rate provides information on the improvement we made on a service (from V1 to V2), and enables us to trace the outcome of the deployment (similar to benchmarking in test, but this is carried out in production. Of course, benchmark it in test first, the production data is just a support for the improvements conducted).
 
 
+## Accuracy
+
+Dealing with metrics (e.g. counter) can be tricky - if we have retry pattern that will retry a request, it will increment the counter for both errors and requests. The data captured will be inaccurate, and hence require better way of capturing. For better precision, it would be better to log both the service requests together with a unique id and timestamp so that we can eliminate duplicate call.
+
