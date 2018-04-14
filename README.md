@@ -311,3 +311,10 @@ Read and writes should be separated in the microservices layer, as they can be s
 
 If there are new services with changing schemas, the idea is to deprecate the older version. It will still be running, but warn the end users about the deadline and the necessary changes for the newer version. Also, log the requests count together with the version to see how many people are still consuming the endpoint. Once the count reach below certain threshold, deprecate it completely. To make the migration transparent, one can apply the proxy or adapter pattern.
 
+## Microservices Approach
+
+- what microservices to build? video? check for existing schemas in schema.org (DRY)
+- what cloud design pattern is involved? basically how to handle scaling in the future
+- what technology stack to use (no debate here, but it's good to be clear on this - use the right tool)
+- simple mvp and test cases
+- what data needs to be analysed
