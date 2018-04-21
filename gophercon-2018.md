@@ -4,6 +4,8 @@
 
 ## Expenses
 
+## Accomodation
+
 ## Itirinery
 
 - Monday, April 30th
@@ -16,3 +18,17 @@
 - Friday, May 4th
 - Saturday, May 5th
 - Sunday, May 6th
+
+
+## Items
+
+- **passport**
+- **gophercon ticket**
+- clothes for 7 days
+- toiletries
+
+## Locations
+
+Gophercon Conference Location: [Marina Bay Sands Expo and Convention Center](https://web.facebook.com/pages/Marina-Bay-Sands-Expo-and-Convention-Center/260182121080938?fref=mentions)
+
+Gophercon Workshop Location: [Lifelong Learning Institute](https://web.facebook.com/LLISG/?fref=mentions)
