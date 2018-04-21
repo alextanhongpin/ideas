@@ -7,6 +7,7 @@
 ## Accomodation
 
 - [Hotel 81 Rochor](https://www.booking.com/searchresults.en-gb.html?aid=311984;label=fac419jc-hotel-en-sg-81Nrochor-unspec-my-com-L%3Aen-O%3AosSx-B%3Achrome-N%3AXX-S%3Abo-U%3Aao-H%3As;sid=4ce004ef89041c6303e7640f66b91d35;checkin=2018-04-30;checkout=2018-05-06;city=-73635;highlighted_hotels=175623;hlrd=with_av;keep_landing=1;redirected=1;source=hotel&)
+- [Galaxy Pods](https://www.booking.com/searchresults.en-gb.html?aid=311984;label=fac419jc-hotel-en-sg-galaxyNpodsNchinatown-unspec-my-com-L%3Aen-O%3AosSx-B%3Achrome-N%3AXX-S%3Abo-U%3Aao-H%3As;sid=4ce004ef89041c6303e7640f66b91d35;checkin=2018-04-30;checkout=2018-05-06;city=-73635;highlighted_hotels=2840857;hlrd=with_av;keep_landing=1;redirected=1;source=hotel&#hotelTmpl)
 
 ## Itirinery
 
