@@ -318,3 +318,18 @@ If there are new services with changing schemas, the idea is to deprecate the ol
 - what technology stack to use (no debate here, but it's good to be clear on this - use the right tool)
 - simple mvp and test cases
 - what data needs to be analysed
+
+## Planning Large Terraform Projects
+
+- how to setup workflow for different environment (production, staging, etc)
+- how to test the setup?
+- how to manage chain workflows (creation of one resource requires details from another resources) without coupling them
+
+
+## Versioning Application
+
+How to measure performance changes when versioning application? Every release (new features) will definitely slow down the application. How to detect the threshold that is allowed? Possibly through prometheus, find a way to inject the version of the application, then plot the graph through grafana.
+
+## Traffic Shifting
+
+It is possible to do traffic-shifting - but can we shard (duplicate) the calls to a staging environment instead to debug/test performance/check errors? When doing so, it is important to isolate side-effects (writes to db, sending out emails, triggering webhook etc). Find out how. 
