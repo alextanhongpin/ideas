@@ -49,3 +49,7 @@ It is important not just to know about this, but also to do something about it. 
 ## Pushing new technology is simple
 
 __ (Replace this with the technology in mind) __ is not our core business, we should delegate it so that we can prioritize on what is important for us.
+
+## Say no to invisible work
+
+Invisible work is works that gets done that no one knows is happening or happens in the background.
