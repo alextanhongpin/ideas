@@ -333,3 +333,16 @@ How to measure performance changes when versioning application? Every release (n
 ## Traffic Shifting
 
 It is possible to do traffic-shifting - but can we shard (duplicate) the calls to a staging environment instead to debug/test performance/check errors? When doing so, it is important to isolate side-effects (writes to db, sending out emails, triggering webhook etc). Find out how. 
+
+## Cloud Native apps with microservices architecture
+
+- Building and Deploying a Microservice 
+- Discovery and Invocation 
+- Microservices Patterns 
+- Circuit Breakers 
+- Pipelines 
+- Authentication 
+- Logging, Monitoring, and Tracing 
+- Blue-Green Deployment 
+- Canary 
+- Moving from Monolith to Microservices 
