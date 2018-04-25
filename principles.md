@@ -53,3 +53,8 @@ __ (Replace this with the technology in mind) __ is not our core business, we sh
 ## Say no to invisible work
 
 Invisible work is works that gets done that no one knows is happening or happens in the background.
+
+
+## Cargo Cult
+
+A.k.a copy-paste programming. A style of software development where you ignore how a piece of code works and its relationship with the code around it.
