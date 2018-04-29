@@ -2,6 +2,9 @@
 
 List of the books (that I remember) that I have read/gone through the examples. Keeping the list here to recommend others and also for future reference.
 
+This list only contains technical books, I do not just read technical books by all means :) Other lists are available [here](http://alextanhongpin.github.io/#books) though I did not update it that much anymore.
+
+
 ## Machine Learning
 
 - [Artificial Intelligence with Python](https://www.packtpub.com/big-data-and-business-intelligence/artificial-intelligence-python)
@@ -64,6 +67,9 @@ List of the books (that I remember) that I have read/gone through the examples. 
 - [User Story Mapping](http://shop.oreilly.com/product/0636920033851.do)
 - [Specification by Example]()
 - [Learning Behaviour-driven Development with JavaScript](https://www.packtpub.com/application-development/learning-behavior-driven-development-javascript)
+
+## Team
+- [The Art of Scalability: Scalable Web Architecture, Processes, and Organizations for the Modern Enterprise (2nd Edition)](https://www.amazon.com/Art-Scalability-Architecture-Organizations-Enterprise/dp/0134032802) - This is less of a technical book than I first thought. It teaches you how to scale processes in an organization from segregating roles and responsibilities to defining methodologies in groups. Has
 
 ## Still Searching
 
