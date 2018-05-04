@@ -154,3 +154,7 @@ console.log(counter.infos())
 ## Adding Versioning in Logs
 
 Adding the application version in logs enables you to track the application performance through tags. Do not confuse this with error logs (although it can be added there), but rather metrics logs.
+
+## Quotes
+
+Logs are meant to provide signals, not noises.
