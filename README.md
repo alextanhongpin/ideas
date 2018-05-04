@@ -346,3 +346,10 @@ It is possible to do traffic-shifting - but can we shard (duplicate) the calls t
 - Blue-Green Deployment 
 - Canary 
 - Moving from Monolith to Microservices 
+
+## Latency Issue Debugging
+
+check cpu, memory usage, allocations, goroutines stack trace
+
+Request tracing tools
+- nettrace, openzipkin, opencensus
