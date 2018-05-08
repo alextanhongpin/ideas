@@ -37,3 +37,11 @@ Services that performs above the given SLAs should be used as an example, those 
 The sum of all services SLAs is the architecture SLAs. The architecture SLAs indicates whether it is healthy or not. Components affecting the architecture SLAs should be removed.
 
 
+## Canary and Blue/Green deployment and A/B Testing
+
+Canary and blue/green deployment differs a little. The idea of runnning multiple versions can be extended and measured.
+
+## Bandit Algorithm and Feature toggle
+
+Bandit algorithm + traffic shifting can be used to test features in production.
+
