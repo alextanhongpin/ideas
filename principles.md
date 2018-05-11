@@ -58,3 +58,16 @@ Invisible work is works that gets done that no one knows is happening or happens
 ## Cargo Cult
 
 A.k.a copy-paste programming. A style of software development where you ignore how a piece of code works and its relationship with the code around it.
+
+
+## Deciding on Technology Stack
+
+It's not about using the latest technology - it's about using what makes sense. In order to achieve that, you need to develop a good intuition on what technology will stand the test of time. Take for example, blockchain. During the time it was release, do you have the correct intuition on where it will be in the next 5 years?
+
+## Business before Technology
+
+It's important not to value technology and abandon business. There has to be a sweet spot of focus for both, since they should co-exist together. Value tech and business (and people too).
+
+## Full Stack Myth
+
+A lot of people call themselves a full stack developer - overestimating their capabilities. I prefer the title `developer` - it's plain and humble. If I ask someone how many bugs they have created and how they value themselves after that, most of them would be embarrased to admit they are a full stack anymore. People make mistakes. Stay humble.
