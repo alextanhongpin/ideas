@@ -10,6 +10,7 @@ This list only contains technical books, I do not just read technical books by a
 - [Artificial Intelligence with Python](https://www.packtpub.com/big-data-and-business-intelligence/artificial-intelligence-python)
 - [Learning Data Mining with Python](https://www.amazon.com/Learning-Mining-Python-Robert-Layton/dp/1784396052)
 - Programming Collective Intelligence
+- Bandit Algorithms for Website Optimization
 
 
 ### Halfway Through
