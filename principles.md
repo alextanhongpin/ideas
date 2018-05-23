@@ -4,7 +4,9 @@ A list of principles I hold when programming/working with my team. It's rather o
 
 ## If you want to move fast, walk alone. If you want to move far, walk together.
 
-Also, you need to want to walk the same path. If our destination differs, split.
+Success is a journey that you have to carry others on. Period. 
+
+Make sure you walk that path with the people you trust.
 
 ## Iterate, don't conclude
 
