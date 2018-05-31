@@ -16,7 +16,7 @@ Sometimes when we work on a feature, we just build and forget. A working feature
 
 - Don't look for **temporary solutions**, design your system the correct way. If you design a temporary working solution and you did not look back into it, you are gonna create a new legacy. If you do not know the correct way, spend some time researching/asking others.
 - When reviewing, be honest. Reviewers should not hesitate to comment/criticize. Also, codes should be reviewed by a minimum of two reviewers. Letting code reviews pass for the sake of passing will add technical debts to your organization.
-
+- Most of the time, we will have idea on what is the right thing to do - but often there are times that test our decision - are you gonna stick to the right thing, or are you just gonna let it slip for once?
 
 ## Correctness over simplicity
 
@@ -73,3 +73,5 @@ It's important not to value technology and abandon business. There has to be a s
 ## Full Stack Myth
 
 A lot of people call themselves a full stack developer - overestimating their capabilities. I prefer the title `developer` - it's plain and humble. If I ask someone how many bugs they have created and how they value themselves after that, most of them would be embarrased to admit they are a full stack anymore. People make mistakes. Stay humble.
+
+
