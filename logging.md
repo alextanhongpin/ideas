@@ -158,3 +158,52 @@ Adding the application version in logs enables you to track the application perf
 ## Quotes
 
 Logs are meant to provide signals, not noises.
+
+
+## Golang
+
+- setup a logger at the main and pass it down through dependency injection (DI)
+- using global logger is not recommended, since you do not want to pollute the global logger
+- when passing down the logger through DI, you can customize the logger further (adding name to indicate hierachy, or who the parent function is)
+- setting up a logger at init is a no-op (also look at singleton pattern when doing lazy initialization, since lazy initialization is not concurrent-safe), since it makes testing harder
+- passing logger in context is a bad design pattern - instead, pass the value you want to have in your logger through context	
+- to associate a group of logs (concurrent logging), pass down `requestId` at the start of the region
+- logging should be part of a middleware - you should be able to toggle it
+- standardize the format of your logging - your logging can include the following
+  - level: `info`, `warn`, `debug`, `error` etc. to make it easier to search for events
+  - ts: timestamp of the event, in UTC
+  - logger: the named logger, usually indicating which subpackage the logger is called from
+  - caller: the exact line where the logger is called
+  - msg: a human-readable message
+  - hostname: the hostname of the application/container, might be useful to check which containers are the one calling the log, especially when you have autoscaling in place
+  - requestId: a unique identifier that allows you to group logs together, can be used to trace a sequence of events. Also look at `opentracing` and `opencensus`
+  - method: the method name calling the log, can be used to compare performance, especially when you include the application version together
+  - took: the duration took in milliseconds
+  - semver: the application version, can be used to compare performance, and the changes indicates how often a new deployment is made
+  - other parameters: log other parameters such as request params for the method, or errors
+
+Example logs:
+
+```
+{"level":"info","ts":1527913244.9135277,"logger":"main.reposvc","caller":"reposvc/model.go:98","msg":"find last created by user","hostname":"c04135e2d167","requestId":"bc91ls78l01krejqmqh0","method":"FindLastCreatedByUser","took":0.023795597,"date":"2015-10-11","default":true}
+{"level":"info","ts":1527913245.3131607,"logger":"main.github","caller":"github/model.go:77","msg":"fetch repos cursor","hostname":"c04135e2d167","requestId":"bc91ls78l01krejqmqh0","method":"FetchReposCursor","took":0.399328448,"login":"keryi","start":"2015-10-11","end":"2018-06-02","limit":30,"count":2}
+{"level":"info","ts":1527913245.3143008,"logger":"main.reposvc","caller":"reposvc/model.go:42","msg":"inserted repos","hostname":"c04135e2d167","requestId":"bc91ls78l01krejqmqh0","method":"BulkUpsert","took":0.000840333,"count":2}
+{"level":"info","ts":1527913245.3148515,"logger":"main.usersvc","caller":"usersvc/model.go:161","msg":"update one user","hostname":"c04135e2d167","requestId":"bc91ls78l01krejqmqh0","method":"UpdateOne","took":0.000388025,"login":"keryi"}
+{"level":"info","ts":1527913245.3150039,"logger":"main.mediatorsvc","caller":"mediatorsvc/mediatorsvc.go:117","msg":"got users and upsert users","hostname":"c04135e2d167","requestId":"bc91ls78l01krejqmqh0","method":"FetchRepos","took":45.314477173,"userPerPage":100,"repoPerPage":30,"users":100,"repos":2}
+```
+
+## Downside
+
+Logging can reduce the performance of the application significantly. In some benchmark I did with nodejs, the requests per second of a service is cut down by almost half.
+
+However, this does not justify the attempt of not logging in production. For high-performance system, log wisely, but for development/prototype, better to log all the necessary data, then analyse them to identify slow paths
+
+## Visualization
+I wanted to do the visualization to display the following:
+
+- function/method calls count (can trace for unused function)
+- average function/method latency (performance!)
+- function/method health, indicated by the rate of errors per call (SLA and KPI of the service)
+- version of the application (e.g. through git SHA, or semver), and the difference compared to the previous version
+
+Would be nice to produce a daily/weekly/monthly report for a service. Also, if you log the application version, you can tell how often you do deployment in a certain time frame.
