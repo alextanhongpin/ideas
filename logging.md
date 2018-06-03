@@ -207,3 +207,11 @@ I wanted to do the visualization to display the following:
 - version of the application (e.g. through git SHA, or semver), and the difference compared to the previous version
 
 Would be nice to produce a daily/weekly/monthly report for a service. Also, if you log the application version, you can tell how often you do deployment in a certain time frame.
+
+## Toggle Log
+
+Logging can impact performance, so if you need the extra juice, make sure to turn off your logs. But it is still necessary to log errors for visibility. Consider the following approach:
+
+- only log errors if you do not need the request and response of the service
+- consider logging only for a certain period of time (e.g., when the application is first deployed, pass in the env vars for `start_logging_date` and `end_logging_date` for a time frame of, say two weeks. If there are no errors, it will be safely turned off, except for errors.
+- make it easier to debug by passing debug flags in application
