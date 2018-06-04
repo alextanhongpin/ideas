@@ -74,4 +74,8 @@ It's important not to value technology and abandon business. There has to be a s
 
 A lot of people call themselves a full stack developer - overestimating their capabilities. I prefer the title `developer` - it's plain and humble. If I ask someone how many bugs they have created and how they value themselves after that, most of them would be embarrased to admit they are a full stack anymore. People make mistakes. Stay humble.
 
+## Cheesy Developer Lines
 
+- may the source be with you
+- the code must go on
+- change must come from within
