@@ -1,0 +1,5 @@
+digraph G {
+  node [shape=box]
+  main -> {database;logger;config;client;server} -> {svc1;svc2;svc3} -> {mediator;facade} -> {http;cron;rpc;websocket;graphql}
+  service -> model -> store
+}

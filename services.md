@@ -66,3 +66,21 @@ Writing a *perfect* service can be daunting, since there are many ways requireme
   - Single Team Owned Service Architecture (STOSA)
 
 ## Testing
+
+
+## Sample structure
+
+![structure](./assets/structure.png)
+
+Above is a simple diagram on how the code will look like. We have several layers here, from top to bottom:
+
+
+- `main` is the start of the application. Is responsible for setting up dependencies, which leads us to the dependencies layer.
+- Dependencies such as `logger`, `database`, `external client (http calls)`, `server`, `config` should be created at the dependency layer. Note that all these dependencies are created through factory method and are passed down through dependency injection. These configurations should be documented to inform what is required for the program to run.
+- The next layer is the service layer - which is responsible for initializing services by passing the configurations and dependencies through dependency injection. Each services should be separated based on domain boundary, and should serve a purpose. In microservices architecture, it is common to have only a single service per microservice - but most of the time you need existing services to complement each other. And hence, this is a bridge between SOA and microservices, but the services are separated through packages instead of running it on different servers.
+- The next layer is the orchestration layer. Here, we make use of the mediator and/or facade pattern to compose services. This is useful when you have multiple dependencies between services (e.g. you have a client service calling the oauth for google login, and need to store it to the database for another service). Note that the orchestration layer is usually an internal service.
+- The most bottom layer refers to the gateway and transport layer. This is normally the layer that is either exposed to the public users (http, websocket) or a process that is running in the background (cron). Here there is a clear separation between services and transport - since only service should contain the business logic.
+
+__Facade__ is a structural design pattern - it exposes existing functionality from a different perspective. 
+
+__Mediator__ on the other hand is a behavioral pattern. It adds functionality because it combines different existing function to create new ones.
