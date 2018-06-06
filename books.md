@@ -72,6 +72,10 @@ This list only contains technical books, I do not just read technical books by a
 ## Team
 - [The Art of Scalability: Scalable Web Architecture, Processes, and Organizations for the Modern Enterprise (2nd Edition)](https://www.amazon.com/Art-Scalability-Architecture-Organizations-Enterprise/dp/0134032802) - This is less of a technical book than I first thought. It teaches you how to scale processes in an organization from segregating roles and responsibilities to defining methodologies in groups. Has
 
+## Software Engineering
+
+- [Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman](https://www.amazon.com/Apprenticeship-Patterns-Guidance-Aspiring-Craftsman/dp/0596518382) - This book strikes me as I experienced some of the patterns mentioned.
+
 ## Still Searching
 
 - Zero Bugs: and Program Faster by Kate Thompson
