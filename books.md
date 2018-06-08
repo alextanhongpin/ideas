@@ -76,6 +76,11 @@ This list only contains technical books, I do not just read technical books by a
 
 - [Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman](https://www.amazon.com/Apprenticeship-Patterns-Guidance-Aspiring-Craftsman/dp/0596518382) - This book strikes me as I experienced some of the patterns mentioned.
 
+
+## Operations Research
+
+- Winston Operation Research Application and Algorithms
+
 ## Still Searching
 
 - Zero Bugs: and Program Faster by Kate Thompson
