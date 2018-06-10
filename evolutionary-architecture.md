@@ -45,3 +45,9 @@ Canary and blue/green deployment differs a little. The idea of runnning multiple
 
 Bandit algorithm + traffic shifting can be used to test features in production.
 
+
+## SRP 
+
+When adding multiple capabilities to your application (logging, tracing etc), you really need to architect them well to isolate the responsibilities well
+
+For example, you don’t want to blindly throw logging or tracing everywhere in your code - it’s untraceable. And you want to make sure they doesn’t get executed during testing.
