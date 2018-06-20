@@ -84,3 +84,32 @@ This list only contains technical books, I do not just read technical books by a
 ## Still Searching
 
 - Zero Bugs: and Program Faster by Kate Thompson
+
+
+# Non-IT
+
+## Read
+
+- Focus: The Hidden Driver of Excellence by Daniel Goleman
+- Emotional Intelligence by Daniel Goleman
+- Who Moved My CheeseMar by Spencer Johnson
+- The New One Minute ManagerMay by Ken Blanchard and Spencer Johnson
+- The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win Hardcover by Gene Kim  (Author), Kevin Behr (Author), George Spafford  (Author)
+- Beyond Blame: Learning From Failure and Success Paperback by Dave Zwieback
+- Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity by Kim Scott
+- Drive: The Surprising Truth About What Motivates Us Paperback by Daniel H. Pink
+
+## Want to Buy and Read
+
+- The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations by Gene Kim
+- Principles: Life and Work by Ray Dalio
+- The Culture Code: The Secrets of Highly Successful Groups Hardcover by Daniel Coyle  (Author)
+- When: The Scientific Secrets of Perfect Timing Hardcover by Daniel H. Pink  (Author)
+- The Reputation Game: The Art of Changing How People See You by David Waller and Rupert Younger
+- Ikigai: The Japanese way to a Happy Healthy Long Life by Eric Goodfellow (Author)
+- The Rules of Work: A definitive code for personal success by Richard Templar  (Author)
+- Unstoppable Influence: Be You. Be Fearless. Transform Lives by Natasha Hazlett  (Author)
+- Dollars and Sense: How We Misthink Money and How to Spend Smarter by Dan Ariely  (Author), Jeff Kreisler (Author)
+- all books by Dan Ariely, Edward de Bono, Robert Greene, Malcolm Gladwell
+- The Little Book of Common Sense Investing: The Only Way to Guarantee Your Fair Share of Stock Market Returns (Little Books. Big Profits) by John C. Bogle
+- The Intelligent Investor, Rev. Ed (Collins Business Essentials) by Benjamin Graham  (Author), Jason Zweig  (Author), Warren E. Buffett (Collaborator)
