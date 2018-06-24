@@ -353,3 +353,13 @@ check cpu, memory usage, allocations, goroutines stack trace
 
 Request tracing tools
 - nettrace, openzipkin, opencensus
+
+## Chaos Monkey Testing
+
+The idea of terminating instance is not difficult. But integrating resiliency to services is the main idea behind chaos monkey testing. Are there better ways to integrate it? Here are some things that can be considered when writing services:
+
+- what happens when the database is down?
+- what happens when a service call fails (retries, circuit breaker)?
+- what happens when the infra fails (cache, config)?
+- what happens when the wrong configuration is passed in?
+- what happens when the database is empty?
