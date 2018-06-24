@@ -363,3 +363,4 @@ The idea of terminating instance is not difficult. But integrating resiliency to
 - what happens when the infra fails (cache, config)?
 - what happens when the wrong configuration is passed in?
 - what happens when the database is empty?
+- how to plot the graph of relationship between services?
