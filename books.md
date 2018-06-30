@@ -113,3 +113,4 @@ This list only contains technical books, I do not just read technical books by a
 - all books by Dan Ariely, Edward de Bono, Robert Greene, Malcolm Gladwell
 - The Little Book of Common Sense Investing: The Only Way to Guarantee Your Fair Share of Stock Market Returns (Little Books. Big Profits) by John C. Bogle
 - The Intelligent Investor, Rev. Ed (Collins Business Essentials) by Benjamin Graham  (Author), Jason Zweig  (Author), Warren E. Buffett (Collaborator)
+- Never Split the Difference: https://www.amazon.com/Never-Split-Difference-Negotiating-Depended-ebook/dp/B014DUR7L2
