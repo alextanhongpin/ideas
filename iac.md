@@ -13,3 +13,28 @@ Currently we have identified the following parts that needs to be automated:
 Part of the IaC is to also understand the resources required (storage size, instance size etc), network configuration (VPC settings, load balancers etc), and also the credentials (username, password, connection strings etc. that needs to be stored as environment variables).
 
 End goal is to be able to confidently destroying and recreating a new instance in a matter of minutes.
+
+
+
+## Strategy
+
+IAC
+
+Infrastructure as Code can be done using several tools:
+- AWS CLI
+- EB Cli (Only for ElasticBeanstalk, since the AWS CLI does not have an option to deploy the changes to AWS)
+- Terraform (preferred, only if the complexity is worth it)
+
+CI/CD
+
+First Stage
+- Manual build steps. Images has to be dockerised, tested, pushed to the private registry and applications has to be updated in production.
+
+Second Stage
+- Every commit will execute the tests, and once the test passes, it should deployed to Staging directly
+- Deployment to production can be done by creating tags
+
+Deployments
+- Applications are dockerized and deployed to AWS 
+- Options are ElasticBeanstalk, ECS, EC2…
+
