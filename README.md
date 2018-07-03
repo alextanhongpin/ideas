@@ -373,3 +373,9 @@ Create a viewer like etherscan that caches the data in redis to speed up read. I
 - search function
 - filter function
 - sort function
+
+
+## Signal
+
+See how to implement encryption in applications:
+https://github.com/signalapp/libsignal-protocol-javascript
