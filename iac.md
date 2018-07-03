@@ -18,14 +18,14 @@ End goal is to be able to confidently destroying and recreating a new instance i
 
 ## Strategy
 
-IAC
+### IAC
 
 Infrastructure as Code can be done using several tools:
 - AWS CLI
 - EB Cli (Only for ElasticBeanstalk, since the AWS CLI does not have an option to deploy the changes to AWS)
 - Terraform (preferred, only if the complexity is worth it)
 
-CI/CD
+### CI/CD
 
 First Stage
 - Manual build steps. Images has to be dockerised, tested, pushed to the private registry and applications has to be updated in production.
@@ -34,7 +34,10 @@ Second Stage
 - Every commit will execute the tests, and once the test passes, it should deployed to Staging directly
 - Deployment to production can be done by creating tags
 
-Deployments
+### Deployments
 - Applications are dockerized and deployed to AWS 
 - Options are ElasticBeanstalk, ECS, EC2…
 
+## Tagging Strategies
+
+[Amazon](https://aws.amazon.com/answers/account-management/aws-tagging-strategies/) has a good summary on tagging strategies. It's important to have a well-defined tags not just to make it easier to identify the costs, but also better visibility on the roles of each resources. It's also important to know who/when deployed the applications and when it needs to be brought down. How the applications are deployed (IAC url) etc can also be added to tags to *inform* future developers on how the applications are deployed and what they need to consider before making changes etc).
