@@ -35,8 +35,11 @@ Design an architecture for a webhook server and integrate it successfully.
 
 ## Storing data in IPFS
 
-Look into how to create DAP (decentralized application).
+Look into how to create DAP (decentralized application). 
 
+## Compare IPFS, Swarm etc.
+
+Also look into Whisper. Try to implement a simple project with it.
 
 ## Genetic Algorithm
 
