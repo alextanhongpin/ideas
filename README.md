@@ -410,3 +410,11 @@ And some others:
 - application versioning
 
 
+## ChatOps
+
+Deploy with Slack commands, for `dev` and `stage` anyone can deploy, for `prod` need consensus from at least 2 person:
+
+```
+\deploy app-name staging
+```
+
