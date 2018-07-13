@@ -418,3 +418,16 @@ Deploy with Slack commands, for `dev` and `stage` anyone can deploy, for `prod` 
 \deploy app-name staging
 ```
 
+## Basic API Server Information
+
+Should probably return more meaningful information for backend services at the index `/` endpoint:
+
+```js
+{
+  "language": "go version 1.10", 
+  "build_type": "docker" // or binary
+  "build_date: "2018-07-11T10:12:33Z",
+  "version": "4a2690e",
+  "deployed_date": "2018-07-11T10:12:33Z"
+}
+```
