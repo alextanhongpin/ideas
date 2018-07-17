@@ -431,3 +431,21 @@ Should probably return more meaningful information for backend services at the i
   "deployed_date": "2018-07-11T10:12:33Z"
 }
 ```
+
+## Slicing a monolith
+
+### Config
+
+Config can be divided to a few categories:
+- application config, prefixed with `APP_`, e.g. APP_VERSION, APP_HOST, APP_PORT
+- infrastructure config, like database or message queue, e.g. DB_HOST, NATS_HOST, etc
+- service config, for feature toggle, crontabs, etc
+- dependencies, such as logger settings in different environment
+
+When you have a lot of config, things can get pretty messy. Some of the key pointers for each config is to:
+
+- document the usage
+- make the source explicit (e.g. where to find them)
+- set defaults
+
+Configs are typically centralized in a single file. Why not break them down instead to different files or place them in their respective module folder?
