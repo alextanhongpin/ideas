@@ -452,5 +452,5 @@ Configs are typically centralized in a single file. Why not break them down inst
 
 ## CRDT, Bloom Filter
 
-Read and find out about [RaiBlock](https://raiblocks.net/), [IOTA](https://www.iota.org/), Directed acyclic graph (DAG), Distributed Hash Table (DHT), Merkle tree, cross chain bridges, bloom filters, conflict-free replicated data ([CRDT](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)), Nash Equilibrium, Puppeth...
+Read and find out about [RaiBlock](https://raiblocks.net/), [IOTA](https://www.iota.org/), Directed acyclic graph (DAG), Distributed Hash Table (DHT), Merkle tree, cross chain bridges, bloom filters, cuckoo hashing, conflict-free replicated data ([CRDT](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)), Nash Equilibrium, Puppeth...
 
