@@ -114,3 +114,5 @@ This list only contains technical books, I do not just read technical books by a
 - The Little Book of Common Sense Investing: The Only Way to Guarantee Your Fair Share of Stock Market Returns (Little Books. Big Profits) by John C. Bogle
 - The Intelligent Investor, Rev. Ed (Collins Business Essentials) by Benjamin Graham  (Author), Jason Zweig  (Author), Warren E. Buffett (Collaborator)
 - Never Split the Difference: https://www.amazon.com/Never-Split-Difference-Negotiating-Depended-ebook/dp/B014DUR7L2
+- The Culture Code: The Secrets of Highly Successfull Groups https://www.amazon.com/Culture-Code-Secrets-Highly-Successful/dp/0525492461
+- Alive at Work: The Neuroscience of Helping Your People Love What They Do https://www.amazon.com/Alive-Work-Neuroscience-Helping-People/dp/1633694259
