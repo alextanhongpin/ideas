@@ -93,7 +93,7 @@ What is CQRS? How can I build and test each components of event sourcing while s
 
 ## Sudoku Solver
 
-Look into how to solve sudoku uisng the `Dancing Links` and `Algorithm X` algorithms.
+Look into how to solve sudoku uisng the `Dancing Links` and `Algorithm X` algorithms. Working solution with TypeScript [here](https://github.com/alextanhongpin/algorithm-x).
 
 ## Relevant Search
 
@@ -125,7 +125,7 @@ Create a full chat server. The server is written in [golang](https://github.com/
 
 ## Bloom Filter
 
-The classic example is using bloom filters to reduce expensive disk (or network) lookups for non-existent keys. Another use case is to check if the unique username existed before allowing users to choose that username.
+The classic example is using bloom filters to reduce expensive disk (or network) lookups for non-existent keys. Another use case is to check if the unique username existed before allowing users to choose that username. Repo [here](https://github.com/alextanhongpin/bloom-filter).
 
 ## Markov Chain Classifier
 
@@ -148,10 +148,15 @@ Learn and understand the use case of NER. Use NER to understand the context of t
 - how to train your own model
 - architecture deployment
 
+Repo [here](https://github.com/alextanhongpin/standford-ner-basic).
+
 ## Levenshtein Distance
 
 Understand how to implement dynamic programming with it.
 
+## AutoCorrect
+
+Norvig's autocorrect. http://norvig.com/spell-correct.html
 
 ## LambdaMART
 
@@ -159,11 +164,11 @@ Understand the LambdaMART algorithm and use it to create ranking system.
 
 ## Viterbi Algorithm
 
-Checkout Viterbi algorithm, and see what are the applications in real life.
+Checkout Viterbi algorithm, and see what are the applications in real life. Repo [here](https://github.com/alextanhongpin/hidden-markov-model).
 
 ## Technical Indicators
 
-Try out all the possible technical indicators and write the algorithm in Python Jupyter. Also, run it against a real test data, plot it out and visualize the outcome. See if they can be used for prediction. Also, check if you can do image pattern matching against the popular technical indicators.
+Try out all the possible technical indicators and write the algorithm in Python Jupyter. Also, run it against a real test data, plot it out and visualize the outcome. See if they can be used for prediction. Also, check if you can do image pattern matching against the popular technical indicators. Repo [here](https://github.com/alextanhongpin/technical-indicators)
 
 ## Decentralized Applications
 
@@ -175,7 +180,7 @@ You can do linear regression with stochastic gradient descent. Understand the di
 
 ## Affinity Analysis
 
-Compare the different data mining algorithms for affinity analysis, especially apriori and eclat.
+Compare the different data mining algorithms for affinity analysis, especially apriori and eclat. Repo [here](https://github.com/alextanhongpin/affinity-analysis).
 
 ## Minimal Docker images
 
@@ -454,3 +459,9 @@ Configs are typically centralized in a single file. Why not break them down inst
 
 Read and find out about [RaiBlock](https://raiblocks.net/), [IOTA](https://www.iota.org/), Directed acyclic graph (DAG), Distributed Hash Table (DHT), Merkle tree, cross chain bridges, bloom filters, cuckoo hashing, conflict-free replicated data ([CRDT](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)), Nash Equilibrium, Puppeth...
 
+## Actively Pursuing
+
+- Site Reliability Engineering
+- Languages: Haskell, Rust, Scala, Nim, Python 3.7, NodeJS, Elixir
+- Infrastructure: Linkerd 2.0, Consul 1.2 Service Mesh, Terraform, Kubernetes Operators
+- Blockchain: White papers
