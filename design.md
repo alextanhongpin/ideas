@@ -26,3 +26,24 @@ Or rather, use bandit algorithm to test components. See how frequent user intera
 
 For naming colors, refer to `namethatcolor` website.
 
+
+
+# Code breakdown
+configuration
+- constant values
+- default values
+- configurable values
+initialization
+- new state
+- load existing state
+rules
+- business logic
+- validation
+- errors
+security
+- authorization
+- signing/extraction/verification
+storage
+- inmemory
+- persistent
+- CRUD
