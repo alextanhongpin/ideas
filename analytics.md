@@ -63,3 +63,6 @@ Latency and requests rate provides information on the improvement we made on a s
 
 Dealing with metrics (e.g. counter) can be tricky - if we have retry pattern that will retry a request, it will increment the counter for both errors and requests. The data captured will be inaccurate, and hence require better way of capturing. For better precision, it would be better to log both the service requests together with a unique id and timestamp so that we can eliminate duplicate call.
 
+## Implement Web Beacon for Frontend to gather analytics data
+
+https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon
