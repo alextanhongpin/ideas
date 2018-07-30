@@ -465,3 +465,7 @@ Read and find out about [RaiBlock](https://raiblocks.net/), [IOTA](https://www.i
 - Languages: Haskell, Rust, Scala, Nim, Python 3.7, NodeJS, Elixir
 - Infrastructure: Linkerd 2.0, Consul 1.2 Service Mesh, Terraform, Kubernetes Operators
 - Blockchain: White papers
+
+## Leslie Lamport
+
+Look into his past work, including the Byzantine General Problem, and [The Part-Time Parliament]( https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf)
