@@ -469,3 +469,8 @@ Read and find out about [RaiBlock](https://raiblocks.net/), [IOTA](https://www.i
 ## Leslie Lamport
 
 Look into his past work, including the Byzantine General Problem, and [The Part-Time Parliament]( https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf)
+
+## LXC, LXD and HyperContainer
+
+Only works on linux for now.
+https://docs.hypercontainer.io/index.html
