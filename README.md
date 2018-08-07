@@ -459,12 +459,15 @@ Configs are typically centralized in a single file. Why not break them down inst
 
 Read and find out about [RaiBlock](https://raiblocks.net/), [IOTA](https://www.iota.org/), Directed acyclic graph (DAG), Distributed Hash Table (DHT), Merkle tree, cross chain bridges, bloom filters, cuckoo hashing, conflict-free replicated data ([CRDT](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)), Nash Equilibrium, Puppeth...
 
+Look into distributed hash table http://ntrg.cs.tcd.ie/undergrad/4ba2.05/group6/index.html, and CHORD implementation https://en.wikipedia.org/wiki/Chord_(peer-to-peer)
+
 ## Actively Pursuing
 
 - Site Reliability Engineering
 - Languages: Haskell, Rust, Scala, Nim, Python 3.7, NodeJS, Elixir
 - Infrastructure: Linkerd 2.0, Consul 1.2 Service Mesh, Terraform, Kubernetes Operators
 - Blockchain: White papers
+- Data structures and algorithm: https://en.wikipedia.org/wiki/Ford%E2%80%93Fulkerson_algorithm
 
 ## Leslie Lamport
 
