@@ -360,7 +360,7 @@ It is possible to do traffic-shifting - but can we shard (duplicate) the calls t
 check cpu, memory usage, allocations, goroutines stack trace
 
 Request tracing tools
-- nettrace, openzipkin, opencensus
+- nettrace, openzipkin, `opencensus`
 
 ## Chaos Monkey Testing
 
@@ -484,3 +484,10 @@ Also other alternatives like kata container, virtlet etc
 ## How to perform traffic multliplexer
 
 Rather than performing blue-green in production, would it be better to multiplex the traffic to both production and staging environment. This reduces the effort to manually test the staging environment. Also, is it possible to rollback the state (time-travel) if there are errors in order to have a clean state. Of course, the danger of duplicating the data is also security related. 
+
+
+## Kiali
+
+https://github.com/kiali/kiali
+
+Observations using kiali and opentracing, it doesn't have to be real-time. They are basically gathering metrics through different means (e.g., prometheus). It is always good to be able to time-travel back at the time some incident happen. Also, https://opencensus.io/introduction/
