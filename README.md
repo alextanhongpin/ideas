@@ -480,3 +480,7 @@ https://docs.hypercontainer.io/index.html
 
 
 Also other alternatives like kata container, virtlet etc
+
+## How to perform traffic multliplexer
+
+Rather than performing blue-green in production, would it be better to multiplex the traffic to both production and staging environment. This reduces the effort to manually test the staging environment. Also, is it possible to rollback the state (time-travel) if there are errors in order to have a clean state. Of course, the danger of duplicating the data is also security related. 
