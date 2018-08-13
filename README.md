@@ -491,3 +491,8 @@ Rather than performing blue-green in production, would it be better to multiplex
 https://github.com/kiali/kiali
 
 Observations using kiali and opentracing, it doesn't have to be real-time. They are basically gathering metrics through different means (e.g., prometheus). It is always good to be able to time-travel back at the time some incident happen. Also, https://opencensus.io/introduction/
+
+
+## How does uber payment works?
+
+User book a cab, but the payment is done after the user arrive at the destination. What happens if the user disconnect (intentionally or not) halfway during the trip?
