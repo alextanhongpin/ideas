@@ -496,3 +496,17 @@ Observations using kiali and opentracing, it doesn't have to be real-time. They 
 ## How does uber payment works?
 
 User book a cab, but the payment is done after the user arrive at the destination. What happens if the user disconnect (intentionally or not) halfway during the trip?
+
+
+## Evolutionary Algorithms 
+
+Look into ant colony optimization, particle swarm optimization etc and see how to apply it to actual problems (TSP, etc). Also look into generating the solutions in a different way (iterators, generators) and create canvas html simulations.
+http://www.cleveralgorithms.com/nature-inspired/index.html
+
+## Ultimate Tic Tac Toe
+
+Create solution for this (monte-carlo tree search)
+
+## Collaborative Filtering
+
+Using One Slope algorithm for binary ranking (1, 0)
