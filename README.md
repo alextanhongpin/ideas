@@ -514,3 +514,7 @@ Using One Slope algorithm for binary ranking (1, 0)
 ## Solving Docker Image issue
 
 Sometimes the new application that we are deploying is not working (especially in AWS, when adding new environment variables), and it will keep crashing in an infinite loop. Solution is to deploy a dummy nginx instead of our complex application, cause it will just display the dummy 504 page. A better alternative is to create a custom server that display a dummy 500 page.
+
+
+## Look into Affinity Analysis
+Also, there are some good stuff on high-utility itemset mining. Probably take a look into that.
