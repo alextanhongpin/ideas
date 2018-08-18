@@ -84,7 +84,8 @@ This list only contains technical books, I do not just read technical books by a
 ## Still Searching
 
 - Zero Bugs: and Program Faster by Kate Thompson
-
+- https://www.amazon.com/Simplify-Practices-Unclutter-Your-Soul/dp/1414391234
+- https://www.amazon.com/Simplify-Practices-Unclutter-Your-Soul/dp/1414391234
 
 # Non-IT
 
