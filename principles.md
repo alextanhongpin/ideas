@@ -82,3 +82,8 @@ A lot of people call themselves a full stack developer - overestimating their ca
 
 ## Problem Exist Between Chair and Keyboard
 https://en.wiktionary.org/wiki/PEBCAK
+
+
+## Read a book a day
+
+Try not to juggle between many books at the same time. Currently juggling 8 books at a time. Reduce it to 3 books (treat them as follow up), but finish one book at a time.
