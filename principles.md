@@ -87,3 +87,10 @@ https://en.wiktionary.org/wiki/PEBCAK
 ## Read a book a day
 
 Try not to juggle between many books at the same time. Currently juggling 8 books at a time. Reduce it to 3 books (treat them as follow up), but finish one book at a time.
+
+## Pareto Principle
+
+[Pareto's principle](https://en.wikipedia.org/wiki/Pareto_principle) can be applied in many different areas - even when designing your own principle! You do not need to be overly attached to a principle, you can always set some budget. Say, for every 10 times you promise yourself not to do something, you can do it twice. 
+
+## Dilbert Principle
+https://en.wikipedia.org/wiki/Dilbert_principle
