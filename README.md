@@ -518,3 +518,14 @@ Sometimes the new application that we are deploying is not working (especially i
 
 ## Look into Affinity Analysis
 Also, there are some good stuff on high-utility itemset mining. Probably take a look into that.
+
+## IDM (Internet Downloader Manager)
+
+Create a basic version of internet downloader manager.
+
+## Look into distributed synchronization protocols and implement a basic working example
+
+## Look into NATS
+
+## Look into operational transformation
+
