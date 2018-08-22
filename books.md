@@ -99,6 +99,8 @@ This list only contains technical books, I do not just read technical books by a
 - Beyond Blame: Learning From Failure and Success Paperback by Dave Zwieback
 - Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity by Kim Scott
 - Drive: The Surprising Truth About What Motivates Us Paperback by Daniel H. Pink
+- [The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life ](https://www.amazon.com/Subtle-Art-Not-Giving-Counterintuitive/dp/0062457713)
+- [The One Minute Manager](https://en.wikipedia.org/wiki/The_One_Minute_Manager)
 
 ## Want to Buy and Read
 
