@@ -529,3 +529,17 @@ Create a basic version of internet downloader manager.
 
 ## Look into operational transformation
 
+## Look into grapheme cluster
+Something to do with the unicode encoding.
+http://unicode.org/reports/tr29/
+
+
+## Compression
+Check out algorithm for compressed inputs, such as LZ77 (grammar-based compression) and Boldi-Vigna (graph compression).
+
+## Dendogram
+Hierarchical clustering and how to generate such clusters.
+
+## Algorithms
+
+This is taking too much time, results are there, but probably focus more on the application rather than performance. Also, write a few articles to describe how it can be applied in real-world scenarios. Also, find way to turn the algorithms into applications. Probably would be interesting if things can be visualized.
