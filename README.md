@@ -543,3 +543,8 @@ Hierarchical clustering and how to generate such clusters.
 ## Algorithms
 
 This is taking too much time, results are there, but probably focus more on the application rather than performance. Also, write a few articles to describe how it can be applied in real-world scenarios. Also, find way to turn the algorithms into applications. Probably would be interesting if things can be visualized.
+
+
+## Meta Tags
+
+In html, you can get more information from users through click analysis. But just clicking the region would not give much indication on what the user like. So, it's probably interesting to inject metadata to each elements, metadata that contains much more information that is obtained either manually or through machine learning.
