@@ -553,3 +553,7 @@ In html, you can get more information from users through click analysis. But jus
 ## W3C Web Authentication
 
 https://www.w3.org/TR/webauthn/
+
+## OpenCV to detect Sudoku Board
+
+And complete the sudoku puzzle with dancing links
