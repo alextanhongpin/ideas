@@ -94,3 +94,12 @@ Try not to juggle between many books at the same time. Currently juggling 8 book
 
 ## Dilbert Principle
 https://en.wikipedia.org/wiki/Dilbert_principle
+
+
+## Don't rewrite
+
+If you have to spend 2 days rewriting a functional piece of work after 2 months worth of time figuring out why things wouldn't work - work it backwards. Spend 2 days writing something that works and only do the alternative when you have time.
+
+## UI matters, but...
+
+I've seen many companies doing a complete overhaul of the design (a totally new contrasting design from the previous one, rather than making small, measurable changes) and the results, while pretty, are not that praiseworthy from the end-user side. It's better to make small measurable changes to the design.
