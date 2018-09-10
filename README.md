@@ -561,7 +561,8 @@ And complete the sudoku puzzle with dancing links
 
 ## Apply Modular Crypt format for Argon2
 
-https://passlib.readthedocs.io/en/stable/modular_crypt_format.html
+https://passlib.readthedocs.io/en/stable/modular_crypt_format.html deprecated in favor of 
+https://github.com/P-H-C/phc-string-format/blob/master/phc-sf-spec.md
 
 ## Learn about fuzzy testing
 
