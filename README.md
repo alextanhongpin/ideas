@@ -557,3 +557,12 @@ https://www.w3.org/TR/webauthn/
 ## OpenCV to detect Sudoku Board
 
 And complete the sudoku puzzle with dancing links
+
+
+## Apply Modular Crypt format for Argon2
+
+https://passlib.readthedocs.io/en/stable/modular_crypt_format.html
+
+## Learn about fuzzy testing
+
+https://en.wikipedia.org/wiki/American_fuzzy_lop_(fuzzer)
