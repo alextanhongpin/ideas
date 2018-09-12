@@ -567,3 +567,7 @@ https://github.com/P-H-C/phc-string-format/blob/master/phc-sf-spec.md
 ## Learn about fuzzy testing
 
 https://en.wikipedia.org/wiki/American_fuzzy_lop_(fuzzer)
+
+## Using client processing power
+
+Find ways to make client do more work and send statistics to the server rather than performing the job on the server side. This delegation allows the work to scale across and the server is only responsible for validating and storing the data they received from the client.
