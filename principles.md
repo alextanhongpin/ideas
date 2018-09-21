@@ -103,3 +103,14 @@ If you have to spend 2 days rewriting a functional piece of work after 2 months 
 ## UI matters, but...
 
 I've seen many companies doing a complete overhaul of the design (a totally new contrasting design from the previous one, rather than making small, measurable changes) and the results, while pretty, are not that praiseworthy from the end-user side. It's better to make small measurable changes to the design.
+
+
+## What if someone says you are smart?
+
+It's just a projection of one's expectations on you. It doesn't really matter.
+
+## Thoughts on money. 
+
+For me, the order of importance to me is knowledge > power > money. I might be a little naive on the order of knowledge and power, because in Malaysia I've learn to know that you do not need to be smart to have power (you are born with it).
+
+Money is essential, but thoughts on money can be a distractions. Those born with a silver spoon probably thinks less about money, and this enable them to focus more on the outcomes, then the circumstances. I need to learn to focus more on the journey and the outcome too.
