@@ -571,3 +571,13 @@ https://en.wikipedia.org/wiki/American_fuzzy_lop_(fuzzer)
 ## Using client processing power
 
 Find ways to make client do more work and send statistics to the server rather than performing the job on the server side. This delegation allows the work to scale across and the server is only responsible for validating and storing the data they received from the client.
+
+## Fire Alarm
+
+Inspired by OWASP AppSensor. Implement something like a fire alarm trigger to disable certain parts of the application when there are possible attackers. I've been wondering how to make full use of logs, (context logs with correlation id, open tracing, open census), just storing them is not enough. There need to be some action that needs to be done. Also, when an application is experiencing high traffic, it should not affect the whole instance - only the pipeline that is affected should be regulated. 
+
+Do a pipeline-style architecture that can be dropped when attacked. Create a log analysis mechanism too.
+
+## p2p 
+
+design a p2p network for synchorization of data. It requires the capabilities to detect new peers/drop existing peers, and searching for the best peer to sync data. Also, malicious peers should be dropped.
