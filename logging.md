@@ -2,6 +2,10 @@
 
 How can we understand our users more (and their preferences)? In order to do that, we need data.
 
+## Mantra
+
+  Log everything that changes the state, cache every read.
+
 ## Logging api calls
 
 For each `session`, associate the user's `id` with the data they are trying to request. This is particularly useful if the api they call is one of the following:
