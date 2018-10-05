@@ -599,3 +599,7 @@ Implement one version in golang, which takes advantage of the hash map random or
 
 ## How to block ip address?
 https://husobee.github.io/golang/ip-address/2015/12/17/remote-ip-go.html
+
+
+## Consistent Hashing
+Learn and implement consistent hashing. Also check out their use cases and how to apply them.
