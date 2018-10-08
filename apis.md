@@ -47,7 +47,49 @@ The payload may change. What if we hash the payload with sha, and return them as
 }
 ```
 
-That way, the client can always cache the api response on the cient side, and make a call to compare if any of the values changed.
+That way, the client can always cache the api response on the cient side, and make a call to compare if any of the values changed. One idea is just to perform hashing with SHA256, and take the first 6 characters as identifier:
+
+```go
+package main
+
+import (
+	"crypto/sha256"
+	"encoding/json"
+	"fmt"
+)
+
+type ResponseV2 struct {
+	Name string `json:"name"`
+	Age  int    `json:"age"`
+}
+
+type ResponseV1 struct {
+	Name string
+	Age  int
+}
+
+func main() {
+	v1, _ := json.Marshal(ResponseV1{"hello", 1})
+	h1 := sha256.New()
+	h1.Write(v1)
+	fmt.Printf("%x\n", h1.Sum(nil))
+
+	v2, _ := json.Marshal(ResponseV2{"hello", 1})
+	h2 := sha256.New()
+	h2.Write(v2)
+	fmt.Printf("%x\n", h2.Sum(nil))
+
+	v3, _ := json.Marshal(ResponseV2{"world", 1})
+	h3 := sha256.New()
+	h3.Write(v3)
+	fmt.Printf("% x\n", h3.Sum(nil))
+
+	v4, _ := json.Marshal(ResponseV2{"world", 1})
+	h4 := sha256.New()
+	h4.Write(v4)
+	fmt.Printf("% x\n", h4.Sum(nil))
+}
+```
 
 
 ## Context Logging
