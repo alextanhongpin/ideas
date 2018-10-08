@@ -603,3 +603,16 @@ https://husobee.github.io/golang/ip-address/2015/12/17/remote-ip-go.html
 
 ## Consistent Hashing
 Learn and implement consistent hashing. Also check out their use cases and how to apply them.
+
+
+## Questions
+- how to handle anonymous session/best practices and why do we need to do it (prevent attacks, fingerprint user)
+- is sessionid using uuid secure? also look at the mysql uuid to binary to see how we can save bytes
+- how to block ip address, and better way to fingerprint user
+- how does redis ttl works (solved, can create a naive implementation using golang)
+- NIST statistical test suite to test random number
+- how to secure ajax
+- TOCTOU (time of check, time of use race condition)
+- how to design a proper security pipeline in CI/CD (git pre-commit check, zed attack proxy docker)
+- handling caching for client side. One way is to return a version for each api response. When calling the first api call, check the version and see if the data needs to be prefetched.
+- reducing string storage size with 16bits http://www.kinematicsoup.com/news/2016/9/6/data-compression-bit-packing-101
