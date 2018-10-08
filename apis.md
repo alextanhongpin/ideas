@@ -1,4 +1,4 @@
-## Root endpoint
+## Root or Health endpoint
 
 The root endpoint (`/`) may contain useful information. For example:
 
@@ -23,6 +23,32 @@ The root endpoint (`/`) may contain useful information. For example:
   "feature_score": "", // The score for the current tested A/B feature. We may, for e.g. deploy two instances that are load balanced with different features.
 }
 ```
+
+## Health endpoint naming
+
+`/health`, or `/_health`.
+
+## JSON API/JSON Schema
+
+To ease validation of large json schema, and also to standardize response type. 
+
+## Versioning
+
+```
+/apis/v1/resources
+```
+
+The payload may change. What if we hash the payload with sha, and return them as version in the api response?
+
+```
+{
+  "data": {},
+  "version": "x0dsak12"
+}
+```
+
+That way, the client can always cache the api response on the cient side, and make a call to compare if any of the values changed.
+
 
 ## Context Logging
 
