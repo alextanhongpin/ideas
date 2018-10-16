@@ -497,6 +497,7 @@ Observations using kiali and opentracing, it doesn't have to be real-time. They 
 
 User book a cab, but the payment is done after the user arrive at the destination. What happens if the user disconnect (intentionally or not) halfway during the trip?
 
+Implementing dynamic pricing is also possible. 
 
 ## Evolutionary Algorithms 
 
@@ -568,9 +569,13 @@ https://github.com/P-H-C/phc-string-format/blob/master/phc-sf-spec.md
 
 https://en.wikipedia.org/wiki/American_fuzzy_lop_(fuzzer)
 
+In golang, the `quickcheck` package can be used to do testing too.
+
 ## Using client processing power
 
 Find ways to make client do more work and send statistics to the server rather than performing the job on the server side. This delegation allows the work to scale across and the server is only responsible for validating and storing the data they received from the client.
+
+Check the implementation of [hashcash](https://en.wikipedia.org/wiki/Hashcash) and see how to implement a basic one.
 
 ## Fire Alarm
 
