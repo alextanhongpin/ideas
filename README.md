@@ -621,3 +621,15 @@ Learn and implement consistent hashing. Also check out their use cases and how t
 - how to design a proper security pipeline in CI/CD (git pre-commit check, zed attack proxy docker)
 - handling caching for client side. One way is to return a version for each api response. When calling the first api call, check the version and see if the data needs to be prefetched.
 - reducing string storage size with 16bits http://www.kinematicsoup.com/news/2016/9/6/data-compression-bit-packing-101
+
+
+## Create a name generator
+
+Markov chain can be used to generate random names:
+
+http://pcg.wikidot.com/pcg-algorithm:markov-chain
+
+Also, the way docker names are generated is plain simple.
+
+https://github.com/moby/moby/blob/master/pkg/namesgenerator/names-generator.go
+
