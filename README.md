@@ -633,3 +633,8 @@ Also, the way docker names are generated is plain simple.
 
 https://github.com/moby/moby/blob/master/pkg/namesgenerator/names-generator.go
 
+https://www.biographyonline.net/people/famous-100.html
+https://en.wikipedia.org/wiki/List_of_programmers
+https://en.wikipedia.org/wiki/List_of_Pok%C3%A9mon
+https://jobmob.co.il/blog/positive-personality-adjectives/
+
