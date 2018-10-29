@@ -653,3 +653,8 @@ Service C   10             100%
 
 Here we see that service C has the least call. If a service does not deliver value, it is wise to remove it.
 For services that consumes a lot of call, we can probably segregate the data by users to see who calls it more often - this can lead to more interesting discovery like why the user calls the service often, and what can be done to improve the service (custom-tailor microservices).
+
+
+## AES-GCM vs AES-CBC for encryption
+
+https://security.stackexchange.com/questions/184305/why-would-i-ever-use-aes-256-cbc-if-aes-256-gcm-is-more-secure
