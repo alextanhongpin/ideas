@@ -658,3 +658,14 @@ For services that consumes a lot of call, we can probably segregate the data by 
 ## AES-GCM vs AES-CBC for encryption
 
 https://security.stackexchange.com/questions/184305/why-would-i-ever-use-aes-256-cbc-if-aes-256-gcm-is-more-secure
+
+## Reactive System
+
+Most of the time, we build applications hoping for users to interact with them. But what if we can bring the interaction out of the application? Take for example:
+
+- push notification to notify when you are around somewhere (beacon/geolocation)
+- notification to notify when a weather is about to change/earthquake detection
+- an app senses that you are in danger and make a call/message others
+- detect that a train is reaching soon 
+- notify when you are close to a destination
+
