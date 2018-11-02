@@ -669,3 +669,11 @@ Most of the time, we build applications hoping for users to interact with them. 
 - detect that a train is reaching soon 
 - notify when you are close to a destination
 
+## MutationObservers, WeakMap, WeakSet JS, CustomElements
+
+Also sharedWorker with websocket. https://blog.pusher.com/reduce-websocket-connections-with-shared-workers/
+
+Build your own approach to designing components without framework.
+
+## NewsFeed 3D
+Build 3D overlapping news feed where new news will just pop on top of older ones. When selected, it will change into the standard list views.
