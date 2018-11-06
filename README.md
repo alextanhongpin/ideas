@@ -677,3 +677,7 @@ Build your own approach to designing components without framework.
 
 ## NewsFeed 3D
 Build 3D overlapping news feed where new news will just pop on top of older ones. When selected, it will change into the standard list views.
+
+## TODO
+
+Trie optimization, and library for the client/server which would allow the data to be more personalized (client-side library) and at the same time up to date with the server's copy (synchronization). Find a way to serialize the data to a more compact format.
