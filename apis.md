@@ -189,3 +189,11 @@ There needs to be some sweet spot between noise and signal. Logging data that do
 - data retention periods? 3 months/3 years?
 
 The OWASP logging guide is a must see. Summarize your learning from there
+
+
+## Protected APIs
+
+There are several ways to protect the API from being accessed by unauthorized users. Let's take a look at how to handle it for public and private (admin) apis. 
+- public, but require no auth: We can simply create an anonymous session to keep track of the calls from a public api. This is useful for analytics.
+- public, but require auth: For read only, use an API key. This is useful to throttle the calls and for tracking analytics. For any update and delete operations, ensure that the user is provided a token separate from the read API token. Else, user can just reuse the read token to manipulate other people's data. The write token should be usable once only, and such makes the OTP token a good candidate. The token can only be generated on the server side, and is valid for the particular user. Note that this implementation is slightly stateful. We need to tie the session to the server in order to accomplish this. This means that the creation/updating of data can only be done on the webpage, and not through API.
+- private. For eg, admin APIs or ops APIs where only internal user can update.
