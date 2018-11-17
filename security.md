@@ -1,3 +1,6 @@
+## Kerkchoffs Principle
+https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle
+
 ## XSS Protection
 
 TODO: Check if the app renders html/script in json response.
