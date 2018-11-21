@@ -200,3 +200,20 @@ There are several ways to protect the API from being accessed by unauthorized us
 
 
 Separate read and write api. By default, read api should be more lenient (if the data is not sensitive etc). For write data, rate-limit it to prevent abuse. Better, prompt user to re-authenticate again in order to perform a write (if it's sensitive data, like user profile update etc). Rather than setting a time-limit only for the user to perform write, set a threshold limit too. E.g. an api key to write is only valid for the next 10 minutes and 5 writes (success and fail). 
+
+
+## Returning error
+
+When returning error response, it is better to be explicit. Ensure all fields are validated, and if the endpoint usually involves multiple steps (more steps, more risks of failure), then return the `request_id` that is passed through the context for logging as the `error_code`. This allows Ops to debug for issues by simple searching for the code in the logs management system. 
+
+```json
+{
+	"error": "id is required",
+	"error_code": "65903c20-04dc-4b78-9684-b2db93e81a2b"
+}
+```
+
+When and when not to return the `error_code`?
+- If it is a simple `GET` endpoint, do not return. It will only add to noise.
+- If there are no logs using that `request_id`, do not return.
+- If it is a complex step that requires many processes, with logging in between each steps, return the error code.
