@@ -217,3 +217,17 @@ When and when not to return the `error_code`?
 - If it is a simple `GET` endpoint, do not return. It will only add to noise.
 - If there are no logs using that `request_id`, do not return.
 - If it is a complex step that requires many processes, with logging in between each steps, return the error code.
+
+## Creating Ops Access
+
+Most of the time, your apis needs to be accessed by the ops side to perform admin stuff (resetting password, updating resources information). Prepare a set of admin credentials, and use scopes in JWT to limit access.
+
+There are several options for this:
+1) passing credentials through env vars. Note that it's not safe to pass plaintext credentials through env vars. Always hash them (e.g. through md5). Then, in your application, just compare the hash of the credentials passed in with the ones set in the env variables. The crendentials would be mostly static most of the time, but can be updated through env vars.
+
+```
+# $ echo -n john:123456 | md5
+ADMIN_CREDENTIALS=7a661e6b4faa9aa10a97b0f3374bf414
+```
+
+2) generating them through the application. It is possible to create dynamic config, and set a cron job to refresh the credentials daily. E.g. `generateCredentials()` method in the application will create a new login credentials at 12 am daily. The credentials will then be emailed/send through slack/mobile etc for users to use it.
