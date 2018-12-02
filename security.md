@@ -53,3 +53,13 @@ w.Header().Set("WWW-Authenticate", `Basic-Realm=""`)
 ## NSP
 
 Checkout node-security platform
+
+## Ops Access
+
+Add a cron job to randomize the credentials daily and email/slack it to the user.
+
+## Client Side
+
+When logging in, store the token in the application state rather than local storage. When user closes the application, store it in the local storage.
+
+The next time the user login, get the token from the localStorage, store it in the application state and delete it from the localStorage.
