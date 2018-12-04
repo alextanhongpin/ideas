@@ -685,3 +685,10 @@ Trie optimization, and library for the client/server which would allow the data 
 ## How to ensure that anonymous user does not break certain flows (purchase, registration etc)? 
 
 Create a single unique session that will expire (or can only be used once) and send them a link with that token through email. For each steps, assign a unique bits (1, 2, 4, 8 etc). The email link can only be visited once. If the user complete a step, mark it. If they try to break the steps, forbid them, or ask if they want to restart the flow. The flow can only go in one direction, restarting means repeating the steps from the first one. How to avoid spam (user sending it to another email?). By adding more constraints like the sending can only be done every 5 minutes etc.
+
+
+## Food for thoughts
+
+- why must the server runs for 24/7? Can't the server just run for a 8hrs a day?
+- lifespan of a server, expire after a month
+- make the server passwordless
