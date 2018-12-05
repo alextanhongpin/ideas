@@ -27,7 +27,10 @@ Assuming we have 4 inputs, we will have 2^4 combinations that needs to be tested
 
 - at a higher picture, the user story
 - at a lower level, validation and scenarios
-
+- test behaviours, not implementations
+- implementations makes tests brittle
+- prepare setups for tests (such as logged in users etc) once at the beginning of the test
+- clear the database for each tests
 
 ## Int scenario
 
