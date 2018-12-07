@@ -231,3 +231,8 @@ ADMIN_CREDENTIALS=7a661e6b4faa9aa10a97b0f3374bf414
 ```
 
 2) generating them through the application. It is possible to create dynamic config, and set a cron job to refresh the credentials daily. E.g. `generateCredentials()` method in the application will create a new login credentials at 12 am daily. The credentials will then be emailed/send through slack/mobile etc for users to use it.
+
+
+## Blocker for Frontend
+
+Often, the FE needs some API's to be fetched/posted, which the BE does not provide. It is useful to create a dumb echo endpoint that just accepts anything and return the same thing back to the FE. This way, the FE won't be block and can just replace the endpoint with actual calls when it is completed on the BE.
