@@ -29,3 +29,10 @@ Tracing skill is particularly important. Knowing the steps that leads to result,
 How to improve:
 - write smaller functions
 - think in terms of a single operation in the loop (optimize later, logic first)
+
+
+## The type of Developer I want to be
+
+I always thought that I need to know everything in the beginning (techical skills, languages etc), but I guess I was wrong. I like DevOps, and I thought by being a DevOps, all I need to know is how to code an application and deploy it to production. I've never been wrong before.
+
+I guess the definition of Developer that I want to be is to simply be someone that enjoys writing code my way :). And what's important is to cultive the appreciation of the code I write. Also, being a DevOps means being able to support the business at operation level, be product-minded and not stick to one goal or definition. Things change, and the ability to adapt, forget old decisions and pivot is essential to be a good developer.
