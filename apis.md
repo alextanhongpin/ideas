@@ -24,6 +24,16 @@ The root endpoint (`/`) may contain useful information. For example:
 }
 ```
 
+The `git_commit` is useful for:
+- checking what is the last deployed version
+- when there are bugs, it's easy to trace which commit
+- can integrate with CI auto-deployment. If the version matches the current git, do not need to deploy
+
+The `uptime` gives indication on:
+- how long the server is up
+- when did it restart? (compare with the build date or deployed at date). should probably find a way to log the number of restarts
+- when the server should be brought down - if it's been up for too long, there are chances that the devs lose visibility on the service. Hence, the service should be brought down for inspection/upgrade/value definition. There's no point putting a server that no one uses! The value can be obtained through request metrics and so on.
+
 ## Health endpoint naming
 
 `/health`, or `/_health`.
