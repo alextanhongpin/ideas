@@ -281,3 +281,55 @@ try {
   globalLogger.error(ctx, {error: error.message})
 }
 ```
+
+## Logging and events
+
+What if we need our logger to react to the events, rather than the logger logging the events? There a slight difference between this two - reacting to events means the event will be created first, and then the logs will be triggered. Logging the events means the logger explicitly logs the event that happens. We can simply refactor our code from the example above:
+
+```
+class CarEvent {
+	constructor() {
+  	this.fns = []
+  }
+  add(fn) {
+		this.fns.push(fn)
+  }
+  carCreated(ctx, params) {
+		for (let fn of this.fns) {
+    	fn(ctx, params)
+    }
+  }
+}
+
+const carEvent = new CarEvent()
+carEvent.add(console.log) // Add the subscribers.
+carEvent.carCreated('hello', 'car, apepr')
+```
+
+Or a generic dispatcher:
+```
+class CarEvent {
+	constructor() {
+  	this.events = new Map()
+  }
+  on(event, fn) {
+  	if (!this.events.has(event)) {
+    	this.events.set(event, [])
+    }
+    this.events.get(event).push(fn)
+  }
+  emit(event, params) {
+  	const events = this.events.get(event)
+    if (!events.length) {
+    	return 
+    }
+    for (let event of events) {
+    	event(params)
+    }
+  }
+}
+
+const carEvent = new CarEvent()
+carEvent.on('hello', console.log)
+carEvent.emit('hello', 'car, apepr')
+```
