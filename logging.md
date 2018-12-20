@@ -352,3 +352,48 @@ const carEvent = new CarEvent()
 carEvent.on('hello', console.log)
 carEvent.emit('hello', 'some stuff')
 ```
+
+
+## Logging Lifecycle with Proxy
+
+```
+const handler = {
+  get: function(target, propKey, receiver) {
+    const method = Reflect.get(target, propKey)
+    return async function(...args) {
+      console.log(`method=${method.name} request=${args}`)
+      console.log('before')
+      try {
+        const result = await method.apply(this, args)
+        console.log('success')
+        return result
+      } catch (error) {
+        console.log('error:', error)
+      } finally {
+        console.log('always')
+      }
+      console.log('after')
+    }
+  }
+}
+
+function lifecycleProxy(obj) {
+  return new Proxy(obj, handler)
+}
+class Car {
+  create() {
+    console.log('create car')
+    return true
+  }
+  faultyMethod() {
+    throw new Error('faulty')
+  }
+}
+const carLifecycle = lifecycleProxy(new Car())
+async function main() {
+  const response = await carLifecycle.create(110, 10)
+  console.log('respnse', response)
+  return carLifecycle.faultyMethod()
+}
+main().catch(console.error)
+```
