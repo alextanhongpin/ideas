@@ -289,20 +289,41 @@ What if we need our logger to react to the events, rather than the logger loggin
 ```js
 class CarEvent {
   constructor() {
+    this.map = new Map()
     this.fns = []
   }
-  add(fn) {
-    this.fns.push(fn)
+  nofity(...fns) {
+    for (let fn of fns) {
+      if (this.map.has(fn.name)) {
+        console.log(`${fn.name} already exist`)
+        return
+      }
+      this.map.set(fn.name, fn)
+      console.log(`registered: ${fn.name}`)
+      this.fns.push(fn)
+    }
   }
   carCreated(ctx, params) {
     for (let fn of this.fns) {
-      fn(ctx, params)
+      fn(ctx, params, 'CarCreated')
     }
   }
 }
 const carEvent = new CarEvent()
-carEvent.add(console.log) // Add the subscribers. E.g. logger, message queue. They must conform to the interface.
-carEvent.carCreated('hello', 'car, apepr')
+// Add the subscribers. E.g. logger, message queue. They must conform to the interface.
+function logError(params) {
+  console.log('Error:', params)
+}
+carEvent.nofity(console.log, logError)
+const ctx = {
+  id: '123'
+}
+carEvent.carCreated(ctx, {
+  name: 'Audi'
+})
+carEvent.carCreated(ctx, {
+  name: 'Mercedes'
+})
 ```
 
 Or a generic dispatcher:
