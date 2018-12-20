@@ -219,3 +219,65 @@ Logging can impact performance, so if you need the extra juice, make sure to tur
 - only log errors if you do not need the request and response of the service
 - consider logging only for a certain period of time (e.g., when the application is first deployed, pass in the env vars for `start_logging_date` and `end_logging_date` for a time frame of, say two weeks. If there are no errors, it will be safely turned off, except for errors.
 - make it easier to debug by passing debug flags in application
+
+## Logger as Domain model
+
+I've always misunderstood logs. I usually use the raw log to log out events:
+
+```js
+const bunyan = require('bunyan')
+// Namespace the logger.
+const logger = bunyan.createLogger({name: 'car-service'})
+// Add request id for context logging.
+
+class CarService {
+  // ctx is always the first parameter.
+  create(ctx, car) {
+    // do something
+    const createdCar = this.repository.create(car)
+    const log = logger.child({ ...ctx, request})
+    log.info({car}, 'CarCreated')
+  }
+}
+```
+
+Which actually pollutes the classes that depends on the logger with an external dependency (the logger). Instead, I could have defined the logger in a class itself, with the events that I want to log. 
+
+```js
+class CarLogger {
+  constructor(logger) {
+    this.logger = bunyan.createLogger({name: 'car-service'})
+  }
+  carCreated(ctx, request) {
+    log.info({...ctx, request}, 'CarCreated')
+  }
+}
+class CarService {
+  constructor(logger) {
+    this.logger = logger
+  }
+  create(ctx, car) {
+    // do something
+    const createdCar = this.repository.create(car)
+    this.logger.carCreated(ctx, car)
+  }
+}
+
+const carLogger = new CarLogger(require('bunyan'))
+const carService = new CarService(carLogger)
+carService.create({id: uuid()}, {name: 'Audi'})
+```
+
+The errors could be captured once outside of the logger.
+
+```js
+const carLogger = new CarLogger(require('bunyan'))
+const carService = new CarService(carLogger)
+const ctx = {id: uuid()}
+try {
+  const response = await carService.create(ctx, {name: 'Audi'})
+} catch (error) {
+  // Every layer has a different logger. The globalLogger is mainly another logger above the car service logger.
+  globalLogger.error(ctx, {error: error.message})
+}
+```
