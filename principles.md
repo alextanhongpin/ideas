@@ -114,3 +114,14 @@ It's just a projection of one's expectations on you. It doesn't really matter.
 For me, the order of importance to me is knowledge > power > money. I might be a little naive on the order of knowledge and power, because in Malaysia I've learn to know that you do not need to be smart to have power (you are born with it).
 
 Money is essential, but thoughts on money can be a distractions. Those born with a silver spoon probably thinks less about money, and this enable them to focus more on the outcomes, then the circumstances. I need to learn to focus more on the journey and the outcome too.
+
+## Peter Principle 
+
+Image result for peter principleen.wikipedia.org
+The Peter Principle is an observation that the tendency in most organizational hierarchies, such as that of a corporation, is for every employee to rise in the hierarchy through promotion until they reach the levels of their respective incompetence
+
+### My own
+- I was focusing on developing my technical skills so much that I forgot the most important thing - it's not about just building my skillsets, but it's about building the skillsets of the people around me. A company cannot survive with just the work of a lone wolf (solo developer).
+
+## References
+- https://spacecraft.ssl.umd.edu/akins_laws.html
