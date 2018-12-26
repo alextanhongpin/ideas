@@ -246,3 +246,22 @@ ADMIN_CREDENTIALS=7a661e6b4faa9aa10a97b0f3374bf414
 ## Blocker for Frontend
 
 Often, the FE needs some API's to be fetched/posted, which the BE does not provide. It is useful to create a dumb echo endpoint that just accepts anything and return the same thing back to the FE. This way, the FE won't be block and can just replace the endpoint with actual calls when it is completed on the BE.
+
+
+## Error messages
+
+It's useful to return the correlation id (a.k.a `request_id`) in the error response, so that it can be send as a report from the client. Client can show a form to submit crash report with the given correlation id so that the developer can debug the errors caused by it.
+```js
+{
+  "error": "date is required",
+  "error_code": "uuid",
+  "error_message": "based on localization"
+}
+```
+
+Localization is difficult in this case. The error message should hence be generic, so that the client can parse it and handle it according to the localization on the client side.
+
+The server can also returned the localized translated error message to the client, if the client sends the language information to the server, e.g. through the header `Accept-Language`. The server needs to handle the language if available, or defaults to english if not. Look into `i18n` and also `l10n` on how to make your application fits the different locale.
+
+References:
+- https://stackoverflow.com/questions/50986333/rest-api-request-with-language-and-region
