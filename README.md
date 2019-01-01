@@ -692,3 +692,10 @@ Create a single unique session that will expire (or can only be used once) and s
 - why must the server runs for 24/7? Can't the server just run for a 8hrs a day?
 - lifespan of a server, expire after a month
 - make the server passwordless
+
+## AOP
+Aspect-oriented programming, and how it could be use to modularize functionalities. Stuff like decorators for throttling etc.
+
+## Learn how to algorithmize decisions
+
+- decision trees etc.
