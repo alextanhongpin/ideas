@@ -265,3 +265,13 @@ The server can also returned the localized translated error message to the clien
 
 References:
 - https://stackoverflow.com/questions/50986333/rest-api-request-with-language-and-region
+
+
+## Pagination
+
+- limit, offset
+- cursor pagination (keyset pagination)
+
+## Retries
+
+Only retry when `error code > 500`. Display message if error code is `>400`.
