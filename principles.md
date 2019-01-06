@@ -123,5 +123,13 @@ The Peter Principle is an observation that the tendency in most organizational h
 ### My own
 - I was focusing on developing my technical skills so much that I forgot the most important thing - it's not about just building my skillsets, but it's about building the skillsets of the people around me. A company cannot survive with just the work of a lone wolf (solo developer).
 
+## Between right and kind, choose kind
+
+I've always made the choice to be right instead of kind. At first I thought it was wrong to do so, until I read that sometimes being right is also being kind to the other person.
+
+## We Buy On Emotion and Justify with Logic
+
+http://customerthink.com/neuroscience-confirms-we-buy-on-emotion-justify-with-logic-yet-we-sell-to-mr-rational-ignore-mr-intuitive/
+
 ## References
 - https://spacecraft.ssl.umd.edu/akins_laws.html
