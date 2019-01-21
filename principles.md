@@ -131,5 +131,12 @@ I've always made the choice to be right instead of kind. At first I thought it w
 
 http://customerthink.com/neuroscience-confirms-we-buy-on-emotion-justify-with-logic-yet-we-sell-to-mr-rational-ignore-mr-intuitive/
 
+## Baader Meinhof
+
+https://science.howstuffworks.com/life/inside-the-mind/human-brain/baader-meinhof-phenomenon.htm
+
+## Others
+https://blog.bufferapp.com/6-powerful-psychological-effects-that-explain-how-humans-tick
+
 ## References
 - https://spacecraft.ssl.umd.edu/akins_laws.html
