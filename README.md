@@ -699,3 +699,12 @@ Aspect-oriented programming, and how it could be use to modularize functionaliti
 ## Learn how to algorithmize decisions
 
 - decision trees etc.
+
+## Stuff to learn
+
+- OpenTracing nginx integration
+- learn crystal/rust programming language basic and work on a simple project
+- linkerd 1.6 and 2.0 updates 
+- find out how to do consistent hashing in different languages (golang, nodejs, python etc)
+- learn more about message queue use cases and how to implement production-ready message queue
+- relook into design patterns for different languages, and microservice architecture and system design.
