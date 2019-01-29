@@ -63,3 +63,15 @@ Add a cron job to randomize the credentials daily and email/slack it to the user
 When logging in, store the token in the application state rather than local storage. When user closes the application, store it in the local storage.
 
 The next time the user login, get the token from the localStorage, store it in the application state and delete it from the localStorage.
+
+
+## Allow passwords to auto-rotate by randomly generating a unique password
+
+```
+# Generate a hashed credentials
+echo -n "username:password" | shasum -a 256
+
+# Pass this in as an environment variable CREDENTIALS
+
+# In the application, compare the hashed username:password with the credentials
+```
