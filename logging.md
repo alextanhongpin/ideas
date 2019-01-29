@@ -356,7 +356,7 @@ carEvent.emit('hello', 'some stuff')
 
 ## Logging Lifecycle with Proxy
 
-```
+```js
 const handler = {
   get: function(target, propKey, receiver) {
     const method = Reflect.get(target, propKey)
@@ -396,4 +396,19 @@ async function main() {
   return carLifecycle.faultyMethod()
 }
 main().catch(console.error)
+```
+
+
+## X-Request-ID
+
+Always set a unique request id for your application. Try to get an existing request id from the request first - if it doesn't exist, then create one. This can normally be set as a middleware. Example with `koa.js`:
+
+```js
+async function requestId(ctx: Context, next: () => Promise<any>) {
+  // Passing data through koa context.
+  ctx.locals = ctx.locals || {};
+  ctx.locals.id = ctx.get('X-Request-ID') || uuid();
+  ctx.set('X-Request-ID', ctx.locals.id);
+  await next();
+}
 ```
