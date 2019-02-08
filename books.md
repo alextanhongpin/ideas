@@ -4,6 +4,9 @@ List of the books (that I remember) that I have read/gone through the examples. 
 
 This list only contains technical books, I do not just read technical books by all means :) Other lists are available [here](http://alextanhongpin.github.io/#books) though I did not update it that much anymore.
 
+## Profiling
+
+- Dan Korem - The Art of Profiling
 
 ## Machine Learning
 
