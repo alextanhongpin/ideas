@@ -412,3 +412,19 @@ async function requestId(ctx: Context, next: () => Promise<any>) {
   await next();
 }
 ```
+
+## Summary from Production experience
+
+When running a http server, it's normal for the router to include a middleware that logs the request. There are a lot of useful middlewares to log the response, but there are some custom modifications that can be made:
+
+- exclude certain paths from being log. For e.g., the `/health` endpoint. Most of the time they will be executed by health checks, hence generating a lot of noise. It probably makes no sense to log them since they are not particularly useful (I could be wrong).
+- include the request object (query, body, param) whenever there are errors. But take note not to include sensitive information in the request (passwords, credentials etc). Having a way to selectively include the useful requests params makes it easier to trace the errors.
+- wrap your errors (see https://github.com/joyent/node-verror, or https://golang.org/pkg/errors/ for golang)
+- include the `request_id` (correlation-id) in the logs so that it is easier to trace back the errors
+- use `debug` logs in development, they are useful and can be silenced in production (remember to silence them, or suffer in silence if you happened to log sensitive credentials). That said, don't log sensitive things even in debug mode.
+- include minimal error message in the log, and a full stack trace tied to the request id
+- logging happens at all level, it is okay to use a `global singleton logger`, as long as you can silence the logger in testing mode. That is the main point of passing the logger through Dependency Injection, since you can easily replace it with a `Nop` (Null Object Pattern) logger interface.
+- log with sufficient information - information that is _useful_ (this depends on experience, and you will know it better over time). But the key thing is, log the things you __want__ to see. Some people just log for the sake of logging, but did not bother to view them.
+- use log levels to filter `error` logs and send them to a dashboard/slack channel for quick alerts. 
+- that said, `warning` level is redundant
+
