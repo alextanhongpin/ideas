@@ -708,3 +708,8 @@ Aspect-oriented programming, and how it could be use to modularize functionaliti
 - find out how to do consistent hashing in different languages (golang, nodejs, python etc)
 - learn more about message queue use cases and how to implement production-ready message queue
 - relook into design patterns for different languages, and microservice architecture and system design.
+
+## Write use cases
+- take a look at old projects (chat, websocket, social media etc) and write some use cases
+- write use cases for passwordless project
+- also take time to write an implementatio for server sent events and websockets with the background task worker with different languages
