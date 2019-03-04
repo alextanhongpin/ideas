@@ -713,3 +713,4 @@ Aspect-oriented programming, and how it could be use to modularize functionaliti
 - take a look at old projects (chat, websocket, social media etc) and write some use cases
 - write use cases for passwordless project
 - also take time to write an implementatio for server sent events and websockets with the background task worker with different languages
+- look into how to integrate background notification for websocket events
