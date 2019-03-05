@@ -714,3 +714,6 @@ Aspect-oriented programming, and how it could be use to modularize functionaliti
 - write use cases for passwordless project
 - also take time to write an implementatio for server sent events and websockets with the background task worker with different languages
 - look into how to integrate background notification for websocket events
+
+## Write the three principles
+
