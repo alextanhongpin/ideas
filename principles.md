@@ -135,6 +135,12 @@ http://customerthink.com/neuroscience-confirms-we-buy-on-emotion-justify-with-lo
 
 https://science.howstuffworks.com/life/inside-the-mind/human-brain/baader-meinhof-phenomenon.htm
 
+## Two other principles I want to display in my work
+
+- maintainability. I've always wanted to write clean code, and I realise the reason is not only for self-satisfaction, but also for maintainability. How many times have you looked into your code from a year ago and questioned why you have written it that way? Maintainable code means code that you can read, understand and justify why it's written that way. 
+- safety. Safety is not only about security, it's about correctness of the program too. SRP, SOLID and other principles are all about safety. We break our code into layers that is not only composable, but does one thing well and does not share responsibility with other modules/packages. This makes refactoring easy, and tracing issues simpler since we know where the responsibility lie in.
+
+
 ## Others
 https://blog.bufferapp.com/6-powerful-psychological-effects-that-explain-how-humans-tick
 
