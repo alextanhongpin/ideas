@@ -66,3 +66,26 @@ Dealing with metrics (e.g. counter) can be tricky - if we have retry pattern tha
 ## Implement Web Beacon for Frontend to gather analytics data
 
 https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon
+
+
+## Proving Pareto's principle
+
+- check if 20% of the customer generates 80% of the revenue
+
+## Frequent Pattern
+
+Data mining 
+
+## Analytics 
+
+Having data is useless if we only use them to plot charts - it has to generate _actionable actions_. For example, can we find out if:
+
+- what product generates the most revenue?
+- how does the trend changes over year
+- who are the top 20% product that generates the most revenue?
+- who are the top 20% users that purchase the most? are they recurring purchases of the same product? what can we do to engage those users so that they continue buying/staying loyal?
+
+
+## Emails
+
+- get more email views by adding `Re: subject` in front of the subject.
