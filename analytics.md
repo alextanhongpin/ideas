@@ -89,6 +89,7 @@ Having data is useless if we only use them to plot charts - it has to generate _
 ## Emails
 
 - get more email views by adding `Re: subject` in front of the subject.
+- how to send personalized email to all users? The answer is - you can't. If you are sending the emails to all users, it is gonna be generic. The best way is to take 20% of the top purchasers (based on Pareto's principle), observe their buying habits, deduce their personality and send them a personal email. 20% of 100k is too many? Then start by sending 100 emails first. Some things have to be done manually, and then once we have found the sweet spot for the (effort to results ratio), automate it.
 
 ## Driving data decision
 
