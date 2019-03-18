@@ -89,3 +89,10 @@ Having data is useless if we only use them to plot charts - it has to generate _
 ## Emails
 
 - get more email views by adding `Re: subject` in front of the subject.
+
+## Driving data decision
+
+- if we are plainly looking for analytics, we can strip of customers information (email, id, names etc), since we do not need to use them to derive value
+- if we are looking for recommendations, we need to at least match their preferences with the behaviours
+- most basic metrics includes daily, weekly, monthly or yearly sales (trends etc)
+
