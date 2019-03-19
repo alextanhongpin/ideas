@@ -140,6 +140,9 @@ https://science.howstuffworks.com/life/inside-the-mind/human-brain/baader-meinho
 - maintainability. I've always wanted to write clean code, and I realise the reason is not only for self-satisfaction, but also for maintainability. How many times have you looked into your code from a year ago and questioned why you have written it that way? Maintainable code means code that you can read, understand and justify why it's written that way. 
 - safety. Safety is not only about security, it's about correctness of the program too. SRP, SOLID and other principles are all about safety. We break our code into layers that is not only composable, but does one thing well and does not share responsibility with other modules/packages. This makes refactoring easy, and tracing issues simpler since we know where the responsibility lie in.
 
+## Testing
+
+Spending time to write test is better than spending that time to fix bugs and getting frustrated when a issue occured in production.
 
 ## Others
 https://blog.bufferapp.com/6-powerful-psychological-effects-that-explain-how-humans-tick
