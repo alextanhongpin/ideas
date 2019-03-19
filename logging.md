@@ -428,3 +428,6 @@ When running a http server, it's normal for the router to include a middleware t
 - use log levels to filter `error` logs and send them to a dashboard/slack channel for quick alerts. 
 - that said, `warning` level is redundant
 
+## Logging With Use Cases
+
+Adding use case context, such as 'payment_made', 'user_added' adds more visibility to the system
