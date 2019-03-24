@@ -717,3 +717,47 @@ Aspect-oriented programming, and how it could be use to modularize functionaliti
 
 ## Write the three principles
 
+## TODO: Graphql
+
+- handling table joins
+- querying with different data sources (mysql)
+- access controll list
+- authorization
+- where does business logic reside? Probably used graphql as a read-only data source
+
+## Api Designs
+
+- throttling, backoff, circuit breaker and rate limit
+- rate limit by ip (throttle individual requests)
+- rate limit by ip + path (throttle individual usage for specific endpoint)
+- circuit breaker for error? when a user type in wrong password three times
+- request id library (make it modular)
+- caching json response?
+- ttl map for golang (similar like redis EXP)
+
+## Golang struct order
+https://medium.com/@felipedutratine/how-to-organize-the-go-struct-in-order-to-save-memory-c78afcf59ec2
+
+## How redis expires keys
+https://redis.io/commands/expire
+
+## Setting user agent
+https://blog.gopheracademy.com/advent-2016/http-client/
+
+
+## Improved Makefile
+
+Note: use `.PHONY` on non-build targets. 
+
+```
+objects = foo.o bar.o
+all: $(objects)
+
+$(objects): %.o: %.c
+  $(CC) -c $(CFLAGS) $<-o $@
+```
+
+References:
+- https://www.gnu.org/software/make/manual/html_node/Static-Usage.html#Static-Usage
+- https://blog.gopheracademy.com/advent-2017/make/
+- https://blog.gopheracademy.com/advent-2017/kubernetes-ready-service/
