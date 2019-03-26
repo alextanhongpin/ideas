@@ -144,6 +144,9 @@ https://science.howstuffworks.com/life/inside-the-mind/human-brain/baader-meinho
 
 Spending time to write test is better than spending that time to fix bugs and getting frustrated when a issue occured in production.
 
+## Obey the principles without being bound by them
+― Bruce Lee
+
 ## Others
 https://blog.bufferapp.com/6-powerful-psychological-effects-that-explain-how-humans-tick
 
