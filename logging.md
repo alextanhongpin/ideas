@@ -431,3 +431,18 @@ When running a http server, it's normal for the router to include a middleware t
 ## Logging With Use Cases
 
 Adding use case context, such as 'payment_made', 'user_added' adds more visibility to the system
+
+
+## Logging Metadata
+
+Based on OWASP recommendation:
+```
+date/time
+url path
+http method
+ip
+user-agent
+query
+bytes-transferred
+status
+```
