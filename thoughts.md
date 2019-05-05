@@ -277,3 +277,9 @@ This documentation will serve as the following:
 - Avoid redoes through documented work
 - Black and white agreement on what has been decided
 - Served as a single source of truth
+
+
+## Other problems encountered
+
+- mvp first: the idea of building a minimum viable product often leads to software designs that doesn't work. most of the time, this narrow point of view will lead to design with flaws when it's time to scale. This is especially true when working with a RDBMS, since the schema design is hard to change, and without sufficient knowledge in data migration, this can quickly develop into a legacy. The worst thing I've seen is the design of the db is tightly coupled to the Frontend, since the logic for storing the dynamic forms and translation lies in the db. MVP works, but it doesn't need to leak out to the software side - we can for example send out surveys and get feedback from the open first whether or not the product makes sense. If it does need to be develop, care is needed when designing the schema. Better be safe than sorry! (redoing will take more toll and wasted development time when what you want is to develop more features)
+- because team lead (put the person's name) says so: this is one of the worst thing that I could have heard when working in a team. Just because someone says so, doesn't mean you have to do it. If the person tells you to jump down a 30 storey building, would you do so? Aha, and now suddenly you have the brain to think about it. Good teams are proactively looking for solutions to the problems they face, and not just solutions that work, but one that can stand against the test of time. If the team is only looking for a quick gain, they are bound to suffer huge losses in the future.
