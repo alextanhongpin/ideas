@@ -761,3 +761,20 @@ References:
 - https://www.gnu.org/software/make/manual/html_node/Static-Usage.html#Static-Usage
 - https://blog.gopheracademy.com/advent-2017/make/
 - https://blog.gopheracademy.com/advent-2017/kubernetes-ready-service/
+
+
+## New Todos
+
+- go through all the old repositories and update them
+- add a github resume and share with others
+- put past experiences
+- try out the status pattern in database
+- design all the schema for social media, travel, hospital and the rest
+- implement SRE practices
+- ticketing system for manual ops operation
+- update the AppSensor implementation
+- look at existing job application and try to fill up the gaps (or rewrite them with your expertise)
+- look back into data structures and algorithm
+- Learn Postgres
+- Learn kubernetes
+
