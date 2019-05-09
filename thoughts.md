@@ -290,3 +290,9 @@ Is it because the design was poor? Is it because there are no unit tests? Is it 
 
 Someone decided it's not necessary to write tests. Hence new features are added at a pace without testing, and the consequence are brittle softwares with quick patches.
 Someone decided the schema should be designed that way, because it's a MVP. When the user base increases, the system couldn't cope with the demand and starts failing.
+
+
+## Over/underengineering
+Let’s not fit the problem into the solution, there will be gaps. Let’s find a solution that is the most efficient for different problems.
+
+There are no generic solution, but there are good enough solution for different problems. The best way is to identify when to apply what solution for each problems.
