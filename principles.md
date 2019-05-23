@@ -147,6 +147,10 @@ Spending time to write test is better than spending that time to fix bugs and ge
 ## Obey the principles without being bound by them
 ― Bruce Lee
 
+## Design for long term gain, not short term win
+
+Don't make your MVP (minimum viable products) become the most vulnerable products.
+
 ## Others
 https://blog.bufferapp.com/6-powerful-psychological-effects-that-explain-how-humans-tick
 
