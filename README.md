@@ -765,6 +765,8 @@ References:
 
 ## New Todos
 
+TODO:
+
 - go through all the old repositories and update them
 - add a github resume and share with others
 - put past experiences
@@ -775,6 +777,578 @@ References:
 - update the AppSensor implementation
 - look at existing job application and try to fill up the gaps (or rewrite them with your expertise)
 - look back into data structures and algorithm
+- SPTAG (Space Partition Tree And Graph) is a library for large scale vector approximate nearest neighbor search scenerio, which is written in C++ and wrapped by Python
+- Document classification
+- learn and implement back the software design patterns
+- https://en.wikipedia.org/wiki/Software_design_pattern
+- https://medium.com/@marinithiago/doing-event-sourcing-without-building-a-spaceship-6dc3e7eac00
+
+- Learn and implement nimlang, crystal, scala, python and kotlin again
+- add timeout session for page when user is idle
+- Metrics to measure sequence
+- Measure the number of calls for endpoint by user. If a lot of requests is made by a user for login, they might be hacking
+- Stateful rest Api design with state machine
+- Machine learning anomaly detection refresher
+- rate limiting and throttle, they are two different things. Both are enforcing a policy. But we often talk about application level rate limiting (max 10000 requests per second) and consumer rate limiting (5 req per second), but they are actually not the same. The former is daily throttle quota, the latter is rate limit usage.
+- Learn nats/redis/kafka
 - Learn Postgres
-- Learn kubernetes
+- Learn Kubernetes, Consul, Nomad, Terraform, Prometheus
+- Group watch with Netflix idea, share the same subscription but pay in group
+- Group forms honestbee
+- OWASP Top 10, and how to secure your login form.
+- Project setup by just using environment variables. The idea is to have a container that initialises all the basic micro service components such as database and message queue, config loading etc. Then we can just set the environment variables to use those infrastructure. The user may choose to extend the container to add new configuration. The idea is similar to go-kit. Rather than providing user options to fill up, we just define the environment variables that the user have to fill in.
+
+Active service pattern is just a cron job. How to pull data periodically? Return the last update date. MD5 hash the content, or check if the updated date is greater than the previously updated data. If you are pulling a collection, then the greatest last updated date is the indicator.
+
+Useful patterns for data
+- Tag the start date. This allows us to know if the report is indeed stale or not. Always strive to produce a better ones.
+- add similar tags
+
+Parse pdf
+- Read the text from the pdf and summarise it. Allow users to ask questions about the summarised text. 
+- Categorize the pdf according to the type. Perform supervised and unsupervised learning
+
+Create user profile for each individuals.
+- Store the actions/events/behaviours in a bucket for each user
+- Whenever a new user action is performed, gather the metrics
+- For each metrics, assign a behaviour, e.g. if the user login actively, give them the behaviour “active user”
+
+Upload documents/data
+- allow users to ask questions on the documents they uploaded. For example if it is an insurance policy, users can ask if they are covered for certain incident
+
+https://instagram-engineering.com/storing-hundreds-of-millions-of-simple-key-value-pairs-in-redis-1091ae80f74c
+
+- Business rules requires facts to be gathered first. Facts are deduced by events. We can have facts on
+
+- Something that is supposed to happen once, e.g. user selects an order
+- Something that is supposed to happen twice. User calls the service twice
+- Something that is supposed to happen multiple times.
+We can take the statement above and apply the NOT logic. 
+We can also compose multiple of those occurrences with AND, OR , WHEN, ALL, SOME etc.
+We can set a TIME WINDOW, turning them into time series events.
+- sequence of events is even harder. There are predecence, or concurrent. The former states that an action must occur before the next, the latter states that both can happen at the same time)
+
+A simple rule to check the user’s home address can be based on the following facts:
+- Fact 1: Location of user when the time is 2-3 am
+- Fact 2: The highest frequency of the location for 1 week.
+- The business logic will then be to sort the locations with the highest frequency and return them
+- That concludes the rule check user home address
+
+We can extend that to:
+- Check users change address. If the same pattern is repeated above and the value differs from the previous location, then trigger the user change address rule.
+- Check user’s work address. We just need to change the time to check to 10-12 am. (before lunch). There’s a probablility that the work place and the home is the same, or we can also deduce that the user might not be working. 
+We can store the users temporal data in such a way we can capture the change of facts. 
+- valid from
+- Valid till 
+- Facts
+- Rule that deduce the facts 
+
+This is excellent since we can just use it to get the facts and compress them into a model, rather than storing all of them away. We can keep a snapshot of this facts, but we do not need to store all of them (unless they are transactions).
+
+
+can we add a page called downtime in Confluence, and record what happened, what we did, how we approach it, what works/what doesn’t, how long was the downtime and when it recover?
+
+possible approach
+- hide domain from public to debug (not terminate instance or swap image)
+- check other services that shares the same db
+
+
+## JWT
+Jwt why different audience for mobile
+Tracking for different devices
+- Logout all feature by changing the main secret
+- Logout all by checking  the issued date less than logout date
+- we can handle logout from different devices with the same trick, but this requires an external distributed cache
+- how to handle sessions from different devices? when the user first request the token, store all the necessary data (user agent, location etc), and every other time the user calls the endpoint with the token, track the location and check if it is possible). We can user haversine distance to calculate the user’s velocity and see if it’s possible. Walking distance, commuting, driving, cycling all has an average velocity. If we can compare the outliers, we can identify suspicious activities)
+- the same concept is used for credit card, called the card velocity. 
+- since we can get the unique id of the device when they logged in, we can tie the usage. This will require a lot of checking though. We can use complex event processing to monitor the changes. stream the data to a pipeline, and compare the location (if null, how should it be handled, if user did not provide the location?)
+- using Subject instead of custom claims
+- setting audience and issuer effectively
+- exclude dynamic roles in the jwt token
+- why use session instead
+- should we have refresh token for applications?
+
+todo:
+- preventing thundering herd with nginx
+- https://www.nginx.com/blog/mitigating-thundering-herd-problem-pbs-nginx/
+
+
+pagerank algorithm
+- https://www.geeksforgeeks.org/page-rank-algorithm-implementation/
+- https://www.cs.princeton.edu/~chazelle/courses/BIB/pagerank.htm
+- https://searchenginewatch.com/google-pagerank-algorithm-explained
+- https://hackernoon.com/implementing-googles-pagerank-algorithm-88069314fb3d
+
+Related: how to build a search ranking algorithm using Learning To Rank
+- https://www.searchenginejournal.com/build-search-ranking-algorithm-machine-learning/297047/#close
+
+Consistent hashing
+- https://www.acodersjourney.com/system-design-interview-consistent-hashing/
+
+implementing distributed caching
+https://success.outsystems.com/Documentation/Best_Practices/Performance_Best_Practices/Improving_performance_with_distributed_caching
+
+
+Kubernetes service to service discovery
+- https://kubernetes.io/docs/concepts/services-networking/service/
+- https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#exposing-pods-to-the-cluster
+
+Complex event processing/context aware application
+
+Real-time machine learning/fraud detection
+- https://www.kdnuggets.com/2015/11/petrov-real-time-machine-learning.html
+- https://stats.stackexchange.com/questions/376677/how-to-frequently-update-classification-model-with-new-training-data
+- https://medium.com/codait/keeping-your-machine-learning-models-up-to-date-f1ead546591b
+- https://www.oreilly.com/ideas/lessons-learned-turning-machine-learning-models-into-real-products-and-services
+- https://dzone.com/articles/real-time-machine-learning-with-tensorflow-in-data
+- https://towardsdatascience.com/real-time-streaming-and-anomaly-detection-pipeline-on-aws-cbd0bef6f20e
+- https://towardsdatascience.com/real-time-anomaly-detection-with-aws-c237db9eaa3f
+- https://databricks.com/session/real-time-anomaly-detection-with-spark-ml-and-akka
+- https://dzone.com/articles/creating-real-time-anomaly-detection-pipelines-wit
+- https://engineering.salesforce.com/how-we-built-an-automated-anomaly-detection-system-onto-a-streaming-pipeline-84ecfd6420e0
+- https://www.information-age.com/anomaly-detection-123475833/
+- https://engineering.linkedin.com/blog/2018/09/automated-fake-account-detection-at-linkedin
+- https://www.datadoghq.com/blog/alerting-101-metric-checks/
+- https://comtradedigital.com/fraud-detection-monitoring/
+- https://en.m.wikipedia.org/wiki/Data_analysis_techniques_for_fraud_detection
+- https://precognitive.io/2017/10/12/using-behavioral-analytics-detect-ecommerce-fraud/
+- https://precognitive.io/behavioral-analytics/
+- https://precognitive.io/device-intelligence/
+- https://en.m.wikipedia.org/wiki/Data_analysis_techniques_for_fraud_detection
+
+some ideas - combine expert system (rule based and machine learning)
+- create funnels that filters responses
+- use message queue/redis streams to perform transformation etc and filter when the events pass through
+- design alerting/response mechanism
+- check AppSensor application
+
+Concurrent queue workers in golang. Can golang channels replaces queue?
+Not really, we can make it persistent with level db (local cache) and reload the data back into the channels when the application restarts)
+https://nesv.github.io/golang/2014/02/25/worker-queues-in-go.html
+https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8
+https://www.opsdash.com/blog/job-queues-in-go.html
+https://pusher.com/tutorials/messaging-queue-node-go
+https://medium.com/@magicpineng/in-depth-look-at-a-scalable-robust-data-stream-processing-pipeline-using-golang-processing-500k-9e68310a0675
+https://ewanvalentine.io/microservices-in-golang-part-5/
+https://blog.wallaroolabs.com/2018/01/go-go-go-stream-processing-for-go/
+
+Distributed system design
+https://medium.com/@shijuvar/building-distributed-systems-and-microservices-in-go-with-nats-streaming-d8b4baa633a2
+https://blog.wallaroolabs.com/2018/01/go-go-go-stream-processing-for-go/
+
+
+
+hotspot prevention/thundering herd
+- using golang single flight and groupcache
+
+
+Screaming architecture
+https://blog.cleancoder.com/uncle-bob/2011/09/30/Screaming-Architecture.html
+https://dzone.com/articles/screaming-architect
+https://javadevguy.wordpress.com/2017/11/15/screaming-architect/
+http://www.plainionist.net/Implementing-Clean-Architecture-Scream/
+https://www.codingblocks.net/podcast/clean-architecture-make-your-architecture-scream/
+https://www.freecodecamp.org/news/a-quick-introduction-to-clean-architecture-990c014448d2/
+https://www.linkedin.com/learning/java-ee-design-patterns-and-architecture/what-is-screaming-architecture
+
+
+Getting close. In the next version, come out with several levels of architecture. A good architecture should separate implementation from the abstraction/interface.
+
+
+
+microservice use case
+https://dzone.com/articles/microservices-use-cases-1
+
+
+## Database
+Binary handling https://stackoverflow.com/questions/5801352/storing-binary-string-in-mysql
+which database to choose for analytics https://www.linkedin.com/pulse/what-database-do-you-choose-analytics-shankar-meganatha
+https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/architect-microservice-container-applications/data-sovereignty-per-microservice
+https://www.holistics.io/blog/should-you-use-mongodb-or-sql-databases-for-analytics/
+## Database.Sharding
+https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6
+
+
+Event driven architecture
+https://www.confluent.io/blog/data-dichotomy-rethinking-the-way-we-treat-data-and-services/
+https://www.confluent.io/blog/journey-to-event-driven-part-2-programming-models-event-driven-architecture
+
+
+Change data capture event streaming
+https://medium.com/myheritage-engineering/achieving-real-time-analytics-via-change-data-capture-d69ed2ead889
+
+
+Text analytics https://www.datacamp.com/community/tutorials/text-analytics-beginners-nltk
+https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
+
+
+## NLP - Text Summarization
+https://machinelearningmastery.com/gentle-introduction-text-summarization/
+
+https://medium.com/m/global-identity?redirectUrl=https%3A%2F%2Ftowardsdatascience.com%2Fa-quick-introduction-to-text-summarization-in-machine-learning-3d27ccf18a9f
+
+https://medium.com/m/global-identity?redirectUrl=https%3A%2F%2Ftowardsdatascience.com%2Funderstand-text-summarization-and-create-your-own-summarizer-in-python-b26a9f09fc70
+https://medium.com/jatana/unsupervised-text-summarization-using-sentence-embeddings-adb15ce83db1
+https://blog.floydhub.com/gentle-introduction-to-text-summarization-in-machine-learning/
+
+https://www.geeksforgeeks.org/ml-text-summarization-of-links-based-on-user-query/
+https://medium.com/m/global-identity?redirectUrl=https%3A%2F%2Fhackernoon.com%2Ftext-summarizer-using-deep-learning-made-easy-490880df6cd
+
+https://www.analyticsvidhya.com/blog/2018/11/introduction-text-summarization-textrank-python/
+https://machinelearningmastery.com/gentle-introduction-text-summarization/
+https://catalog.ldc.upenn.edu/LDC2012T21
+
+https://www.tensorflow.org/tutorials/keras/basic_classification
+
+https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python/
+
+https://www.digitalvidya.com/blog/document-classification-python-machine-learning/
+https://medium.com/mlrecipies/document-classification-using-machine-learning-f1dfb1171935
+https://cloud.google.com/blog/products/gcp/problem-solving-with-ml-automatic-document-classification
+
+https://www.kdnuggets.com/2015/01/text-analysis-101-document-classification.html
+https://blog.christianposta.com/microservices/the-hardest-part-about-microservices-data/
+
+
+also take a look at SQUAD standford question answering database
+https://databricks.com/tensorflow/examples
+https://github.com/aymericdamien/TensorFlow-Examples
+https://adventuresinmachinelearning.com/python-tensorflow-tutorial/
+https://www.geeksforgeeks.org/ml-text-summarization-of-links-based-on-user-query/
+
+https://medium.com/m/global-identity?redirectUrl=https%3A%2F%2Ftowardsdatascience.com%2Fnlp-building-a-question-answering-model-ed0529a68c54
+https://towardsdatascience.com/automatic-question-answering-ac7593432842?gi=dae76ddf5325
+https://paperswithcode.com/task/question-answering
+https://radimrehurek.com/gensim/tutorial.html
+http://kavita-ganesan.com/gensim-word2vec-tutorial-starter-code/
+
+
+## Monitoring/Observability
+
+Relook into prometheus and statsd
+- how to scale statsd 
+- where to store data into statsd (graphite), how to stream data to graphite and how to get data out from graphite 
+- setup docker version
+- setup kubernetes version
+- setup ui for monitoring (grafana)
+- how to perform alerting and detect threshold
+- how to get realtime statistics
+
+Relook into logging with fluentd
+- how to detect patterns with fluentd
+- how to optimize logging
+- how to send the logs to aws s3
+- what tools can be used to visualize large logs data (write a custom exporter from s3 to elasticsearch)
+
+Relook into search engine with bleeve and elasticsearch kibana etc
+
+Tips on scaling
+- scaling is about managing resources. In order to scale, we need to know the capacity of our system. In order to know the capacity of our system (request per second, cpu, memory etc), we need to measure it. Instead of relying on the system to support the given capacity that we want, we can define it ourselves by limiting them (setting the requests per second by adding rate limiter, limiting the cpu and memory etc). This allows us to have better control over the system. We can load test to determine the capacity of the system upfront. 
+- if the code works, then the infrastructure is the one likely to fail(db)
+- to reduce resources overhead/consumption, use caching/snapshotting. Handle the requests asynchronously, and let the client ask for the response. If the requests have not yet been processed, then we can just return a different status to indicate that it is pending processing. We can return the stale response when the system is still carrying out the processing. 
+- Some killers includes sorting the whole table, or getting the total count. Joins can be a killer too when the database are sharded
+- snapshot expensive operation (count) etc and periodically update them
+- reduce thundering herd and hotspot keys by throttling the requests
+- rate limit client apis and calls to database
+- use singleflight/groupcache for caching/preventing deduplication of requests
+- circuit breaker etc/ retry/ratelimit/throttling
+- use asynchronous handling for expensive job
+- instead of letting the client make too many requests, we can stream the data back to the client side instead, using websocker or server sent events
+- the rule to caching is to determine the lifespan of the data. Is it static? then we can cache it longer. Is it dynamic, then the caching duration will be shorter. If we want real-time data, we can also look into the push approach instead of the pull approach. This could be better in some ways. 
+
+
+Recommendation algorithm
+- how to write one from scratch
+- how to scale one
+- using existing libraries
+- deploying it to production
+- retraining the recommendation algorithm
+https://medium.com/arc-software/recommender-systems-behind-the-scenes-a39c831a0ae2
+https://towardsdatascience.com/prototyping-a-recommender-system-step-by-step-part-1-knn-item-based-collaborative-filtering-637969614ea
+https://en.m.wikipedia.org/wiki/Recommender_system#Content-based_filtering
+https://en.m.wikipedia.org/wiki/Tf–idf
+https://en.m.wikipedia.org/wiki/SMART_Information_Retrieval_System
+https://en.m.wikipedia.org/wiki/Latent_semantic_analysis
+https://en.m.wikipedia.org/wiki/Latent_Dirichlet_allocation
+https://www.kaggle.com/pierremegret/gensim-word2vec-tutorial
+https://www.kaggle.com/pierremegret/gensim-word2vec-tutorial
+
+
+## Data Science
+
+- https://www.textkernel.com/challenges-behind-parsing-matching-cvs-jobs/
+- https://www.freelancer.com/projects/data-mining-matlab-mathematica/nlp-resume-parser-write-nlp/
+- https://datascience.stackexchange.com/questions/36447/resume-parsing-extracting-skills-from-resume-using-machine-learning
+- https://medium.com/@divalicious.priya/information-extraction-from-cv-acec216c3f48
+- https://dataturks.com/blog/named-entity-recognition-in-resumes.php
+- https://medium.com/activewizards-machine-learning-company/top-9-data-science-use-cases-in-media-and-entertainment-a5705231e228
+- https://bigdata-madesimple.com/6-of-my-favorite-case-studies-in-data-science/
+- https://medium.com/coriers/7-use-cases-for-data-science-and-predictive-analytics-e3616e9331f9
+- https://blogs.sas.com/content/hiddeninsights/2015/05/28/building-customer-profiles-in-the-era-of-big-data/
+- https://arxiv.org/pdf/1503.07474.pdf
+- https://medium.com/datadriveninvestor/represent-users-and-products-in-a-data-science-way-for-e-commerce-website-22d7dbc24c33
+
+
+## Consistent Hashing
+
+https://quabase.sei.cmu.edu/mediawiki/index.php/Shard_data_set_across_multiple_servers_(Consistent_Hashing)
+
+
+## API Design
+https://nordicapis.com/could-artificial-intelligence-improve-api-design/
+
+
+## Deep learning use case
+
+What are the use cases of AI, and what can be applied? 
+https://skymind.ai/wiki/use-cases
+
+
+## CQRS
+
+https://medium.com/@domagojk/patterns-for-designing-flexible-architecture-in-node-js-cqrs-es-onion-7eb10bbefe17
+https://www.confluent.io/blog/apache-kafka-for-service-architectures/
+
+## Change Data Capture CDC 
+
+Look into how to use change data capture to capture facts (data that has been successfully stored in the database.
+This is perhaps a better (?) solution than streaming the results once the operation completed at the application layer because there can be some fields (autogenerated id from database) that cannot be obtained from the application layer.
+(?) but if the insert fail, we might still need to publish the events saying that the operation failed.
+- but at least we don’t need to deal with changes from the application side
+- how do we handle schema changes in the database? or addition of new tables?
+
+
+https://debezium.io/blog/2016/08/02/capturing-changes-from-mysql/
+https://vladmihalcea.com/a-beginners-guide-to-cdc-change-data-capture/
+https://medium.com/fundbox-engineering/https-medium-com-fundbox-engineering-diy-cdc-pipeline-from-mysql-to-snowflake-32c14b705cfe
+https://medium.com/myheritage-engineering/achieving-real-time-analytics-via-change-data-capture-d69ed2ead889
+https://www.percona.com/blog/2016/09/13/mysql-cdc-streaming-binary-logs-and-asynchronous-triggers/
+https://vladmihalcea.com/how-to-extract-change-data-events-from-mysql-to-kafka-using-debezium/
+https://engineeringblog.yelp.com/2016/08/streaming-mysql-tables-in-real-time-to-kafka.html
+http://shzhangji.com/blog/2017/08/12/extract-data-from-mysql-with-binlog-and-canal/
+https://www.bouvet.no/bouvet-deler/utbrudd/a-simple-todo-application-a-comparison-on-traditional-vs-cqrs-es-architecture
+https://medium.com/@pierreprinetti/event-sourcing-in-go-the-event-handler-29f9438c58f0
+https://medium.com/@shijuvar/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb-983f650452aa
+https://outcrawl.com/go-microservices-cqrs-docker/
+
+
+## Document Classifier
+
+- An API to read the input file
+- How to parse PDF? extract the text from pdf, and go through the pipeline.  (note, pdf is only a source, we should create an interface that accepts a string, since the source can be from anywhere, input string, word text, pdf, excel, scraped website)
+- lowercase text, tokenize text, remove stopwords, stemming, lemmatization
+- NER analysis
+- parse the section
+- how to find the skills and section
+- how to parse different type of documents (word, docs, pages)
+
+- with this, we can first perform tagging on the documentation and tfidf. we can allow search to be done, 
+- e.g. show me the resumes with the skills javascript
+- show me the users with 10 years experience
+- this requires knowledge on NLU natural language understanding (take a look at SpaCy)
+
+https://www.analyticsvidhya.com/blog/2017/01/ultimate-guide-to-understand-implement-natural-language-processing-codes-in-python/
+
+come up with a simple POC first, use jupyter notebook to execute the independent pipeline, then only look into optimization for each steps
+at the end release a simple api or grpc that allows the code to be streamed (redis stream?) to be analyzed real-time.
+- this can be a worker process and we want to do it once only/can also run as a cron daily, but best to process it real time)
+- we can create a basic search engine with the text that is scraped
+- create a simple visualization/website to display each pipeline steps
+
+
+
+Example streaming
+- store the last N values in the given time window
+- when there are new values that exceeds the size N, remove the head and push to the array
+- compute the last activity
+E.g. when checking the user’s location
+user {
+	lat, lng, timestamp
+}
+- skip zeros/invalid location lat/lng
+- we don’t need to store all the values, just compare the previous value with the latest one
+- delta distance / delta timestamp > in valid range
+- user has moved to an invalid duration
+
+
+## Stream Processing
+
+https://wso2.com/library/articles/2018/02/stream-processing-101-from-sql-to-streaming-sql-in-ten-minutes/
+https://medium.com/stream-processing/what-is-stream-processing-1eadfca11b97
+https://www.toptal.com/mobile/context-aware-apps-and-complex-event-processing
+
+https://calcite.apache.org/docs/stream.html
+
+
+
+POS Tagger 
+What can we do with tagger?
+
+What types of tagger are available?
+- rule-based pos taggers (brill tagger)
+- stochastic pos taggers (using hidden markov model)
+
+
+- brill tagger. An “error-driven transformation-based tagger”. A form of supervised learning.
+- Standford log-linear part of speech tagger: http://www.nltk.org/api/nltk.tag.html#module-nltk.tag.stanford
+
+
+
+
+## Algorithms 
+How to use HMM in the real world
+how to compute viterbi algorithm in different languages
+- this can be used for content generation, chat bot
+- https://www.freecodecamp.org/news/a-deep-dive-into-part-of-speech-tagging-using-viterbi-algorithm-17c8de32e8bc/
+
+
+## Authorization
+- how does authorization works for offline application?
+- how to split the application into hybrid offline/online solution? read only data can always be offline. If we want to create data etc, we can perform it locally first, then sync the data later when we are online(?) will this cause a hotspot issue, when all offline devices went online at the same time.
+- how to ensure the files created offline are batched before synced online (especially when there are plenty of files)
+- the idea of putting things offline is to save the network calls to the server, hence reducing server load and making the application more responsive.
+- syncing server like dropbox is what we need. But how do we design it? We can queue the requests on the client side and then fire them when they are back online. We need to ensure the calls are not rapid to prevent own ddos. Another alternative is to set a rule that only online clients can upload content.
+
+
+## Deployment
+
+how to handle zero downtime deployment
+
+https://www.ebayinc.com/stories/blogs/tech/zero-downtime-instant-deployment-and-rollback/
+https://www.exoscale.com/syslog/kubernetes-zero-downtime-deployment/
+https://blog.pvincent.io/2018/12/patterns-for-zero-downtime-deployments-of-large-applications/
+
+
+## Frecency
+
+https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Frecency_algorithm
+
+one way is to bucket the counter for each time the request hit, e.g. hourly
+
+hour 24: 10
+hour 23: 50
+hour 22: 3
+…
+
+then, take the last N buckets to determine the ranking of the item. Another way is to add them in buckets with different range of data:
+
+4 days bucket, weight: 100
+14 days bucket: weight: 70
+31 days bucket: weight 50
+90 days bucket: weight 30
+rest, 10:
+
+The more frequent and recent ones will have a higher score. How can we do this with redis set?
+
+Another easier way is just to check the usage in the last seven days. 
+day 7 * 100
+day 6 * 80
+day 5 * 60
+day 4 * 40
+day 3 * 20
+day 2 * 10
+day 1 * 5
+the sum of the scores is the recency score. Create fake data to check the distribution. 
+
+
+A good leader is one who can make decision, and reflect upon it and undo it if the decision does not feel right.
+
+
+List down all useful books here
+
+Idea. Find error in text or grammar, use gamification. But doing translation behind the scene
+
+Put the questions you want to ask
+How to create real time streaming architecture
+Update machine learning model in real time
+
+Say, if we want to create a credit card fraud detector, we need to design a model. There are only two possible outcome the model can give us
+- a definite answer
+- A probabilistic one. 
+The former is when we know exactly that a credit card is flawed. It is a fact, and does not require any machine learning whatsoever. The latter is more in a prediction.
+
+
+Handling multilingual for gaoling including errors and content 
+Dynamic forms, good or bad?
+A/b testing using hashing the user id modulo
+
+Simplest sync server
+- The initial idea is to hash the data using md5 and compare the hash of the data on the server against the client. But then hashing again is computationally expensive.
+- The second idea is to check the last updated time. In mysql, we can always set the updated at date time to update whenever there is a change.
+- On the client side, if they are offline, then just push the items to be updated in a local queue/database. When the app is back online, then update it. There can only be a max of 10 items to be updated when it is offline. 
+- The logic to update is as follow: The content can only be updated if the created at date (t0) of the content of the client is greater than the updated at date (t1) of the content on the server side and t0 is less than NOW. This is to avoid having the content to be overwritten by the stale  data (e.g. is user is offline on the mobile, and has a content that has not yet been synced online. The user update the content on the web, and then goes online on the mobile. The mobile content should not be synced, since the server already has the latest content.
+e.g.
+
+User is online. User create book {date: 1 Jan 2019, updated_at: 10:00pm}.  User goes offline.
+User is offline. User update book {date: 1 Jan 2019, created_at: 10:11pm}. User goes online.
+
+if book_local.created_at > book_server.updated_at:
+	can_update
+
+Grammar corrector. Enter a sentence you want to validate the correctness.
+User can submit the corrected version, others can Like or dislike.
+
+Private eye. Search for something or someone. from just a picture.
+
+When to use NATs vs Redis Stream vs Kafka. One of the primary reason is the reusability. For example, go nats does not have clients in certain languages, while redis is almost available everywhere.
+
+
+
+## Bandit algorithm use case
+
+What is the goal of bandit algorithm first?
+- To dynamically and sequentially choose alternatives, referred to as arms, which will maximise the expected total rewards across the t trials.
+- What are the real world use case?
+1. To find the best medicine among alternatives
+2. To find out the best product to launch among the possible products (versions)
+3. Web optimisation, decide how much traffic we need to allocate for each website.
+4. Marketing strategy. Find out the best marketing strategy to launch a product.
+5. Recommendation system.
+    1. Personalised recommendation of songs or books or videos
+    2. Recommendation of complementary or substitute products in commerce
+    3. Friends suggestions in facebook/linkedin
+    4. Recommendation of news articles, based on your interest
+6. Investment in stock market
+    1. Finding out the best portfolio which maximise your profit
+    2. Finding out the best stock to invest
+    3. There are many experts in the market which try to predict the stock price. By using bandit algorithm, we can decide the weight for each expert. Weight will tell us indirectly how much we can trust each expert.
+7. Combinatorial problem
+    1. Helps to figure out the shortest path in the given map
+    2. For some disease , we need more than one medicine to cure it . If we are not sure which combination of medicines will cure the disease, the bandit algorithm will help to find out the best combination.
+8. Extreme values 
+    1. able to find out fraudulent transactions in banking/finance sector (anomaly detection)
+    2. Optimistic investment
+
+https://www.quora.com/In-what-kind-of-real-life-situations-can-we-use-a-multi-arm-bandit-algorithm
+
+
+Bloom filter use cases
+- approximately guess if email already exists from millions of existing emails.
+- Malicious url detection. Rather than caching all the possible urls, we can use bloom filter instead.
+- Medium uses bloom filter to avoid showing duplicate recommendations. The same can be used for tinder swipes suggestions.
+- One hit wonders. Akamai and Facebook uses bloom filters to avoid caching items that are rarely searched or searched only once. Only when they are searched more than once, they are cached. So for each query, check if the item exists in the bloom filter already, if yes, and it’s not yet available in the cache yet, cache it.
+- Unique identification system. Generate unique ids if it does not exist in the filter.
+- Url shortener. Check for uniqueness of the urls.
+- Financial fraud detection. We can add the blacklisted user in the list.
+- the blacklist feature can also be useful to prevent users from entering blackllisted passwords.
+- Facebook and linked in uses bloom filter for their typeahead search.
+- ensure once only delivery, with a 1 percent chance of not delivering.
+- unique counter. If the item does not exist in the bloom filter, increment the counter and add the item to the bloom filter.
+- write code example for each of them.
+https://stackoverflow.com/questions/4282375/what-is-the-advantage-to-using-bloom-filters
+https://www.quora.com/What-are-the-best-applications-of-Bloom-filters
+https://engineering.linkedin.com/open-source/cleo-open-source-technology-behind-linkedins-typeahead-search
+
+todo: use content enricher concept
+- also, rather than real-time recommendation, store the results of the recommendation before sending them out. Use streaming to ensure that the data can be replayed
+
+
+Why does YouTube pause the video play after a while? Maybe because they have complex event processing to determine the users activity - active, idle, picky(when they click another link before the first video payback is completed) etc.
+
+Why does Facebook like still works when it’s offline? Because they debounce it. There’s no merit in showing real time like counter since it can be taxing fro performance. Thus it is better to only make the call after user is idle, his also prevents abuse on the system.
+
+Why does grab shows finding for driver? It’s basically an asynchronous process working to match the drivers in the background based on the current location, whether the driver has accepted the request, or whether the driver has sufficient rating to be recommended. Note that it’s not necessary the first driver that would be selected. A bunch of drivers can first accept the passenger, then the algorithm will decide if they can take the passenger based on the rating. 
+
+
+
 
