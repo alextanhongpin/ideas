@@ -59,17 +59,11 @@ Try out all the possible technical indicators and write the algorithm in Python 
 
 Check out how to create and deploy a simple dapp. Also, check out solutions for distributed databases. 
 
-## Affinity Analysis
-
-Compare the different data mining algorithms for affinity analysis, especially apriori and eclat. Repo [here](https://github.com/alextanhongpin/affinity-analysis).
 
 ## Minimal Docker images
 
 For rust, haskell, golang, node, scala and python. Write down the size and multi-stage build process.
 
-## CRISP-DM
-
-Cross Industry Standard Practice for Data Mining. Try to implement the full steps.
 
 ## Machine Learning Softwares
 
@@ -113,9 +107,6 @@ Look into how to implement those algorithms in different languages.
 
 Look into the different areas of text processing and understand how to apply keras to it. Also look into Spacy for chatbots and learn how to dockerize them.
 
-## Frequent Itemsets
-
-Use frequent itemsets for food recommendation, create packages (food, drink and misc.), log the most frequently purchased and perform recommendations.
 
 ## Yik Yak
 
@@ -289,9 +280,6 @@ Using One Slope algorithm for binary ranking (1, 0)
 
 Sometimes the new application that we are deploying is not working (especially in AWS, when adding new environment variables), and it will keep crashing in an infinite loop. Solution is to deploy a dummy nginx instead of our complex application, cause it will just display the dummy 504 page. A better alternative is to create a custom server that display a dummy 500 page.
 
-
-## Look into Affinity Analysis
-Also, there are some good stuff on high-utility itemset mining. Probably take a look into that.
 
 ## IDM (Internet Downloader Manager)
 
@@ -630,7 +618,7 @@ todo:
 - https://www.nginx.com/blog/mitigating-thundering-herd-problem-pbs-nginx/
 
 
-pagerank algorithm
+## pagerank algorithm
 - https://www.geeksforgeeks.org/page-rank-algorithm-implementation/
 - https://www.cs.princeton.edu/~chazelle/courses/BIB/pagerank.htm
 - https://searchenginewatch.com/google-pagerank-algorithm-explained
@@ -639,18 +627,18 @@ pagerank algorithm
 Related: how to build a search ranking algorithm using Learning To Rank
 - https://www.searchenginejournal.com/build-search-ranking-algorithm-machine-learning/297047/#close
 
-Consistent hashing
+## Consistent hashing
 - https://www.acodersjourney.com/system-design-interview-consistent-hashing/
 
 implementing distributed caching
 https://success.outsystems.com/Documentation/Best_Practices/Performance_Best_Practices/Improving_performance_with_distributed_caching
 
 
-Kubernetes service to service discovery
+## Kubernetes service to service discovery
 - https://kubernetes.io/docs/concepts/services-networking/service/
 - https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#exposing-pods-to-the-cluster
 
-Complex event processing/context aware application
+## Complex event processing/context aware application
 
 Real-time machine learning/fraud detection
 - https://www.kdnuggets.com/2015/11/petrov-real-time-machine-learning.html
@@ -689,17 +677,17 @@ https://medium.com/@magicpineng/in-depth-look-at-a-scalable-robust-data-stream-p
 https://ewanvalentine.io/microservices-in-golang-part-5/
 https://blog.wallaroolabs.com/2018/01/go-go-go-stream-processing-for-go/
 
-Distributed system design
+## Distributed system design
 https://medium.com/@shijuvar/building-distributed-systems-and-microservices-in-go-with-nats-streaming-d8b4baa633a2
 https://blog.wallaroolabs.com/2018/01/go-go-go-stream-processing-for-go/
 
 
 
-hotspot prevention/thundering herd
+## hotspot prevention/thundering herd
 - using golang single flight and groupcache
 
 
-Screaming architecture
+## Screaming architecture
 https://blog.cleancoder.com/uncle-bob/2011/09/30/Screaming-Architecture.html
 https://dzone.com/articles/screaming-architect
 https://javadevguy.wordpress.com/2017/11/15/screaming-architect/
@@ -713,7 +701,7 @@ Getting close. In the next version, come out with several levels of architecture
 
 
 
-microservice use case
+## microservice use case
 https://dzone.com/articles/microservices-use-cases-1
 
 
@@ -971,38 +959,6 @@ https://www.exoscale.com/syslog/kubernetes-zero-downtime-deployment/
 https://blog.pvincent.io/2018/12/patterns-for-zero-downtime-deployments-of-large-applications/
 
 
-## Frecency
-
-https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Frecency_algorithm
-
-one way is to bucket the counter for each time the request hit, e.g. hourly
-
-hour 24: 10
-hour 23: 50
-hour 22: 3
-…
-
-then, take the last N buckets to determine the ranking of the item. Another way is to add them in buckets with different range of data:
-
-4 days bucket, weight: 100
-14 days bucket: weight: 70
-31 days bucket: weight 50
-90 days bucket: weight 30
-rest, 10:
-
-The more frequent and recent ones will have a higher score. How can we do this with redis set?
-
-Another easier way is just to check the usage in the last seven days. 
-day 7 * 100
-day 6 * 80
-day 5 * 60
-day 4 * 40
-day 3 * 20
-day 2 * 10
-day 1 * 5
-the sum of the scores is the recency score. Create fake data to check the distribution. 
-
-
 A good leader is one who can make decision, and reflect upon it and undo it if the decision does not feel right.
 
 
@@ -1046,24 +1002,6 @@ When to use NATs vs Redis Stream vs Kafka. One of the primary reason is the reus
 
 
 
-
-Bloom filter use cases
-- approximately guess if email already exists from millions of existing emails.
-- Malicious url detection. Rather than caching all the possible urls, we can use bloom filter instead.
-- Medium uses bloom filter to avoid showing duplicate recommendations. The same can be used for tinder swipes suggestions.
-- One hit wonders. Akamai and Facebook uses bloom filters to avoid caching items that are rarely searched or searched only once. Only when they are searched more than once, they are cached. So for each query, check if the item exists in the bloom filter already, if yes, and it’s not yet available in the cache yet, cache it.
-- Unique identification system. Generate unique ids if it does not exist in the filter.
-- Url shortener. Check for uniqueness of the urls.
-- Financial fraud detection. We can add the blacklisted user in the list.
-- the blacklist feature can also be useful to prevent users from entering blackllisted passwords.
-- Facebook and linked in uses bloom filter for their typeahead search.
-- ensure once only delivery, with a 1 percent chance of not delivering.
-- unique counter. If the item does not exist in the bloom filter, increment the counter and add the item to the bloom filter.
-- write code example for each of them.
-https://stackoverflow.com/questions/4282375/what-is-the-advantage-to-using-bloom-filters
-https://www.quora.com/What-are-the-best-applications-of-Bloom-filters
-https://engineering.linkedin.com/open-source/cleo-open-source-technology-behind-linkedins-typeahead-search
-
 todo: use content enricher concept
 - also, rather than real-time recommendation, store the results of the recommendation before sending them out. Use streaming to ensure that the data can be replayed
 
@@ -1076,4 +1014,265 @@ Why does grab shows finding for driver? It’s basically an asynchronous process
 
 
 
+
+
+
+
+Learn envoy, and all the functionalities, with docker, kubernetes, rate limiting and then setup with grpc mysql redis etc. Learn back linkerd tutorial.
+
+
+
+Consul envoy service discovery
+
+
+Setting up the data science stack
+- before starting with machine learning, we need to setup the infrastructure for data gathering first, aka enablers. 
+- We also need to find out what data can be captured, aka active data collection. The passive data collection strategy is to collect all and making sense of them later. 
+- It’s better to set a target result, what kind of data is required to produce the desired output. 
+- create a playbook for metrics and experiments, such as
+Experiment
+- valid_from
+- valid_till
+- results
+- description
+- target_achieved
+- comparison
+- conclusion
+
+how to track user activity across different devices and time?
+we can use bitmap to track user’s daily and hourly records
+- weekly: [sun, mon, tue, wed, thu, fri, sat] days
+- daily: [0…23] hours
+From here we can find the most common day that the user login, and the most frequent time that the user is online. If we gather this enough for a month, we can have the data average presented.
+How long should the data be kept? Probably 1 month old, so what we will do is collapse the old data counts 
+
+Find the most visited site for each user. and from there we can infer if the content is what they need.
+
+users_most_visited_pages: []
+users_most_online_time: []
+users_average_time_on_device: []
+users_time_taken_to_complete_process… (can be a good measure for forms etc, to improve the form design etc)
+users_most_searched_keyword: []
+
+how_does_ab_testing work?
+
+
+Database design:
+- use binary id for all dynamic entries. For user, add an additional id that is auto incremented, so that we can use it for testing.
+- 
+
+Music player for the deaf - through vibration/visualization
+Digital will for the dead - a message that can only be opened in the future
+digital assets - user’s that are popular (reviewer. vlogger, celebrity can have collateral assets, which are their users and also the likes, comments etc). Provide loans to users through with their digital assets as collateral.
+
+Viral factor calculator - calculates the net worth of a social media celebrity. Also includes recency (newest comments/feeds will have higher score) and the success rate of the merchants they promote.
+
+Recommender system algorithm + hot rank algorithm. Incorporate recency into the recommender engine so that newer items will be ranked higher than older ones. Why is this important? Some products (such as events/promotion etc) has expiry time and is valid only for a certain period. Others, such as movies/songs are seasonal - they follow a certain trend and usually according to the time. So it might be more reasonable to recommend songs now than songs in the 50s even if the similiarity score is higher.
+
+
+Learn about Facebook Pixel and Google Analytics tracker to capture informative data from the website. Do a sample ecommerce testing and see hwat user clicks the most? Check if the solution can be incorporated with A/B testing and also bandit algorithm.
+
+
+Separate interface from concrete implementation.
+
+
+https://www.datacamp.com/community/tutorials/probability-distributions-python
+
+Learn about segment trees: https://hackernoon.com/practical-data-structures-for-frontend-applications-when-to-use-segment-trees-9c7cdb7c2819
+
+
+also, time to update the projects selection and probably host them. Update resume format to display the format too
+
+Github Recommender: displays a list of top github users with recommendation. Skills proven: data recommendation for users, data scraping and data visualization.
+learn to
+
+
+Look into webassembly for web / or web workers with canvas and see how to speed up large scale web applications online
+- also how to fetch data through web workers/service workers and how this will improve the performance
+- look into the new webgl specifications
+
+Setting measurable targets
+- reduce page load time by 2x
+- Reduce steps to upload documents
+- Make policies searchable
+- Increase memory by making people remember what they did last 
+
+once someone has done something, others follow suit. Grab has shown us that they can compete with western giants, so a bunch of startups that will follow the paths will appear suit.
+- we have a page menu with categories that allows users to find the categorized products. Can we simplify it and instead show the google-like search page with query understanding that allows users to search for queries like
+    - cheapest insurance for flight (displays cheapest insurance for flight comparison and a call to action to buy the product directly)
+    - best pwd insurance (displays all pwd insurance products)
+    - best pwd insurance life (displays all life pwd insurance product)
+
+Build more websites
+- take the data from kaggle such as movie reviews and create actual users and content out of it. Then reverse engine the whole process where they get the user ’s data and how they build the recommendation engine. 
+- Do the same for flights, email etc 
+
+
+Build a blog that aggregates stories about failures in production and how they mitigate it. The failures can be unexpected, or comes from the initial decision and they hypothesis that went wrong.
+
+Creation of knowledge base, and newsletter weekly to update the changes. 
+
+Look into kubernetes recipes, like changing config, hiding secrets.
+
+The opposite of search, recommendation.
+
+
+
+## Complex Event Processing
+
+https://www.toptal.com/mobile/context-aware-apps-and-complex-event-processing
+
+
+## NLTK 
+
+https://www.nltk.org/book/ch01.html#sec-automatic-natural-language-understanding
+
+https://stackabuse.com/text-summarization-with-nltk-in-python/
+
+
+
+## Scaling
+
+https://medium.com/@evyborov/scaling-up-to-your-first-10-million-users-summary-aws-summit-sf-2017-819dcf532fb7
+
+
+## Building neural network from scratch
+
+
+https://towardsdatascience.com/how-to-build-your-own-neural-network-from-scratch-in-python-68998a08e4f6
+
+
+
+Git commit messages
+- feat: A feature that is visible to end users
+- fix: A bugfix that is visible for end users
+- chore: A change that doesn’t impact end users (e.g .changes to CI Pipeline)
+- docs: A change in the README or documentation
+- refactor: A change in production code focused on readability, style and / or performance
+
+## Message Queue
+
+https://www.codemotion.com/magazine/kai-wahner-build-a-scalable-infrastructure-with-apache-kafka-1247
+https://cloudblogs.microsoft.com/opensource/2018/07/09/how-to-data-processing-apache-kafka-spark/
+https://hackernoon.com/distributed-log-analytics-using-apache-kafka-kafka-connect-and-fluentd-303330e478af?gi=81e296c44344
+https://www.confluent.io/blog/using-apache-kafka-drive-cutting-edge-machine-learning
+https://blog.rapid7.com/2013/12/18/5-uses-for-log-data-that-you-never-thought-of/
+https://www.fastly.com/blog/7-business-uses-for-logging
+
+
+## Web Workers
+
+https://hackernoon.com/web-workers-in-react-redux-application-129274e84a4e
+https://auth0.com/blog/speedy-introduction-to-web-workers/
+
+https://bitsofco.de/web-workers-vs-service-workers-vs-worklets/
+https://developers.google.com/web/updates/2018/08/offscreen-canvas
+https://www.freecodecamp.org/news/how-web-workers-can-help-with-consistent-asynchronous-tasks-in-javascript-cd6d728fa4ee/
+
+
+## Python GUI Tkinter example
+
+## Python multithreading
+
+What are the different kind of concurrency options available in python?
+How to implement them in the big data applications.
+
+
+## Interesting data blog
+
+http://datagenetics.com/blog.html
+http://datagenetics.com/blog/october32018/index.html
+
+
+## Feature toggle
+
+Do some sample repos that shows how to perform feature toggle
+
+https://blog.codecentric.de/en/2019/02/feature-toggles-benefits-drawbacks/
+
+
+## Golang cookie
+
+https://www.sohamkamani.com/blog/2018/03/25/golang-session-authentication/
+https://gowebexamples.com/sessions/
+
+
+## Matrix Factorization
+
+https://en.m.wikipedia.org/wiki/Matrix_factorization_(recommender_systems)
+http://rstudio-pubs-static.s3.amazonaws.com/335300_11d40bf12d8940f78d9661b3c63150dc.html
+
+https://www.freecodecamp.org/news/singular-value-decomposition-vs-matrix-factoring-in-recommender-systems-b1e99bc73599/
+
+## Segment Trees
+
+https://kartikkukreja.wordpress.com/2014/11/09/a-simple-approach-to-segment-trees/
+
+https://codeforces.com/blog/entry/15890
+https://hackernoon.com/practical-data-structures-for-frontend-applications-when-to-use-segment-trees-9c7cdb7c2819
+https://cp-algorithms.com/data_structures/segment_tree.html
+https://www.hackerearth.com/practice/data-structures/advanced-data-structures/segment-trees/tutorial/
+https://medium.com/m/global-identity?redirectUrl=https%3A%2F%2Fblog.mapbox.com%2Fa-dive-into-spatial-search-algorithms-ebd0c5e39d2a
+
+## Building a recommendation engine
+
+https://www.codeproject.com/Articles/1232150/Building-a-Recommendation-Engine-in-Csharp
+https://stackoverflow.com/questions/2323768/how-does-the-amazon-recommendation-feature-work
+https://medium.com/netflix-techblog/netflix-recommendations-beyond-the-5-stars-part-2-d9b96aa399f5
+
+Case based reasoning CBR: https://en.m.wikipedia.org/wiki/Case-based_reasoning
+https://www.quora.com/What-are-examples-of-rule-engines-combined-with-machine-learning
+
+
+
+## Python data hacks
+
+https://towardsdatascience.com/10-simple-hacks-to-speed-up-your-data-analysis-in-python-ec18c6396e6b
+
+## Data warehouse 
+
+http://tdan.com/data-warehouse-design-inmon-versus-kimball/20300
+
+## Viterbi / HMM
+
+https://www.freecodecamp.org/news/a-deep-dive-into-part-of-speech-tagging-using-viterbi-algorithm-17c8de32e8bc/
+https://pkghosh.wordpress.com/2013/10/06/predicting-customer-loyalty-trajectory/
+
+https://dzone.com/articles/how-do-you-measure-if-your-customer-churn-predicti
+https://towardsdatascience.com/hands-on-predict-customer-churn-5c2a42806266
+https://stats.stackexchange.com/questions/31746/what-is-the-difference-between-the-forward-backward-and-viterbi-algorithms
+http://www.blackarbs.com/blog/introduction-hidden-markov-models-python-networkx-sklearn/2/9/2017
+http://www.adeveloperdiary.com/data-science/machine-learning/introduction-to-hidden-markov-model/
+
+
+## Data analytics gathering
+
+https://support.google.com/analytics/answer/1033068#See
+https://arxiv.org/pdf/1811.03402.pdf
+https://towardsdatascience.com/how-to-build-a-data-set-for-your-machine-learning-project-5b3b871881ac
+
+
+## Machine learning usecases
+
+- google search makes use of ML and query understanding, answer models
+- photo tagging for people and objects - google search, facebook, pinterest
+- content recommendations = amazon, netflix, facebook, youtube
+- video tagging, caption - youtube, facebook
+- spelling, grammar checking, translating
+- games 
+- ads targeting
+- recipe cooking recommendation based on the ingredients you have
+
+
+## Scraping best practices
+
+- tools
+- what headers to use (why)
+- how to rotate proxy (why)
+
+https://realpython.com/tutorials/web-scraping/
+https://medium.com/velotio-perspectives/web-scraping-introduction-best-practices-caveats-9cbf4acc8d0f
+https://www.codementor.io/blog/python-web-scraping-63l2v9sf2q
+https://www.scrapehero.com/how-to-prevent-getting-blacklisted-while-scraping/
+https://www.scrapehero.com/how-to-rotate-proxies-and-ip-addresses-using-python-3/
 
