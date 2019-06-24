@@ -1,27 +1,5 @@
 # Ideas
 
-
-
-## Prevent scraping through pagination token
-
-Numeric pagination is easy to scrape `?limit=9999&offset=1`. Find a way to create a pagination token that is hard to scrape.
-
-Also, do not expose `id` of resources to the frontend. That includes pages that displays a single item and so on e.g. `books/:id`. Rather, use slug instead as identifier.
-
-## Create a simple page for voting
-
-Use websocket that allows clients from different devices to connect and vote.
-
-Ensure that one person can only vote once from the device.
-
-## Reverse Engineer MultiWorld Testing
-
-Start with a simple bandit experiment, understand the limitation (delayed response). Add real-time graphs and intelligent bot to tell you what can be optimized.
-
-## Smart bots with different personality
-
-Create a bot that has different personality (features). Allows users to search through something and create alerts.
-
 ## Webhook Server
 
 Design an architecture for a webhook server and integrate it successfully.
@@ -50,39 +28,10 @@ Scrape github user's data from malaysia and perform a job search/developer searc
 
 Finanz Revamp, Residenz, Instagram clone, Facebook, what is X is Y (what if JobStreet is Facebook?). Point-of-Sale system for food ordering, lorry tracking system. A clone of Journal.
 
-## User Recommendations
-
-Compare the different recommendations approach and look into matrix factorization. 
-
-## Bandit Server
-
-Bandit algorithm application in recommendations and other things. Not the concurrent issue with some algorithms (greedy epsilon) which requires the values to be updated immediately - imagine many users are pulling the same arm at the same time when the algorithm has not been updated.
-
-Also look into how to apply contextual bandit by using decision tree.
-
-## Retry Pattern and Circuit Breaker
-
-Design a retry pattern and circuit breaker that can be reused. It will be using exponential backoff when performing retry.
-
-## Databases
-
-Distributed sqlLite with Bedrock, CockroachDB, TiDB.
-
-
-## Tracing
-
-Carry out opentracing with Node and python. Also experiment with X-Ray trace.
-
 
 ## Imbalanced Dataset Machine Learning
 
 Reference [here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwi2_ISImcXXAhUBLY8KHaS9BkAQFggxMAE&url=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2017%2F03%2Fimbalanced-classification-problem%2F&usg=AOvVaw18t2VQ8g39iZnlFc8a7O4t) and [here](https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/).
-
-## CQRS and Event Sourcing
-
-Look into how CQRS and Event Sourcing can be implemented. Also look into how Git versioning works.
-
-What is CQRS? How can I build and test each components of event sourcing while scaling it. Check the implementation for event sourcing using Go, Nodejs, Elixir and Scala.
 
 ## Sudoku Solver
 
@@ -96,38 +45,11 @@ Look into the singleflight pattern for subscribing to connection. http://www.cs.
 
 How would the future of web apps look like? Design conceptual websites with modern technologies.
 
-## ACL Admin
-
-ACL that allows you to limit user's access to certain operation (read, write, etc) and allow you to invite new users through email. Basic implementation with nodejs [here](https://github.com/alextanhongpin/node-scope).
-
-
-## ABAC and RBAC
-
-Implement Attribute Based Access Control (ACAB) and Role Based Access Control (RCAB) for different languages.
-
-## Chat Server
-
-Create a full chat server. The server is written in [golang](https://github.com/alextanhongpin/go-chat) and the client [Vue](https://github.com/alextanhongpin/vue-chat). Work in progress.
-
-## Bloom Filter
-
-The classic example is using bloom filters to reduce expensive disk (or network) lookups for non-existent keys. Another use case is to check if the unique username existed before allowing users to choose that username. Repo [here](https://github.com/alextanhongpin/bloom-filter).
-
-## Markov Chain Classifier
-
-Predicting user behaviour using transition probability. Can also be used to predict customer conversion (perhaps to find out the churn possibility).
-
-## Boosting algorithm
-
-AdaBoost.
-
 ## LambdaMART
 
+Part of learning to rank
+
 Understand the LambdaMART algorithm and use it to create ranking system.
-
-## Viterbi Algorithm
-
-Checkout Viterbi algorithm, and see what are the applications in real life. Repo [here](https://github.com/alextanhongpin/hidden-markov-model).
 
 ## Technical Indicators
 
@@ -148,18 +70,6 @@ For rust, haskell, golang, node, scala and python. Write down the size and multi
 ## CRISP-DM
 
 Cross Industry Standard Practice for Data Mining. Try to implement the full steps.
-
-## Contextual Bandit
-
-Learnm and apply the contextual bandit algorithm.
-
-## Ad Click Prediction
-
-Can be done through several ways - such as logistic regression. Find out how to implement a working server for that.
-
-## Dynamic Pricing and Price elasticity
-
-Find out how to work with time series data for prices, and the differences between dynamic pricing vs price elasticity algorithms and how to apply them.
 
 ## Machine Learning Softwares
 
@@ -198,17 +108,6 @@ Look into how to implement those algorithms in different languages.
 
 "Servicify" everything that you have done, with Kubernetes/Nomad as the scheduler. Include proper unit tests for each services too, and best practices.
 
-## JSON API Specification
-
-Look into JSON API specification and understand how to implement it correctly.
-
-## Avro Schema
-
-Look into avro schema registry and compare it against protobuf.
-
-## Hidden Markov Model
-
-Implement hidden markov model in different languages.
 
 ## Keras Text Processing
 
@@ -222,9 +121,6 @@ Use frequent itemsets for food recommendation, create packages (food, drink and 
 
 Make an app like Yik Yak, that will messages that will expire after certain days. Also, add sentiment analysis to create postive text rather than negative.
 
-## Service Value
-
-Defining Service value will enable easy rewrites of the API.
 
 ## Evolutionary Microservices Architecture
 
@@ -242,19 +138,6 @@ Look into websub and how to implement it.
 Learn the basics of Istio and Conduit and create examples. Also look back into Nomad and Linkerd.
 
 
-## System API, Experience API and Process API
-
-https://www.mulesoft.com/sites/default/files/resource-assets/API-led-connectivity-new-soa-updated.pdf
-
-Try to understand the separate layer and why they exist. Is it also possible to abstract, say database access calls to one layer, and reduce the side-effects by splitting read/write (CQRS), which can only be consumed through RPC by other clients?
-
-## Exposing schemas
-
-Given a hypothetical api endpoint `/foods` which return foods, we can have an equivalent schema endpoint `/schemas/foods` that returns the JSON Schema of the resource.
-
-## Intelligent API as a Service
-
-Spam, NER, Search, Viterbi, Markov Chain, Bandit, Recommendation, Sentiment Analysis API for real-world use cases.
 
 
 ## Elasticsearch Syncing with MySQL and MySQL Migration
@@ -265,36 +148,8 @@ If there are constraints, set the rule to allow only addition, not removal of co
 
 To prevent users from performing addition/deletion, create a new user and limit the access.
 
-## Separate Read/Write
-
-Read and writes should be separated in the microservices layer, as they can be scaled independently. Besides, it is easier to control the side-effects and make the system more maintainable (write services requires more attention). The database access can be separated too, and since write is only to the master, the creation of user in slave is only for read access.
-
-## Service Migration
-
-If there are new services with changing schemas, the idea is to deprecate the older version. It will still be running, but warn the end users about the deadline and the necessary changes for the newer version. Also, log the requests count together with the version to see how many people are still consuming the endpoint. Once the count reach below certain threshold, deprecate it completely. To make the migration transparent, one can apply the proxy or adapter pattern.
-
-## Microservices Approach
-
-- what microservices to build? video? check for existing schemas in schema.org (DRY)
-- what cloud design pattern is involved? basically how to handle scaling in the future
-- what technology stack to use (no debate here, but it's good to be clear on this - use the right tool)
-- simple mvp and test cases
-- what data needs to be analysed
-
-## Planning Large Terraform Projects
-
-- how to setup workflow for different environment (production, staging, etc)
-- how to test the setup?
-- how to manage chain workflows (creation of one resource requires details from another resources) without coupling them
 
 
-## Versioning Application
-
-How to measure performance changes when versioning application? Every release (new features) will definitely slow down the application. How to detect the threshold that is allowed? Possibly through prometheus, find a way to inject the version of the application, then plot the graph through grafana.
-
-## Traffic Shifting
-
-It is possible to do traffic-shifting - but can we shard (duplicate) the calls to a staging environment instead to debug/test performance/check errors? When doing so, it is important to isolate side-effects (writes to db, sending out emails, triggering webhook etc). Find out how. 
 
 ## Cloud Native apps with microservices architecture
 
@@ -316,16 +171,7 @@ check cpu, memory usage, allocations, goroutines stack trace
 Request tracing tools
 - nettrace, openzipkin, `opencensus`
 
-## Chaos Monkey Testing
 
-The idea of terminating instance is not difficult. But integrating resiliency to services is the main idea behind chaos monkey testing. Are there better ways to integrate it? Here are some things that can be considered when writing services:
-
-- what happens when the database is down?
-- what happens when a service call fails (retries, circuit breaker)?
-- what happens when the infra fails (cache, config)?
-- what happens when the wrong configuration is passed in?
-- what happens when the database is empty?
-- how to plot the graph of relationship between services?
 
 ## Etherscan Viewer
 
@@ -377,37 +223,10 @@ Deploy with Slack commands, for `dev` and `stage` anyone can deploy, for `prod` 
 \deploy app-name staging
 ```
 
-## Basic API Server Information
 
-Should probably return more meaningful information for backend services at the index `/` endpoint:
-
-```js
-{
-  "language": "go version 1.10", 
-  "build_type": "docker" // or binary
-  "build_date: "2018-07-11T10:12:33Z",
-  "version": "4a2690e",
-  "deployed_date": "2018-07-11T10:12:33Z"
-}
-```
 
 ## Slicing a monolith
 
-### Config
-
-Config can be divided to a few categories:
-- application config, prefixed with `APP_`, e.g. APP_VERSION, APP_HOST, APP_PORT
-- infrastructure config, like database or message queue, e.g. DB_HOST, NATS_HOST, etc
-- service config, for feature toggle, crontabs, etc
-- dependencies, such as logger settings in different environment
-
-When you have a lot of config, things can get pretty messy. Some of the key pointers for each config is to:
-
-- document the usage
-- make the source explicit (e.g. where to find them)
-- set defaults
-
-Configs are typically centralized in a single file. Why not break them down instead to different files or place them in their respective module folder?
 
 ## CRDT, Bloom Filter
 
@@ -912,7 +731,7 @@ https://www.confluent.io/blog/data-dichotomy-rethinking-the-way-we-treat-data-an
 https://www.confluent.io/blog/journey-to-event-driven-part-2-programming-models-event-driven-architecture
 
 
-Change data capture event streaming
+## Change data capture event streaming
 https://medium.com/myheritage-engineering/achieving-real-time-analytics-via-change-data-capture-d69ed2ead889
 
 
@@ -1041,11 +860,6 @@ https://nordicapis.com/could-artificial-intelligence-improve-api-design/
 What are the use cases of AI, and what can be applied? 
 https://skymind.ai/wiki/use-cases
 
-
-## CQRS
-
-https://medium.com/@domagojk/patterns-for-designing-flexible-architecture-in-node-js-cqrs-es-onion-7eb10bbefe17
-https://www.confluent.io/blog/apache-kafka-for-service-architectures/
 
 ## Change Data Capture CDC 
 
@@ -1231,33 +1045,6 @@ Private eye. Search for something or someone. from just a picture.
 When to use NATs vs Redis Stream vs Kafka. One of the primary reason is the reusability. For example, go nats does not have clients in certain languages, while redis is almost available everywhere.
 
 
-
-## Bandit algorithm use case
-
-What is the goal of bandit algorithm first?
-- To dynamically and sequentially choose alternatives, referred to as arms, which will maximise the expected total rewards across the t trials.
-- What are the real world use case?
-1. To find the best medicine among alternatives
-2. To find out the best product to launch among the possible products (versions)
-3. Web optimisation, decide how much traffic we need to allocate for each website.
-4. Marketing strategy. Find out the best marketing strategy to launch a product.
-5. Recommendation system.
-    1. Personalised recommendation of songs or books or videos
-    2. Recommendation of complementary or substitute products in commerce
-    3. Friends suggestions in facebook/linkedin
-    4. Recommendation of news articles, based on your interest
-6. Investment in stock market
-    1. Finding out the best portfolio which maximise your profit
-    2. Finding out the best stock to invest
-    3. There are many experts in the market which try to predict the stock price. By using bandit algorithm, we can decide the weight for each expert. Weight will tell us indirectly how much we can trust each expert.
-7. Combinatorial problem
-    1. Helps to figure out the shortest path in the given map
-    2. For some disease , we need more than one medicine to cure it . If we are not sure which combination of medicines will cure the disease, the bandit algorithm will help to find out the best combination.
-8. Extreme values 
-    1. able to find out fraudulent transactions in banking/finance sector (anomaly detection)
-    2. Optimistic investment
-
-https://www.quora.com/In-what-kind-of-real-life-situations-can-we-use-a-multi-arm-bandit-algorithm
 
 
 Bloom filter use cases
