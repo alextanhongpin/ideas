@@ -1,13 +1,6 @@
 # Ideas
 
-## Identifying user's personality through conversations
 
-How can we understand the user's personality and tie them to the brigg-myers personality test?
-
-1. From the conversation, check the frequency of the most commonly used words.
-2. Check the length of the conversation. Short conversation means more close, longer means more open etc.
-3. Check the response time - how fast they reply your message.
-4. Check the continuation of the conversation - how many replies they will take before they stop.
 
 ## Prevent scraping through pagination token
 
@@ -95,13 +88,6 @@ What is CQRS? How can I build and test each components of event sourcing while s
 
 Look into how to solve sudoku uisng the `Dancing Links` and `Algorithm X` algorithms. Working solution with TypeScript [here](https://github.com/alextanhongpin/algorithm-x).
 
-## Relevant Search
-
-Normal search will not do for most cases - try to incorporate context into the search. At the same time, try to add personalization to the search.
-
-Most list pages will display a list of items in the first place. While it's possible to just display them based on the last created date, it doesn't add relevancy to users that has searched for something, and want to search for similar things. So, keep track of what the users have searched for, and then use the last history to compute the personalized search. It would be great to keep another section to recommend users something related to what they have searched for.
-
-
 ## Singleflight pattern
 
 Look into the singleflight pattern for subscribing to connection. http://www.cs.duke.edu/courses/cps296.4/fall13/838-CloudPapers/dean_longtail.pdf. Also look into connection pooling in Golang, and sync.Once.
@@ -131,32 +117,9 @@ The classic example is using bloom filters to reduce expensive disk (or network)
 
 Predicting user behaviour using transition probability. Can also be used to predict customer conversion (perhaps to find out the churn possibility).
 
-## Spam Filtering
-
-Use naive bayes to predict if a text is spam or not.
-
 ## Boosting algorithm
 
 AdaBoost.
-
-
-## Named Entity Recognition
-
-Learn and understand the use case of NER. Use NER to understand the context of the word - perhaps optimise it so that it can be used to perform more relevant search and deliver a google-like search experience.
-
-- examples
-- how to train your own model
-- architecture deployment
-
-Repo [here](https://github.com/alextanhongpin/standford-ner-basic).
-
-## Levenshtein Distance
-
-Understand how to implement dynamic programming with it.
-
-## AutoCorrect
-
-Norvig's autocorrect. http://norvig.com/spell-correct.html
 
 ## LambdaMART
 
@@ -173,10 +136,6 @@ Try out all the possible technical indicators and write the algorithm in Python 
 ## Decentralized Applications
 
 Check out how to create and deploy a simple dapp. Also, check out solutions for distributed databases. 
-
-## Regression with Stochastic Gradient Descent
-
-You can do linear regression with stochastic gradient descent. Understand the difference between the ordinary solution and the solution using stochastic gradient descent.
 
 ## Affinity Analysis
 
@@ -258,11 +217,6 @@ Look into the different areas of text processing and understand how to apply ker
 ## Frequent Itemsets
 
 Use frequent itemsets for food recommendation, create packages (food, drink and misc.), log the most frequently purchased and perform recommendations.
-
-
-## New Search
-
-Rather than focusing on letting users search on a keyword, provide dynamic recommendations - listing page that changes over time based on the frequency and trend. Users can still search for stuff based on keywords, but this will be the primary feature.
 
 ## Yik Yak
 
@@ -526,8 +480,6 @@ Create a basic version of internet downloader manager.
 
 ## Look into distributed synchronization protocols and implement a basic working example
 
-## Look into NATS
-
 ## Look into operational transformation
 
 ## Look into grapheme cluster
@@ -623,20 +575,6 @@ Learn and implement consistent hashing. Also check out their use cases and how t
 - reducing string storage size with 16bits http://www.kinematicsoup.com/news/2016/9/6/data-compression-bit-packing-101
 
 
-## Create a name generator
-
-Markov chain can be used to generate random names:
-
-http://pcg.wikidot.com/pcg-algorithm:markov-chain
-
-Also, the way docker names are generated is plain simple.
-
-https://github.com/moby/moby/blob/master/pkg/namesgenerator/names-generator.go
-
-https://www.biographyonline.net/people/famous-100.html
-https://en.wikipedia.org/wiki/List_of_programmers
-https://en.wikipedia.org/wiki/List_of_Pok%C3%A9mon
-https://jobmob.co.il/blog/positive-personality-adjectives/
 
 ## Identifying values in services
 
