@@ -456,3 +456,215 @@ https://www.codementor.io/blog/python-web-scraping-63l2v9sf2q
 https://www.scrapehero.com/how-to-prevent-getting-blacklisted-while-scraping/
 https://www.scrapehero.com/how-to-rotate-proxies-and-ip-addresses-using-python-3/
 
+
+## Fraud Detection
+
+
+
+Compare content between different files. Say we have a claims and we uploaded the file. And we have a user with the name, gender etc. We can check if the information in the file still matches, last date etc etc.
+
+Fraud detection:
+
+https://www.altexsoft.com/whitepapers/fraud-detection-how-machine-learning-systems-help-reveal-scams-in-fintech-healthcare-and-ecommerce/
+
+https://www.datascience.com/blog/python-anomaly-detection
+https://www3.cs.stonybrook.edu/~leman/icdm12/ICDM12-Tutorial%20-%20PartI.pdf
+https://towardsdatascience.com/how-to-use-machine-learning-for-anomaly-detection-and-condition-monitoring-6742f82900d7
+https://towardsdatascience.com/5-ways-to-detect-outliers-that-every-data-scientist-should-know-python-code-70a54335a623
+https://en.m.wikipedia.org/wiki/Anomaly_detection
+https://medium.com/m/global-identity?redirectUrl=https%3A%2F%2Fblog.statsbot.co%2Ftime-series-anomaly-detection-algorithms-1cef5519aef2
+https://medium.com/analytics-vidhya/anomaly-detection-strategies-for-iot-sensors-6281e84263df
+https://medium.com/@mehulved1503/outlier-detection-and-anomaly-detection-with-machine-learning-caa96b34b7f6
+https://www.kdnuggets.com/2018/12/four-techniques-outlier-detection.html
+https://towardsdatascience.com/wondering-how-to-build-an-anomaly-detection-model-87d28e50309
+https://github.com/shubhomoydas/ad_examples
+https://www.ritchieng.com/machine-learning-anomaly-detection/
+https://blog.floydhub.com/introduction-to-anomaly-detection-in-python/
+
+
+Distance similarity
+
+https://towardsdatascience.com/3-basic-distance-measurement-in-text-mining-5852becff1d7
+https://medium.com/@adriensieg/text-similarities-da019229c894
+http://aircconline.com/mlaij/V3N1/3116mlaij03.pdf
+
+
+Data streams preprocessing
+https://medium.com/high-alpha/data-stream-processing-for-newbies-with-kafka-ksql-and-postgres-c30309cfaaf8
+https://www.infoq.com/articles/data-processing-redis-spark-streaming/
+
+
+Is there a way of returning partial scoring (think streaming). Say, for fraud detection, we usually want to find if a transaction is a fraud, but it may take day etc. Can we return the confidence score partially, and request data at the same time to improve the final score? We can use this in job applications too. Say, every step that the employer performed will be notified to the user, from receiving the application, initial screening, feedbacks etc will be delivered step by step to the end user.
+
+
+String similarity
+- edit distance based. Computes the number of operations needed to transform one string to another. More operations means less similarity. 
+- Token based. Instead of string, the expected input is a set of takens. The more the number of tokens, the more similar the sets are. 
+- Sequence based. Finding the common substrings between two strings. The longer the longest sequence, the higher the similarity score. 
+
+1. edit distance based
+hamming distance
+levenshtein distance
+damerau-levenshtein distance
+jaro winkler distance
+
+2. Token based
+jaccard index
+jaro-winkler distance
+sorensen dice
+
+3. Sequence based 
+ratcliff-obershelp similarity (gestalt pattern matching)
+
+
+https://asecuritysite.com/forensics/simstring
+
+ 
+string search (boyer moore grep algorithm)
+
+
+Hypothesis: User likes the color blue
+
+How to measure execution time of user to complete an action?
+Simple, when the component starts, set the start time. When the user completed the action such as submitting a form, record the time taken.
+Catfooding. Use a competitor app and try out their functions. What did they do well, what they did not do well?
+Dogfooding. Use our own app. List back our top features (should be measurable), and give a list of tasks. See how long it takes to complete them.
+
+
+Recording time. Users can just enter and exit the feature. We do not want to record that (sampling). We only sample if the user stays on the screen more than X seconds, or has initiated the first step.
+
+
+## Brig Myers
+
+brigg myers personality test
+
+* Basic data cleaning (or the lack thereof - its actually quite clean already)
+* Extract weblinks from each user, and
+    * Further divide the weblinks into video, images and others
+    * For videos, extract video titles from the respective sites (not used)
+    * For images, extract keywords (not done)
+    * For other websites, obtain categories (not done)
+* Split the target data from 16 categories into 4 binary classifiers (The why will be explained below)
+* Extract other metadata:
+    * Emoticons (eg. :happy:)
+    * Mentions (eg. @tamagonii)
+    * Hashtags (eg. #ilovetamago)
+    * MBTI reference (eg. INFP, ENFJ) (not used)
+    * Action words (eg. *jumps into the pool and swim away*)
+    * Enneagram regerence (eg. 4w1) (not used)
+    * Brackets (eg. [quote])
+    * Dots count (…)
+    * Number of words
+    * Number of word characters
+    * Number of fully capitalized words (eg. HEY Y’ALL!!)
+    * Number of characters of fully capitalized words
+    * Ratio of fully capitalized words vs all words
+    * Ratio of characters of fully capitalized words vs characters of all words
+    * Median number of words used per person
+    * Median number of characters used per person
+* Perform Parts-of-speech (POS) tagging to the word document
+* For each MBTI type,
+    * Perform Term Frequency - Inverse Document Frequency (TF-IDF)
+        * For word range of 1-3, up to 10,000 words/phrases each
+        * For each word, apply Truncated Singular Value Decomposition (Truncated SVD) to reduce the size to 500 features each, totalling 1500 features
+    * Pre-process the data:
+        * Perform Standard Scaling on metadata
+        * Combine with TFIDF data, and perform MinMax Scaling
+    * Select 100 best features using chi2 test
+    * Train the model with Logistic Regression
+* Collect instances of all 4 types to predict data from new input data
+* Done!
+
+## Decision
+Make purchase decision easier
+- create reusable profiles for recurring purchases. User can switch the profile for family, self, etc
+- Is it a one time purchase? Make the forms easier to purchase.
+- How to convince user that the right decision is being made? Once the user select the item, throw the anchor 80% of the user buy this too (this statistic is based on the what the customers purchase the most in general, we do not include the actual number, just the percentage. Also, we do not show it in the listing page to reduce bias on what products to buy. We just want to trigger the user to make the final decision.
+- Instead of showing a listing, do a listing with a recommendation. E.g. how about purchasing xyz. This gives user an option straight away if they do not know what the are looking for.
+
+
+Create a lead tracker that allows scraping potential leads. Also, use google url tracker to see how is the progress. When providing url to the leads, customise the websites content to fit what the leads are interested in.
+
+
+Define Decision
+Recommend the user … 
+Start Date:
+End Date:
+Difference measured during this period:
+Does it work well?
+Notes
+
+
+
+How about making a google chrome extension that can execute scripts? Then we can use it to scrape the content and execute the js.
+
+
+Unit test for sequential actions
+- assert, act arrange
+- Should the unit test be allowed to test sequential operations? This is more leaned towards behaviour driven development
+
+
+topic modelling
+
+
+what is topic modellling?
+a branch of unsupervised natural language processing which is used to represent a text document with the help of several topics.
+
+Why do we need topic modelling.
+- grouping words in such a way that each group represents a topic in a document. E.g. finding similar questions on StackOverflow, news flow aggregation and analysis, recommender system.
+- topic models helps us make recommendations about what to read next by finding materials that have a topic list in common
+- improve search result by revealing documents that may use a mix of different words but are about the same idea
+
+Latent Diriclet Allocation
+- Latent: This refers to everything that we don’t know apriori and are hidden in the data. 
+- Dirichlet: Distribution of distributions. In the context of topic modelling, dirichlet is the distributions of topics in documents and distributions of words in the topics.
+- allocation: Once we have the dirichlet, we will allocate topics to the documents and words of the documents to topics.
+
+https://medium.com/@tomar.ankur287/topic-modeling-using-lda-and-gibbs-sampling-explained-49d49b3d1045
+
+https://towardsdatascience.com/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24
+
+https://medium.com/@lettier/how-does-lda-work-ill-explain-using-emoji-108abf40fa7d
+https://towardsdatascience.com/nlp-extracting-the-main-topics-from-your-dataset-using-lda-in-minutes-21486f5aa925
+
+
+Genetic Algorithm
+
+https://blog.floydhub.com/introduction-to-genetic-algorithms/?fbclid=IwAR3w-xWcDpoLSFn35UrDu2sybIhbDUHqojyiig51j7Kvc2z4vFOxCXhf6SA
+
+
+Creation of knowledge base and also kanban board for organization
+how to collect useful metrics
+
+Offline architecture
+- store images/profile data locally
+- Clear it when user logs out
+- Logging in with different user should not allow acce
+
+thought/questions
+
+- do I need a degree/masters/phd in order to do data science? no, just focus on what you are doing.
+
+courses (find the itinerary for data science / big data courses, and you will know the direction
+- data preprocessing
+- regression: simple linear regression, multiple linear regression, polynomial regression, SVR, decision tree regression, random forest regression
+- classification: logistic regression, knn, svm, kernel svm, naive bayes, decision tree classification, random forest classification
+- clustering: k means, hierarchical clustering
+- association rule learning: apriori, eclat, fp-growth
+- reinforcement learning: upper confidence bound, thompson sampling
+- natural language processing: bag of words and algorithms for NLP
+- deep learning: artificial neural networks, convolutional neural networks
+- dimensionality reduction: PCA, LDA, kernel PCA
+- model selection and boosting: k-fold cross validation, parameter turning, grid search, XGBoost.
+- ss to the data
+- 
+
+
+
+How to predict gender from name
+From profile photo
+From conversation style
+From email 
+
+https://www.learnopencv.com/image-alignment-ecc-in-opencv-c-python/
+https://www.learnopencv.com/image-alignment-feature-based-using-opencv-c-python/
