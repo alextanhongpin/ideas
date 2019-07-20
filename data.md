@@ -12,3 +12,12 @@ https://gist.github.com/turbofart/3428880?source=post_page
 http://www.theprojectspot.com/tutorial-post/applying-a-genetic-algorithm-to-the-travelling-salesman-problem/5?source=post_page
 http://www.theprojectspot.com/tutorial-post/creating-a-genetic-algorithm-for-beginners/3
 https://medium.com/datadriveninvestor/4-simple-steps-in-building-ocr-1f41c66099c1?source=email-305369a04efe-1563397807249-digest.reader------0-59------------------191c04cc_48a1_4e29_bc88_5eaa6e94b048-16
+
+
+## Data sources
+
+Todo: Move it to a dedicated folder.
+
+### Insurance
+
+https://www.naic.org/consumer_glossary.htm
