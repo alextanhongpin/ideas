@@ -156,3 +156,7 @@ https://blog.bufferapp.com/6-powerful-psychological-effects-that-explain-how-hum
 
 ## References
 - https://spacecraft.ssl.umd.edu/akins_laws.html
+- http://www.methodsandtools.com/archive/softwarelaws.php
+- https://exceptionnotfound.net/fundamental-laws-of-software-development/
+- https://www.timsommer.be/famous-laws-of-software-development/
+- https://haacked.com/archive/2007/07/17/the-eponymous-laws-of-software-development.aspx/
