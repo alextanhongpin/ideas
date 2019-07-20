@@ -122,3 +122,6 @@ This list only contains technical books, I do not just read technical books by a
 - Never Split the Difference: https://www.amazon.com/Never-Split-Difference-Negotiating-Depended-ebook/dp/B014DUR7L2
 - The Culture Code: The Secrets of Highly Successfull Groups https://www.amazon.com/Culture-Code-Secrets-Highly-Successful/dp/0525492461
 - Alive at Work: The Neuroscience of Helping Your People Love What They Do https://www.amazon.com/Alive-Work-Neuroscience-Helping-People/dp/1633694259
+- https://www.goodreads.com/book/show/67825.Peopleware
+- All books by gene kim
+- https://www.amazon.com/Beautiful-Data-Stories-Elegant-Solutions/dp/0596157118
