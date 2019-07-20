@@ -97,3 +97,9 @@ Having data is useless if we only use them to plot charts - it has to generate _
 - if we are looking for recommendations, we need to at least match their preferences with the behaviours
 - most basic metrics includes daily, weekly, monthly or yearly sales (trends etc)
 
+## Links
+
+
+https://www.projectbi.net/guide-measuring-product-usage-startups/
+http://www.silota.com/docs/recipes/sql-recency-frequency-monetary-rfm-customer-analysis.html
+https://www.crazyegg.com/blog/how-track-user-behavior/
