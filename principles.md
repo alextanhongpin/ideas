@@ -151,6 +151,11 @@ Spending time to write test is better than spending that time to fix bugs and ge
 
 Don't make your MVP (minimum viable products) become the most vulnerable products.
 
+## Some good articles
+
+https://fs.blog/2017/08/amateurs-professionals/
+https://fs.blog/2017/06/habits-vs-goals/
+
 ## Others
 https://blog.bufferapp.com/6-powerful-psychological-effects-that-explain-how-humans-tick
 
