@@ -156,6 +156,14 @@ Don't make your MVP (minimum viable products) become the most vulnerable product
 https://fs.blog/2017/08/amateurs-professionals/
 https://fs.blog/2017/06/habits-vs-goals/
 
+
+# Zhong tai 
+How to use the Zhong tai principle to build the best product?
+Micro products?
+
+https://www.thoughtworks.com/insights/blog/zhong-tai-radical-approach-enterprise-it
+
+
 ## Others
 https://blog.bufferapp.com/6-powerful-psychological-effects-that-explain-how-humans-tick
 
