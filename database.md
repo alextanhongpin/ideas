@@ -12,3 +12,12 @@ https://www.studytonight.com/dbms/database-normalization.php
 - http://database-programmer.blogspot.com/2008/01/table-design-patterns.html
 - https://www.researchgate.net/publication/40714207_Refactoring_of_a_Database
 - https://arxiv.org/pdf/0912.1016.pdf
+
+
+
+Database : access, migrations style, patterns etc
+Deployments: how we deploy
+Code commit: what is the style we using? Feature branch etc, do we need pull requests
+
+
+
