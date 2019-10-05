@@ -793,3 +793,49 @@ https://github.com/goldbergyoni/javascript-testing-best-practices
 - by domains
 - by problems
 - by usecases
+
+
+https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/queueMicrotask
+
+watch video on design thinking
+Design system
+
+
+URL shortener
+http://highscalability.com/blog/2014/7/14/bitly-lessons-learned-building-a-distributed-system-that-han.html
+
+
+
+Entity component system
+http://vasir.net/blog/game-development/how-to-build-entity-component-system-in-javascript
+https://en.m.wikipedia.org/wiki/Entity_component_system
+https://mmstick.keybase.pub/managing-memory-in-rust-ecs/
+
+## Free programming books
+
+https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#ruby
+
+## docker testing gaoling
+
+https://scene-si.org/2019/04/15/next-level-go-testing/
+
+## Vue authentication
+
+https://scotch.io/tutorials/vue-authentication-and-route-handling-using-vue-router
+
+## Sentiment analysis
+https://monkeylearn.com/sentiment-analysis/
+
+# Design system
+
+What is essential for a design system?
+https://github.com/viljamis/vue-design-system
+
+
+# using json in sql to replace eav
+https://en.m.wikipedia.org/wiki/Entity–attribute–value_model
+https://coussej.github.io/2016/01/14/Replacing-EAV-with-JSONB-in-PostgreSQL/
+
+# Dynamic pricing
+https://en.m.wikipedia.org/wiki/Dynamic_pricing
+https://www.priceintelligently.com/blog/bid/198355/how-to-implement-a-dynamic-pricing-strategy-without-the-pr-backlash
