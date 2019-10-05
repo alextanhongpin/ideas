@@ -668,3 +668,128 @@ From email
 
 https://www.learnopencv.com/image-alignment-ecc-in-opencv-c-python/
 https://www.learnopencv.com/image-alignment-feature-based-using-opencv-c-python/
+
+
+Use open street map
+https://nominatim.org/release-docs/develop/api/Reverse/
+
+https://wireframe.cc/ifjJP6
+
+
+## Analytics
+
+To avoid tracking on testing/development environment, filter the url localhost
+
+https://developers.google.com/analytics/devguides/collection/analyticsjs/
+https://segment.com/docs/guides/best-practices/how-do-i-collect-pageviews-on-the-server-side/
+
+# Big Data
+
+How counting is done with big data
+
+https://towardsdatascience.com/big-data-with-sketchy-structures-part-1-the-count-min-sketch-b73fb3a33e2a
+https://towardsdatascience.com/big-data-with-sketchy-structures-part-2-hyperloglog-and-bloom-filters-73b1c4a2e6ad
+
+
+## Big Data Design Patterns
+
+https://hub.packtpub.com/common-big-data-design-patterns/
+https://www.innoarchitech.com/blog/scalable-software-big-data-analytics-architecture-architectural-design-patterns
+https://azure.microsoft.com/en-in/blog/the-emerging-big-data-architectural-pattern/
+https://www.datasciencecentral.com/profiles/blogs/11-core-big-data-workload-design-patterns
+
+# Machine Learning
+
+Statistical data distribution
+https://machinelearningmastery.com/statistical-data-distributions/
+
+Probabilitistic distribution
+- why are they important?
+- how can we use it in our application?
+
+https://bigdata-madesimple.com/how-to-implement-these-5-powerful-probability-distributions-in-python/
+
+
+## How to apply neural network to your web application?
+
+- what kind of data is required?
+- what kind of input/output is expected?
+- how to deploy a simple machine learning pipeline using Flask?
+- how to use tensorflow.js on the client side
+
+https://towardsdatascience.com/neural-networks-to-predict-the-market-c4861b649371
+https://hackernoon.com/build-your-first-neural-network-to-predict-house-prices-with-keras-3fb0839680f4
+https://www.solver.com/neural-network-prediction
+https://www.obitko.com/tutorials/neural-network-prediction/
+https://medium.com/datadriveninvestor/making-your-first-neural-network-part-3-988dc271af0
+https://medium.com/@robertjohn_15390/simple-housing-price-prediction-using-neural-networks-with-tensorflow-8b486d3db3ca
+https://blog.statsbot.co/neural-networks-for-beginners-d99f2235efca
+https://hackernoon.com/how-to-build-and-use-neural-networks-c2a0de2e07d9
+https://www.quora.com/What-are-the-applications-of-neural-networks
+
+
+
+## Recommendation engine
+
+
+With surprise:
+using a library instead of implementing one yourself
+https://realpython.com/build-recommendation-engine-collaborative-filtering/
+
+Learning to rank with Bayesian Personallzed Ranking from implicit feedback
+https://researchcode.com/code/1395261448/bpr-bayesian-personalized-ranking-from-implicit-feedback/
+https://medium.com/radon-dev/als-implicit-collaborative-filtering-5ed653ba39fe
+https://towardsdatascience.com/recommender-system-using-bayesian-personalized-ranking-d30e98bba0b9
+
+Recommendation with Singular Value Decomposition (SVD)
+
+- how to build the svd matrix?
+- how to perform dimensionality reduction?
+- how to add new users?
+- how to update the ranking when new items are added
+
+http://rstudio-pubs-static.s3.amazonaws.com/335300_11d40bf12d8940f78d9661b3c63150dc.html
+http://www.cs.carleton.edu/cs_comps/0607/recommend/recommender/svd.html
+
+Using machine learning to rank
+https://dec0de.me/2014/10/learning-to-rank-1
+https://towardsdatascience.com/learning-to-rank-with-python-scikit-learn-327a5cfd81f
+https://thenewstack.io/letor-machine-learning-web-search-technique-thats-turned-key-information-retrieval-tool/
+http://times.cs.uiuc.edu/course/598f14/l2r.pdf
+
+
+## Elasticsearch
+
+
+How to implement search for web applications?
+
+https://github.com/CatalystCode/CustomSearch
+https://github.com/linkedin/instantsearch-tutorial/blob/master/data/stackoverflow/posts_10K.json
+
+
+##Rust
+
+How to implement basic services?
+- that includes middleware
+- asynchronous db calls?
+- async/await
+- clean code architecture
+
+https://danielwelch.github.io/rust-web-service.html
+https://zupzup.org/rust-webapp/
+https://gill.net.in/posts/auth-microservice-rust-actix-web1.0-diesel-complete-tutorial/
+
+Rust functional programming jargon
+
+https://functional.works-hub.com/learn/functional-programming-jargon-in-rust-1b555
+
+## Testing
+
+https://github.com/goldbergyoni/javascript-testing-best-practices
+
+## Time to group the learnings
+- by languages
+- by tools
+- by domains
+- by problems
+- by usecases
