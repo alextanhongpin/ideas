@@ -230,3 +230,129 @@ Learning to rank
 
 
 
+
+Gotchas
+- Always trim string
+- Always set character limits
+
+
+Create portfolio projects
+
+A safer way to set credential? When user open the web, convert local storage to session storage, and put in redux
+
+
+## Documentation for projects
+
+- Architecture used
+- Highlights
+
+Apply ranking based on the user profile
+- First determine the user profile categorisation, e.g. break user persona into 16 types. Then determine which bucket the user belongs to
+- From the user persona, just pick the personalisation
+
+
+## Truncate Text logic
+Split into sentences, then check char length, then take last sentence and half of it
+
+
+Setting up database for gaoling
+
+
+- How to setup connection (Postgres/mysql)
+- How is the golang connection different than other database client
+- How to gracefully terminate connection
+- How to prepare statement (and why)
+- How to reuse statement? (With condition)
+- How to build query dynamically
+- How to chain transactions?
+- How to run migrations (manually, automatically)
+- How to run tests (with docker, locally or in ci/cd)
+- How to add a caching layer in golang (decorator pattern)
+- How to use context correctly
+- How to limit connection (configuration best practices)
+- How to setup repositories?
+
+## Setting up graphql
+- How to perform authorisation
+- How to handle caching
+- How to separate business logic
+- How to handle query joins from mysql? Use data loader
+- How to handle n + 1 query
+- How to handle support on the client side
+- How to handle role
+- How to handle graceful termination
+- How to handle versioning/backward compatibility
+- How to handle integrity (transactions etc?, operations involving associations)
+
+## Grpc best practices
+- How to handle grpc calls
+- How to setup http calls
+- How to perform authorisation, caching and streaming of data
+- What advantages does grpc has over graphql or rest http
+- What are the standards to design schema
+- How to handle versioning/backward compatibility
+- Grpc clients
+- Grace web/and gateway
+- Grace limits (requests and transactions etc)
+- Does grpc handle associations well
+
+
+Dotnetcore
+
+- How to add infra (db, logging)
+- How to use Postgres
+- How to dockerize
+- How to create microservice
+- How to test
+
+Golang: react rents will be using the graphql, with a mixture of authorisation server.
+- graphql setup
+- Authorization/authentication
+- Websocket
+- Httpserver side push
+
+Scala
+- Same as dotnetcore
+
+
+Message queue learn
+- How to use message queue
+- Patterns in message queue
+- Durability/resiliency
+- Autoscaling of message queue
+- Types of client library
+- Retry pattern
+- Asynchronous communication with message queue, and how it differs from synchronous
+- Applications/use cases with message queue
+- Saga pattern with message queue
+- Can message queue be used to prevent duplicate requests?
+
+
+Algorithm
+- Write an algorithm to get the largest gain from stocks buying and selling
+
+Service worker
+
+
+- How does it work?
+- How to cache api requests/ json response offline?
+- How to implement background fetch
+- How to optimise the server side events
+
+
+
+https://pwa-workshop.js.org/4-api-cache/#cache-update-refresh
+
+
+Offline Google Analytics events
+
+https://medium.com/@addyosmani/progressive-web-apps-with-react-js-part-3-offline-support-and-network-resilience-c84db889162c
+
+
+
+
+Implement shadow banning
+- How does shadow banning works?
+- Twitter does not implement shadow banning https://blog.twitter.com/en_us/topics/company/2018/Setting-the-record-straight-on-shadow-banning.html
+
+
