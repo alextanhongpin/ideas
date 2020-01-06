@@ -172,3 +172,61 @@ https://monkeylearn.com/sentiment-analysis/
 # Dynamic pricing
 https://en.m.wikipedia.org/wiki/Dynamic_pricing
 https://www.priceintelligently.com/blog/bid/198355/how-to-implement-a-dynamic-pricing-strategy-without-the-pr-backlash
+
+Architecture and Devops
+
+- Learn traefik, and maesh 
+- Learn envoy
+- Learn istio gateway
+- How to implement event sourcing in java
+- Useful prometheus metrics? What setup is good
+- Terraform scripts for deployment
+- How to implement feature toggle correctly. Through env vars
+- Domain driven design functional programming
+- UML and c4 architecture to solve basic problems like url short energy,
+- Solid, code architecture
+
+Art of scalability
+- Scalable counting
+- Scalable evolutionary architecture through Optimization
+- Sampling in scalable software
+
+How to deal with conflicts?
+- When someone is not agreeing
+- When someone is doing something wrong
+- Create an active guideline
+
+https://gist.github.com/manjufy/a91e5813e77eaf632f168ac6576c94da?fbclid=IwAR3a9S66Ecr4QG7ydYyaaZ7JMoUmoWWUrWB5iCd0LVDxU9BToPWqKGcktyw
+
+
+Functional programming
+- How to perform dependency injection with functional programming
+- What are strong examples of good usage of functional programming?
+
+Analytics
+- Useful statistical algorithms for a/b testing and how to calculate
+- How to get the data needed for analytics, what data and how
+- How to measure user’s churn
+
+Languages
+- Learning java, kotlin, refresher on Haskell
+
+Start be redesigning the different use cases again, how to do multi auth. authentication?
+How to design otp?
+Designing domain model
+- Attributes, scopes, associations
+- Behaviours
+- Design patterns
+
+Machine learning
+- Solving multi tag classification with python
+
+Old recommendation
+- for music and songs, sometimes we tend to favour back old songs. why not provide recommendation for old tracks and tastes?
+
+Learning to rank
+- How many ways are there to perform ranking
+- What is the minimal way to rank (by single attribute, by multiple weighted attributes)
+
+
+
