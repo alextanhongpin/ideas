@@ -16,7 +16,7 @@ Trie optimization, and library for the client/server which would allow the data 
 - why must the server runs for 24/7? Can't the server just run for a 8hrs a day?
 - lifespan of a server, expire after a month
 - make the server passwordless. To avoid sending emails, we can just log the email text response with the token to test it out.
-
+- how to handle unexpected error in background task
 ## TODO: Graphql
 
 - handling table joins
