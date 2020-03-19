@@ -252,25 +252,10 @@ Apply ranking based on the user profile
 
 
 ## Truncate Text logic
-Split into sentences, then check char length, then take last sentence and half of it
 
+Why is this a problem? We don't want a word to be truncated, e.g. apple to be `ap...`, since it will lose it's context. Also, we don't want a sentence to be truncated in front, e.g. `... . This is great` becomes `... . This ...`. It is better to truncate half the sentence of the last sentence when it reaches the threshold for better readability.
 
-Setting up database for gaoling
-
-
-- How to setup connection (Postgres/mysql)
-- How is the golang connection different than other database client
-- How to gracefully terminate connection
-- How to prepare statement (and why)
-- How to reuse statement? (With condition)
-- How to build query dynamically
-- How to chain transactions?
-- How to run migrations (manually, automatically)
-- How to run tests (with docker, locally or in ci/cd)
-- How to add a caching layer in golang (decorator pattern)
-- How to use context correctly
-- How to limit connection (configuration best practices)
-- How to setup repositories?
+Split into sentences, then check char length, then take last sentence and half of it.
 
 ## Setting up graphql
 - How to perform authorisation
