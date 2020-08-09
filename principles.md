@@ -163,6 +163,13 @@ Micro products?
 
 https://www.thoughtworks.com/insights/blog/zhong-tai-radical-approach-enterprise-it
 
+# decisions
+
+When faced with a tough choice, just make a decision. It doesn't matter if it is the right or wrong one. Mistake will push you back to the right choice.
+
+# just do it
+
+Even if you don't like it, if you do it continuously you will be good at it.
 
 ## Others
 https://blog.bufferapp.com/6-powerful-psychological-effects-that-explain-how-humans-tick
