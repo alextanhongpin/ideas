@@ -296,3 +296,7 @@ Someone decided the schema should be designed that way, because it's a MVP. When
 Let’s not fit the problem into the solution, there will be gaps. Let’s find a solution that is the most efficient for different problems.
 
 There are no generic solution, but there are good enough solution for different problems. The best way is to identify when to apply what solution for each problems.
+
+## Speed vs quality
+
+I had a 1-on-1 with my lead, and I mention that development is slow. And then he mentioned that we want to focus more on quality. At that time, I was wondering why most people think that we can't have both quality and speed.
