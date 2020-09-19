@@ -300,3 +300,7 @@ There are no generic solution, but there are good enough solution for different 
 ## Speed vs quality
 
 I had a 1-on-1 with my lead, and I mention that development is slow. And then he mentioned that we want to focus more on quality. At that time, I was wondering why most people think that we can't have both quality and speed.
+
+## Quantity vs speed
+
+How come an organiziation with more than 1000 engineers can't release quality products in track time? The answer is people are the bottleneck, it doesn't matter.
