@@ -19,8 +19,9 @@ Trie optimization, and library for the client/server which would allow the data 
 - how to handle unexpected error in background task
 ## TODO: Graphql
 
-- handling table joins
+- handling table joins (use data loader)
 - querying with different data sources (mysql)
+- managing multiple graphql (explore federation)
 - access controll list
 - authorization
 - where does business logic reside? Probably used graphql as a read-only data source
@@ -340,4 +341,10 @@ Implement shadow banning
 - How does shadow banning works?
 - Twitter does not implement shadow banning https://blog.twitter.com/en_us/topics/company/2018/Setting-the-record-straight-on-shadow-banning.html
 
+# Reducing repetition
 
+Code generator
+
+## Games to buil
+basic pokemon
+werewolf
