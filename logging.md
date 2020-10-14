@@ -446,3 +446,11 @@ query
 bytes-transferred
 status
 ```
+
+
+# Logging errors
+ 
+You have a system running, and you have already followed the best practices for logging. But then suddenly your system crashes, and whatever that is logged out does not provide any useful message to trace back the errors. It is time to improve our logging once more.
+
+- separating infra and application error. Most common errors come from the infrastructure, which could be very confusing. If the infrastructure is down, your application logs will not be produced. Find ways to make infrastructure error more visible.
+- be more specific with application errors. If you already anticipate certain errors from the application, write a test to validate them.
