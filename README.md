@@ -348,3 +348,7 @@ Code generator
 ## Games to buil
 basic pokemon
 werewolf
+
+## Voice application 
+
+Real-time censoring of vulgarity
