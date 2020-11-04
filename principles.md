@@ -26,6 +26,10 @@ Keep your codes simple - this is hard for most people as most of us will overeng
 
 Don't design the final solution without getting feedback. Build a solution, mock your dependencies and ask for opinions. Most of the time when working in a team, some people like to work solo - and end up creating something only they understand. Identify this people, and encourage them to discuss. You can avoid a lot of refactoring/rewrites when doing code review.
 
+## Just do it
+- they say you can be anything if you want to, but you can't be young again
+- time spend hesitation should be well spent on taking action
+
 
 ## Don't push proto-production
 
