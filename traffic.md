@@ -12,8 +12,8 @@
 - use different headlines to target specific target audience, use bandit algorithm etc. TODO: Backlink to implementation.
 
 ## Product
-- add backlinks to page. Example, if we have a blog posts, we can convert the links to our posts as cards/instagram stories etc that redirects back to our blog. It's a matter of changing the presentation. 
+- add backlinks to page. Example, if we have a blog posts, we can convert the links to our posts as cards/instagram stories etc that redirects back to our blog. It's a matter of changing the presentation.
 
 ## Dropout
 
-Look at ways to reduce dropout. 
+Look at ways to reduce dropout.

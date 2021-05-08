@@ -32,7 +32,7 @@ https://blog.gopheracademy.com/advent-2016/http-client/
 
 ## Improved Makefile
 
-Note: use `.PHONY` on non-build targets. 
+Note: use `.PHONY` on non-build targets.
 
 ```
 objects = foo.o bar.o
@@ -98,7 +98,7 @@ Setting measurable targets
 - reduce page load time by 2x
 - Reduce steps to upload documents
 - Make policies searchable
-- Increase memory by making people remember what they did last 
+- Increase memory by making people remember what they did last
 
 once someone has done something, others follow suit. Grab has shown us that they can compete with western giants, so a bunch of startups that will follow the paths will appear suit.
 - we have a page menu with categories that allows users to find the categorized products. Can we simplify it and instead show the google-like search page with query understanding that allows users to search for queries like
@@ -107,13 +107,13 @@ once someone has done something, others follow suit. Grab has shown us that they
     - best pwd insurance life (displays all life pwd insurance product)
 
 Build more websites
-- take the data from kaggle such as movie reviews and create actual users and content out of it. Then reverse engine the whole process where they get the user ’s data and how they build the recommendation engine. 
-- Do the same for flights, email etc 
+- take the data from kaggle such as movie reviews and create actual users and content out of it. Then reverse engine the whole process where they get the user ’s data and how they build the recommendation engine.
+- Do the same for flights, email etc
 
 
 Build a blog that aggregates stories about failures in production and how they mitigate it. The failures can be unexpected, or comes from the initial decision and they hypothesis that went wrong.
 
-Creation of knowledge base, and newsletter weekly to update the changes. 
+Creation of knowledge base, and newsletter weekly to update the changes.
 
 Look into kubernetes recipes, like changing config, hiding secrets.
 
@@ -176,7 +176,7 @@ https://www.priceintelligently.com/blog/bid/198355/how-to-implement-a-dynamic-pr
 
 Architecture and Devops
 
-- Learn traefik, and maesh 
+- Learn traefik, and maesh
 - Learn envoy
 - Learn istio gateway
 - How to implement event sourcing in java
@@ -334,9 +334,6 @@ Offline Google Analytics events
 
 https://medium.com/@addyosmani/progressive-web-apps-with-react-js-part-3-offline-support-and-network-resilience-c84db889162c
 
-
-
-
 Implement shadow banning
 - How does shadow banning works?
 - Twitter does not implement shadow banning https://blog.twitter.com/en_us/topics/company/2018/Setting-the-record-straight-on-shadow-banning.html
@@ -349,6 +346,233 @@ Code generator
 basic pokemon
 werewolf
 
-## Voice application 
+## Voice application
 
 Real-time censoring of vulgarity
+
+Coding with voice
+- [Serenade](https://serenade.ai/)
+- [Talon](https://talonvoice.com/)
+
+
+- implement event Sourcing/CQRS architecture
+  - https://paramore.readthedocs.io/en/latest/BrighterOutboxSupport.html
+  - https://www.cosmicpython.com/book/preface.html
+  - https://microservices.io/patterns/data/event-sourcing.html
+  - https://buildplease.com/pages/fpc-10/
+  - https://cqrs.nu/Faq/command-handlers
+  - https://softwareengineering.stackexchange.com/questions/386710/confused-about-commands-domain-events-and-external-events-in-event-sourcing
+  - https://www.rahulpnath.com/blog/avoid-commands-calling-commands/
+  - command vs event handlers https://groups.google.com/g/axonframework/c/7pURn8XboSc
+  - https://www.petermorlion.com/849-2/
+- learn how to maximize rule engine: https://docs.drools.org/6.0.0.CR3/drools-expert-docs/html_single/#d0e448
+- learn saga orchestration https://www.infoq.com/articles/saga-orchestration-outbox/
+- learn to create slack bot integration for work approval https://slack.com/intl/en-sg/slack-tips
+- learn Nix and NixOS
+  - https://tech.channable.com/posts/2021-04-09-nix-is-the-ultimate-devops-toolkit.html
+  - https://nixos.org/guides/nix-pills/why-you-should-give-it-a-try.html
+- learn to create a CRM https://www.zendesk.com/blog/what-is-a-crm-database/
+- how to use google protobuff to version your entities (could be used as the usecase layer)
+- architecture for one-man startup https://anthonynsimon.com/blog/one-man-saas-architecture/
+  - how would you design it? what's the most cost effective deployment strategy (finops)
+- revise pandas, rust again
+- learn temporal patterns
+  - how to create immutable data structure with postgres
+  - how to ensure continuous time range
+- parameterizing jupyter notebooks, and how to save/load readme
+- summarize thoughts on mocking database during testing, and other best practices
+  - https://qvault.io/clean-code/writing-good-unit-tests-dont-mock-database-connections/
+- how to implement your own state machine (for saga also), based on AWS Sage Maker
+  - https://step-functions-workshop.go-aws.com/30_setting_up_our_services/10_preparing.html
+- microservice timeout, jitters https://d1.awsstatic.com/builderslibrary/pdfs/timeouts-retries-and-backoff-with-jitter.pdf?did=ba_card-body&trk=ba_card-body
+- solving distributed transaction problem with saga
+  - https://developer.ibm.com/depmodels/microservices/articles/use-saga-to-solve-distributed-transaction-management-problems-in-a-microservices-architecture/
+  - https://temporal.io/usecases#transactions
+  - https://www.infoq.com/articles/saga-orchestration-outbox/
+- message broker vs db queue
+  - https://stackoverflow.com/questions/48099098/message-broker-vs-database-and-monitoring
+  - https://softwareengineering.stackexchange.com/questions/351449/message-queue-database-vs-dedicated-mq
+  - https://www.cloudamqp.com/blog/why-is-a-database-not-the-right-tool-for-a-queue-based-system.html
+  - https://medium.com/galvanize/message-queues-in-database-transactions-f830718f4f12
+  - https://medium.com/galvanize/message-queues-in-database-transactions-f830718f4f12
+- learn to implement authorization with OSO
+- why is authorization not part of domain in DDD?
+- Python Jupiter interactive
+
+https://queirozf.com/entries/interactive-controls-for-jupyter-notebooks-python-examples#-ipkernelapp-warning-widget-javascript-not-detected-it-may-not-be-installed-or-enabled-properly
+
+Jupiter tips
+
+https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
+
+https://towardsdatascience.com/optimizing-jupyter-notebook-tips-tricks-and-nbextensions-26d75d502663?gi=25a7e9f0de9e
+
+Immudb for event sourcing?
+
+https://www.codenotary.com/technologies/immudb/
+
+CQRS bulk update
+
+https://enterprisecraftsmanship.com/posts/ddd-bulk-operations/
+
+https://softwareengineering.stackexchange.com/questions/420689/bulk-update-of-ddd-aggregate-roots
+
+https://blog.sapiensworks.com/post/2013/12/16/Bulk-Actions-With-DDD-And-CQRS.aspx
+
+https://github.com/rogchap/v8go
+
+https://softwareengineering.stackexchange.com/questions/420689/bulk-update-of-ddd-aggregate-roots
+
+Where to ddd autoriaxtin
+
+https://stackoverflow.com/questions/50456199/ddd-implementing-authorization-invariants
+
+https://stackoverflow.com/questions/21730464/which-layer-should-be-used-for-user-authentication
+
+https://lessthan12ms.com/authorization-and-authentication-in-clean-architecture.html
+
+http://domain-driven-design.3010926.n2.nabble.com/why-is-authorization-in-a-separate-layer-from-the-model-td7578909.html
+
+https://softwareengineering.stackexchange.com/questions/367659/implementing-ddd-users-and-permissions
+
+https://vaadin.com/learn/tutorials/ddd/ddd_and_hexagonal
+
+https://medium.com/@martinezdelariva/authentication-and-authorization-in-ddd-671f7a5596ac
+
+https://stackoverflow.com/questions/38002961/implementing-user-defined-business-rules-with-ddd
+
+https://builtwithdot.net/blog/where-do-i-put-my-business-rules-and-validation
+
+Security in ddd
+
+https://www.utwente.nl/en/eemcs/trese/graduation_projects/2008/Uithol.pdf#page54
+
+Cel-go basics
+
+https://mycodesmells.com/post/introduction-to-cel-go
+
+Sql for data analysis
+
+https://hakibenita.com/sql-for-data-analysis
+
+aI in manufacturing
+
+https://haker88.medium.com/hands-on-tutorial-for-ai-implementation-in-manufacturing-part-1-55adff94d1e6
+
+AWS lambda function
+
+https://medium.com/creditorwatch/aws-lambda-facts-you-wish-to-know-before-processing-2-billion-lambda-executions-2021-78fe77183c80
+
+Typescript project 2021
+
+https://www.metachris.com/2021/04/starting-a-typescript-project-in-2021/
+
+Rules engine
+
+https://news.ycombinator.com/item?id=19957377
+
+Html5 sanitizer
+
+https://wicg.github.io/sanitizer-api/
+
+Lazy loading javascript data
+
+https://humanwhocodes.com/blog/2021/04/lazy-loading-property-pattern-javascript/
+
+
+Typescript permissions
+
+https://spin.atomicobject.com/2021/04/26/modeling-permissions-types-typescript/
+
+Filter dsl elasticsearch
+
+https://www.elastic.co/guide/en/elasticsearch/reference/current/sql-rest-filtering.html
+
+Clean react projects
+
+https://betterprogramming.pub/21-best-practices-for-a-clean-react-project-df788a682fb
+
+Postman integration testing with Newman
+
+https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/
+
+https://medium.com/velotio-perspectives/api-testing-using-postman-and-newman-6c68c33303fc
+
+How to rollback data?
+
+
+Sandboxed embedded languages
+
+https://www.innoq.com/en/blog/go-plugins-with-javascript/
+
+https://pwnisher.gitlab.io/nodejs/sandbox/2019/02/21/sandboxing-nodejs-is-hard.html
+
+https://github.com/patriksimek/vm2
+
+https://www.freecodecamp.org/news/running-untrusted-javascript-as-a-saas-is-hard-this-is-how-i-tamed-the-demons-973870f76e1c/
+
+https://forum.golangbridge.org/t/help-creating-go-sandbox-to-execute-untrusted-golang-code/20941
+
+https://www.lambrospetrou.com/articles/golang-v8-isolates/
+
+https://github.com/rogchap/v8go/blob/master/function_test.go
+
+https://stackoverflow.com/questions/10937870/how-to-run-untrusted-code-serverside
+
+https://github.com/laverdet/isolated-vm#who-is-using-isolated-vm
+
+https://hmarr.com/2013/oct/16/codecube-runnable-gists/
+
+https://www.npmjs.com/package/vm2
+
+https://github.com/asvd/jailed
+
+https://github.com/postmanlabs/postman-sandbox/blob/develop/lib/sandbox/console.js
+
+https://github.com/rogchap/v8go
+
+Anomaly detection
+
+https://github.com/adobe/OSAS
+
+Contribute to open source
+
+https://opensource.guide/how-to-contribute/
+
+Rust grpc
+
+https://dev.to/rkudryashov/introduction-to-grpc-in-rust-4dgg
+
+Immutable Postgres
+
+https://dzone.com/articles/how-to-mutate-data-in-a-system-designed-for-immuta
+
+https://enter-haken.github.io/posts/2017-07-15-database-architecture-part2.html
+
+https://blog.sentry.io/2019/10/25/how-to-mutate-data-in-a-system-designed-for-immutable-data
+
+https://kevinmahoney.co.uk/articles/immutable-data/
+
+https://gist.github.com/ghl3/7e8147ae4dcf08f3d325
+
+Crdt
+
+https://debezium.io/blog/2019/02/19/reliable-microservices-data-exchange-with-the-outbox-pattern/
+
+https://www.serverless.com/blog/crdt-explained-supercharge-serverless-at-edge
+
+https://www.baeldung.com/java-conflict-free-replicated-data-types
+
+https://news.ycombinator.com/item?id=7735141
+
+https://www.infoworld.com/article/3305321/when-to-use-a-crdt-based-database.html
+
+https://naveennegi.medium.com/rendezvous-with-riak-crdts-part-1-e94cfc8fe091
+
+https://stackoverflow.com/questions/63597403/choreography-sagas-in-ddd-chain-of-integration-events
+
+https://cloudstate.io/old/docs/core/current/user/lang/java/crdt.html
+
+https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2656668/no.ntnu:inspera:48729278:32233568.pdf?sequence=1
+
+https://kalele.io/summary-of-crdts/
