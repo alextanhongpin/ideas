@@ -576,3 +576,195 @@ https://cloudstate.io/old/docs/core/current/user/lang/java/crdt.html
 https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2656668/no.ntnu:inspera:48729278:32233568.pdf?sequence=1
 
 https://kalele.io/summary-of-crdts/
+
+
+Creating a job queue
+
+https://www.holistics.io/blog/how-we-built-a-multi-tenant-job-queue-system-with-postgresql-ruby/
+
+https://www.2ndquadrant.com/en/blog/what-is-select-skip-locked-for-in-postgresql-9-5/
+
+http://johtopg.blogspot.com/2015/01/queues-queues-they-all-fall-down.html?m=1
+
+https://cargopantsprogramming.com/post/queues-in-postgres/
+
+https://camunda.com/blog/2020/02/the-microservices-workflow-automation-cheat-sheet-the-role-of-the-workflow-engine/
+
+https://docs.temporal.io/blog/workflow-engine-principles/
+
+Postgres hashtext and limit category
+
+https://www.depesz.com/2021/01/08/how-to-limit-rows-to-at-most-n-per-category-fix/
+
+Git check conflict without merging them
+
+https://stackoverflow.com/questions/10879331/how-to-check-the-conflict-of-two-branch-but-not-need-to-merge-them
+
+https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
+
+https://about.gitlab.com/blog/2018/06/07/keeping-git-commit-history-clean/#situation-3-i-need-to-add-remove-or-combine-commits
+
+Useful go Lib
+
+https://github.com/uber-go/gopatch/blob/main/docs/PatchesInDepth.md#statements
+Gocmp
+Golang I lint
+Go mock
+Golang desktop app https://wails.app/tutorials/quotes/
+
+https://developer.fyne.io/architecture/scaling
+
+
+
+Working with csv 
+
+https://openrefine.org/download.html
+
+https://www.w3.org/TR/tabular-data-primer/
+
+https://blog.openbridge.com/how-to-do-csv-file-validation-and-schema-generation-43a9cb78e1eb
+
+https://datatracker.ietf.org/doc/html/rfc4180
+
+https://digital-preservation.github.io/csv-schema/#toc4
+
+
+Ideas
+Upload data to infer schema
+Validate schema
+Set required fields
+
+Extras
+Role Actor: system, guest, user, admin, infra: db
+Action: read
+Resource: user
+
+
+Message: failed to find user
+Code: user.not_found use constant int with stringer but don’t expose int, just string. With start and end
+Kind: not found, already exists, permission denied, failed precondition, internal
+
+https://github.com/grpc/grpc-go/blob/v1.12.0/codes/codes.go
+
+https://middlemost.com/failure-is-your-domain/
+
+Extra: map
+
+Type Error
+
+Func userError(kind, code. Builder pattern
+Loss of information
+Not enough data
+Domainerrors should be error sentinel, errors at outer layer should warp domain error
+
+Polymorphic solution
+Use multiple columns, but have one universal id and type column that is indexed. The id is ideally unique
+
+Where should go interface live?
+
+https://groups.google.com/g/golang-nuts/c/WlvWfPjGncY
+
+
+Auth security
+
+https://supertokens.io/blog/the-best-way-to-securely-manage-user-sessions
+
+https://datatracker.ietf.org/doc/html/rfc6819
+
+https://evertpot.com/jwt-is-a-bad-default/
+
+https://supertokens.io/blog/are-you-using-jwts-for-user-sessions-in-the-correct-way
+
+
+Username
+
+https://stackoverflow.com/questions/12018245/regular-expression-to-validate-username
+
+https://stackoverflow.com/questions/62882865/postgres-generate-a-unique-username
+
+Hash password token
+
+https://stackoverflow.com/questions/20013672/best-practice-on-generating-reset-password-tokens
+
+
+Api design with me
+
+https://stackoverflow.com/questions/36520372/designing-uri-for-current-logged-in-user-in-rest-applications
+
+https://stackoverflow.com/questions/35719797/is-using-magic-me-self-resource-identifiers-going-against-rest-principles
+
+Jupiter must have extensions
+
+https://towardsdatascience.com/5-extensions-that-will-make-you-switch-to-jupyter-lab-32c6b66ac755#c97e
+
+Ideas
+
+https://samsquire.github.io/ideas/
+
+Geocoding mapbox
+
+https://www.smashingmagazine.com/2021/06/building-geocoding-app-vue-mapbox/
+
+Go implements interface
+
+https://stackoverflow.com/questions/10498547/ensure-a-type-implements-an-interface-at-compile-time-in-go/34619122#34619122
+
+
+DevOps 
+Stop Rds
+
+https://aws.amazon.com/blogs/database/schedule-amazon-rds-stop-and-start-using-aws-lambda/
+
+Does fb use joins
+
+https://www.quora.com/Does-Facebook-use-join-operation-on-database-tables-to-load-whole-profile-of-user-if-yes-How-many-join-operation-Facebook-do-to-load-the-profile-how-many-databases-tables-they-have-1-Billion-data-of-objects-is-really-big-deal
+
+Vim advance
+
+https://thevaluable.dev/vim-veteran/
+
+Build webhook
+
+https://keygen.sh/blog/how-to-build-a-webhook-system-in-rails-using-sidekiq/
+
+
+Automerge and conflict resolution
+
+https://docs.aws.amazon.com/appsync/latest/devguide/conflict-detection-and-sync.html https://docs.aws.amazon.com/appsync/latest/devguide/conflict-detection-and-sync.html
+
+https://github.com/yjs/yjs
+
+https://github.com/automerge/automerge
+
+https://hasura.io/blog/couchdb-style-conflict-resolution-rxdb-hasura/
+
+
+Event sourcing handle duplicates
+
+https://groups.google.com/g/dddcqrs/c/h17Tjxtz5w4
+
+https://stackoverflow.com/questions/31386244/cqrs-event-sourcing-check-username-is-unique-or-not-from-eventstore-while-sendin
+
+
+Db critic
+
+https://www.channable.com/tech/dbcritic-constructively-criticizing-your-postgres-schema
+
+https://ardentperf.com/2021/07/06/paranoid-sql-execution-on-postgresql/
+
+Aws
+
+https://medium.com/edataconsulting/how-to-get-a-ssl-certificate-running-in-aws-elastic-beanstalk-using-certbot-6daa9baa3997
+
+Big data
+
+https://dvc.org/doc/start
+
+https://docs.delta.io/latest/quick-start.html
+
+
+Golang code generation
+
+- ideally for decorators, removing this does not impact usability
+
+https://mattermost.com/blog/opentracing-for-go-projects/
