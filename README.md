@@ -768,3 +768,12 @@ Golang code generation
 - ideally for decorators, removing this does not impact usability
 
 https://mattermost.com/blog/opentracing-for-go-projects/
+
+
+## DB Design 
+
+- how to mimic folder filesystem in postgres
+- how to add bitemporal capability to postgres
+- how to add upload image storage design
+- how to design robust temporal tables
+- how to add business rules in database (storing rules and excuting them in application)
