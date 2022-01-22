@@ -97,6 +97,11 @@ Having data is useless if we only use them to plot charts - it has to generate _
 - if we are looking for recommendations, we need to at least match their preferences with the behaviours
 - most basic metrics includes daily, weekly, monthly or yearly sales (trends etc)
 
+
+## recommendation
+
+We can create recommendation by finding the patterns of the user past purchases
+- another alternative is to just recommend a global top 10. Then monitor the trends of the users actions towards the list. Daily, update the ranking and remove those with 0 ratings. Then add in new products that has not yet been recommended.
 ## Links
 
 
