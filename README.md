@@ -3,6 +3,11 @@
 ## Docker Monitoring
 
 Done this before, but didn't write down the steps for others to replicate. Also, there are some improvements that I want to, like generating daily, weekly, monthly and yearly report on the metrics (CPU usage, memory, SLA etc).
+- why is monitoring important
+- monitor I/O: only for I/O heavy applications
+-   measure requests
+- monitor CPU: only for CPU bound applications
+-   image processing
 
 Pair it with Grafana and Prometheus.
 
