@@ -782,3 +782,13 @@ https://mattermost.com/blog/opentracing-for-go-projects/
 - how to add upload image storage design
 - how to design robust temporal tables
 - how to add business rules in database (storing rules and excuting them in application)
+
+
+#  Article ideas 
+
+-How to split 100 dollars by 3
+- How to create a real-time config store
+- How to schedule entries in database?
+- dealing polymorphic association in database , and external id
+
+
