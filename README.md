@@ -792,3 +792,7 @@ https://mattermost.com/blog/opentracing-for-go-projects/
 - dealing polymorphic association in database , and external id
 
 
+# Long term goals
+- master other basic infra (redis, kafka), including applicationandscaling
+- deep learning
+
